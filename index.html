@@ -3,66 +3,215 @@
 	<head>
         <title>文道 | Wendaoism</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html" charset="utf-8">
         <link href="" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
         <script src="js/prefixfree.min.js"></script>
 	</head>
-	<body>
-		<header>
-			<nav class="pull-right">
-				<ul class="nav nav-pills">
-					<li class="active"><a href="">首页</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">关于我们<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="">公司简介</a></li>
-							<li><a href="">服务流程</a></li>
-							<li><a href="">顾问团队</a></li>
+	<body class="home">
+		<div class="page">
+			<header>
+				<div class="container">
+					<div class="col-sm-3 full-height">
+						<h1>
+							<img class="img-responsive" src="images/logo.png" alt="logo">
+						</h1>
+					</div>
+					<nav>
+						<ul class="nav nav-pills">
+							<li class="active"><a href="">首页</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">关于我们<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="">公司简介</a></li>
+									<li><a href="">服务流程</a></li>
+									<li><a href="">顾问团队</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">课程论文解决方案<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="">原创范文服务</a></li>
+									<li><a href="">编辑润色服务</a></li>
+									<li><a href="">抄袭率检查服务</a></li>
+									<li><a href="">服务标准</a></li>
+									<li><a href="">案例展示</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">留学文书提升方案<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="">PS写作</a></li>
+									<li><a href="">CV/Resume润色</a></li>
+									<li><a href="">sample essay写作</a></li>
+									<li><a href="">案例展示</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">求职文书优化方案<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="">CV/Resume创作</a></li>
+									<li><a href="">Cover Letter提升</a></li>
+									<li><a href="">案例展示</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">帮助中心<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="">学术资源库</a></li>
+									<li><a href="">问答中心</a></li>
+								</ul>
+							</li>
 						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">课程论文解决方案<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="">原创范文服务</a></li>
-							<li><a href="">编辑润色服务</a></li>
-							<li><a href="">抄袭率检查服务</a></li>
-							<li><a href="">服务标准</a></li>
-							<li><a href="">案例展示</a></li>
+					</nav>
+				</div>
+				<div class="banner">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active" style="background-image:url(images/banner-1.jpg);"></div>
+					    <div class="item" style="background-image:url(images/banner-2.jpg);"></div>
+					    <div class="item" style="background-image:url(images/banner-3.jpg);"></div>
+					  </div>
+
+					</div>
+
+					<div class="login">
+						<form class="form-horizontal" role="form">
+						  <div class="form-group">
+						    <div class="col-sm-6">
+						      <input type="email" class="form-control" id="inputEmail3" placeholder="用户名/Email">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-sm-6">
+						      <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-sm-6 vertical-bottom">
+								<!-- 居中对齐
+
+								<label for="submit" class="control-label"><a href="">注册</a> <span class="text-muted">|</span> <a href="">忘记密码</a></label>
+
+								-->
+								<span class="vertical-bottom-target"><a href="">注册</a> <span class="text-muted">|</span> <a href="">忘记密码</a></span>
+								<button type="submit" class="btn btn-primary pull-right">登录</button>
+						    </div>
+						  </div>
+						</form>
+					</div>
+
+				</div>
+			</header>
+			<div class="main">
+				<div class="container">
+					<div class="ad ad-01 col-sm-8">
+						<div class="row">
+							<img src="images/advantage01.png" alt="advantage01" class="img-responsive">
+							<div class="blue-radius col-sm-9">
+								优选的写作顾问（均为美国TOP50在读或已毕业 GPA3.5以上的学霸）
+							</div>
+						</div>
+					</div>
+					<div class="ad ad-01 col-sm-4">
+						<div class="row">
+							<div>
+								<img src="images/advantage02.png" alt="advantage01" class="img-responsive pull-right">
+								<div class="clearfix"></div>
+							</div>
+							<div class="blue-radius">
+								以客户为中心（30%的预付款；退款承诺）
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="col-sm-4">
+						<img src="images/advantage03.png" alt="advantage03" class="img-responsive">
+						<div class="info info-01">
+							<a href="">关于我们</a>
+							<a href="">博客</a>
+							<a href="">客户评价</a>
+							<a href="">案例展示</a>
+						</div>
+					</div>
+					<div class="col-sm-4"><img src="images/advantage04.png" alt="advantage04" class="img-responsive">
+						<div class="info info-02">
+							<a href="">个人陈述</a>
+							<a href="">简历</a>
+							<a href="">推荐信</a>
+							<a href="">学术论文</a>
+							<a href="">顾问团队</a>
+						</div>
+					</div>
+					<div class="col-sm-4"><img src="images/advantage05.png" alt="advantage04" class="img-responsive">
+						<div class="info info-03">
+							<a href="">学术资源库</a>
+							<a href="">问答中心</a>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="col-sm-4"><img src="images/advantage06.png" alt="advantage04" class="img-responsive">
+						<div class="info info-04">
+							<a href="">服务流程</a>
+							<a href="">常见问题</a>
+							<a href="">付款方式</a>
+							<a href="">反抄袭</a>
+						</div>
+					</div>
+					<div class="col-sm-4"><img src="images/advantage07.png" alt="advantage04" class="img-responsive">
+						<div class="info info-05">
+							<a href="">最新优惠</a>
+							<a href="">省钱功率</a>
+							<a href="">返利攻略</a>
+						</div>
+					</div>
+					<div class="col-sm-4"><div class="xueba">
+						<img src="images/xueba.png" alt="advantage04" class="img-responsive">
+					</div></div>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="col-sm-2">
+						<h4>关于我们</h4>
+						<ul>
+							<li><a href="" class="text-muted">公司简介</a></li>
+							<li><a href="" class="text-muted">服务流程</a></li>
+							<li><a href="" class="text-muted">顾问团队</a></li>
 						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">留学文书提升方案<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="">PS写作</a></li>
-							<li><a href="">CV/Resume润色</a></li>
-							<li><a href="">sample essay写作</a></li>
-							<li><a href="">案例展示</a></li>
+					</div>
+					<div class="col-sm-2">
+						<h4>联系我们</h4>
+					</div>
+					<div class="col-sm-3 pull-right">
+						<h4>新闻公告</h4>
+						<ul>
+							<li><a href="" class="text-muted">2014年春节期间正常营业的通知</a></li>
+							<li><a href="" class="text-muted">关于2014元旦正常营业的通知</a></li>
+							<li><a href="" class="text-muted">WS自动化系统启用正式域名</a></li>
+							<li><a href="" class="text-muted">2014年春节期间正常营业的通知</a></li>
 						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">求职文书优化方案<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="">CV/Resume创作</a></li>
-							<li><a href="">Cover Letter提升</a></li>
-							<li><a href="">案例展示</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">帮助中心<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="">学术资源库</a></li>
-							<li><a href="">问答中心</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<div id="page"></div>
-		<footer></footer>
+					</div>
+				</div>
+				<div class="copyright text-center text-muted">
+					版权所有：LunTaoism 地址：西安市雁塔区朱雀街132号阳阳国际广场B座17层 陕ICP备11005121号
+				</div>
+			</footer>
+		</div>
 		<script src="http://code.jquery.com/jquery.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="js/bootstrap-hover-dropdown.min.js"></script>	
+		<script src="js/bootstrap-hover-dropdown.min.js"></script>
 		<script src="js/fn.js"></script>
 	</body>
 </html>
