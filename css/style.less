@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic);
+
+
 // ----------------------------------------
 // ! variable
 // ----------------------------------------
@@ -259,6 +262,11 @@ footer {
 			padding-left: 3rem;
 			font-size: 1.4rem;
 			color: #0096B8;
+
+			&:hover {
+				text-decoration: none;
+				color: #00b6db;
+			}
 		}
 	}
 
@@ -355,19 +363,20 @@ footer {
 			.commend {
 
 				p.content {
-					margin-left: @base;
+					font-family: 'Gentium Basic', serif;
 					font-style: italic;
-					color: #bbb;
+					color: #555;
 					font-size: 1.8rem;
-					font-family: serif;
 
 					&::before {
+						font-family: 'Gentium Basic', serif;
 						content: '“ ';
 						font-size: 38px;
 						vertical-align: bottom;
 						line-height: 14px;
 					}
 					&::after {
+						font-family: 'Gentium Basic', serif;
 						content: ' ”';
 						font-size: 38px;
 						vertical-align: bottom;
@@ -389,6 +398,15 @@ footer {
 
 		ul{
 			margin: 0;
+
+			a {
+				color: #888;
+
+				&:hover {
+					text-decoration: none;
+					color: #333;
+				}
+			}
 		}
 		ul li::before {
 			content: '';
