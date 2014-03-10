@@ -235,6 +235,7 @@ footer ul li::before {
 }
 .en .main section.container .reg-button:hover {
   text-decoration: none;
+  background: linear-gradient(#00a0d0 0%, #006391 100%);
 }
 .en .main section.container .essay,
 .en .main section.container .earn {
@@ -259,6 +260,9 @@ footer ul li::before {
   padding: 6px 12px;
   line-height: 3.5rem;
   border: 1px #eee solid;
+}
+.en .main section.container .hot-keywords a:hover {
+  text-decoration: none;
 }
 .en .main section.container h5 {
   font-size: 18px;
