@@ -256,6 +256,13 @@ header {
 // ! footer
 // ----------------------------------------
 footer {
+
+	div.container:nth-child(1) {
+		>div {
+			padding-bottom: @base/2;
+		}
+	}
+
 	padding: @base 0 0;
 
 	h4 {
@@ -265,10 +272,11 @@ footer {
 	ul {
 		padding: 0;
 		margin-left: 2rem;
+		margin-bottom: 0;
 	}
 
 	.copyright {
-		padding: 6rem 0 6rem;
+		padding: 1rem;
 	}
 
 	ul, .copyright {
