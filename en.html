@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>文道 | Wendaoism</title>
+        <title>Wendaoism</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="text/html" charset="utf-8">
         <link href="" rel="stylesheet" media="screen">
@@ -14,20 +14,30 @@
 			<header>
 				<div class="top-bar">
 					<div class="container">
-						<div class="col-xs-12 pull-right text-right">
+						<div class="col-sm-8 col-xs-12 pull-right text-right">
 							<a href="">Find Work</a>
 							<a href="">How it Works</a>
 							<a href="">Login or Register</a>
 						</div>
+						<div class="col-sm-4 visible-sm full-height">
+							<div class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Find My Field <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="">...</a></li>
+									<li><a href="">...</a></li>
+									<li><a href="">...</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="container">
-					<div class="col-sm-4 full-height">
+					<div class="col-md-4 col-sm-4 full-height">
 						<h1>
-							<img class="img-responsive" src="images/en/logo.png" alt="logo">
+							<img src="images/en/logo.png" alt="logo">
 						</h1>
 					</div>
-					<div class="col-sm-2 full-height">
+					<div class="col-md-2 visible-md visible-lg full-height">
 						<div class="dropdown">
 							<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">Find My Field <span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -37,7 +47,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-5 pull-right full-height searchform">
+					<div class="col-md-5 col-sm-6 col-xs-12 pull-right full-height searchform">
 					    <div class="input-group vertical-center">
 					      <div class="input-group-btn">
 					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search Titles <span class="caret"></span></button>
@@ -55,41 +65,50 @@
 					      </span>
 					    </div><!-- /input-group -->
 					</div>
-				</div>
-				<div class="banner">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<!--
-
-					    <li data-target="#carousel-example-generic" data-slide-to="  "></li>
-
-						-->
-					  </ol>
-
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-					    <div class="item active" style="background-image:url(images/en/banner-1.jpg);"></div>
-					    <!--
-
-					    <div class="item" style="background-image:url(  );"></div>
-
-						-->
-					  </div>
-
-					</div>
-
+					<div class="clearfix"></div>
 				</div>
 			</header>
+
+			<!-- banner -->
+
+			<div class="banner hidden-xs">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<!--
+
+				    <li data-target="#carousel-example-generic" data-slide-to="  "></li>
+
+					-->
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active" style="background-image:url(images/en/banner-1.jpg);"></div>
+				    <!--
+
+				    <div class="item" style="background-image:url(  );"></div>
+
+					-->
+				  </div>
+
+				</div>
+
+			</div>
+
+			<!-- banner end -->
+
 			<div class="main">
 				<!-- 		section 1		 -->
 				<section class="container">
-					<div class="col-sm-7 text-right">
+					<div class="col-sm-7 col-xs-12 text-right">
 						<h1 class="bluegreen">Want to Be Our WRITERS?</h1>
 					</div>
-					<div class="col-sm-5"><a href="" class="reg-button">Register Now!</a></div>
-					<div class="col-sm-7">
+					<div class="col-sm-5 col-xs-12">
+						<a href="" class="reg-button">Register Now!</a>
+					</div>
+					<div class="col-sm-7 col-xs-12">
 						<div class="essay">
 							<h1>99,999 Essays</h1>
 							<div class="duration text-muted">written in past 30 days</div>
@@ -99,7 +118,7 @@
 							<div class="duration text-muted">earned through WenDaoismWorkshop to date</div>
 						</div>
 					</div>
-					<div class="col-sm-5 hot-keywords">
+					<div class="col-sm-5  col-xs-12 hot-keywords">
 						<a class="btn-primary" href="">HRManagement</a>
 						<a class="btn-info" href="">Marketing</a>
 						<a class="btn-success" href="">Logistics</a>
@@ -118,49 +137,53 @@
 					<div class="white-block"></div>
 
 
-					<div class="col-sm-4">
-						<div class="row col-sm-offset-1 col-sm-10">
-							<h5 class="ad-01">1. Find your work directly.</h5>
-							<div class="white-block"></div>
-							<div class="row">
-								<div class="col-sm-offset-3 col-sm-6">
-									<img class="img-responsive block-center" src="images/en/file.png" alt="" />
+					<div class="ad-three-feature">
+						<div class="col-sm-4 col-xs-6">
+							<div class="row col-sm-offset-1 col-sm-10">
+								<h5 class="ad-01">1. Find your work directly.</h5>
+								<div class="white-block hidden-sm hidden-xs"></div>
+								<div class="row">
+									<div class="col-sm-offset-3 col-sm-6">
+										<img class="img-responsive block-center" src="images/en/file.png" alt="" />
+									</div>
 								</div>
+								<div class="white-block  hidden-sm hidden-xs"></div>
+								<p class="text-center col-lg-0 col-md-12">You can find the essay task that you are experienced in or we recommend to you.</p>
 							</div>
-							<div class="white-block"></div>
-							<p class="text-center">You can find the essay task that you are experienced in or we recommend to you.</p>
 						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="row col-sm-offset-1 col-sm-10">
-							<h5 class="ad-02">2. Write essays efficiently.</h5>
-							<div class="white-block"></div>
-							<div class="row">
-								<div class="col-sm-offset-3 col-sm-6">
-									<img class="img-responsive block-center" src="images/en/write.png" alt="" />
+						<div class="col-sm-4 col-xs-6">
+							<div class="row col-sm-offset-1 col-sm-10">
+								<h5 class="ad-02">2. Write essays efficiently.</h5>
+								<div class="white-block  hidden-sm hidden-xs"></div>
+								<div class="row">
+									<div class="col-sm-offset-3 col-sm-6">
+										<img class="img-responsive block-center" src="images/en/write.png" alt="" />
+									</div>
 								</div>
+								<div class="white-block  hidden-sm hidden-xs"></div>
+								<p class="text-center">You should write the essay according to the customer’s requirements. </p>
 							</div>
-							<div class="white-block"></div>
-							<p class="text-center">You should write the essay according to the customer’s requirements. </p>
 						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="row col-sm-offset-1 col-sm-10">
-							<h5 class="ad-03">3. Get your payment safely.</h5>
-							<div class="white-block"></div>
-							<div class="row">
-								<div class="col-sm-offset-3 col-sm-6">
-									<img class="img-responsive block-center" src="images/en/dollar.png" alt="" />
+						<div class="clearfix visible-xs"></div>
+						<div class="col-sm-4 col-xs-6">
+							<div class="row col-sm-offset-1 col-sm-10">
+								<h5 class="ad-03">3. Get your payment safely.</h5>
+								<div class="white-block hidden-sm hidden-xs"></div>
+								<div class="row">
+									<div class="col-sm-offset-3 col-sm-6">
+										<img class="img-responsive block-center" src="images/en/dollar.png" alt="" />
+									</div>
 								</div>
+								<div class="white-block hidden-sm hidden-xs"></div>
+								<p class="text-center">Only pay for work you approve. plus WenDaoismWorkshop
+								takes care of all invoicing and taxes.</p>
 							</div>
-							<div class="white-block"></div>
-							<p class="text-center">Only pay for work you approve. plus WenDaoismWorkshop
-							takes care of all invoicing and taxes.</p>
 						</div>
-					</div>
 
-					<div class="clearfix"></div>
+						<div class="clearfix"></div>
+					</div>
 					<div class="white-block"></div>
+					<div class="white-block visible-xs"></div>
 
 					<!-- commend -->
 					<div class="commend">
@@ -236,7 +259,7 @@
 							<img src="images/en/logo-foot.png" alt="logo-foot" class="img-responsive">
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-4">
 						<h5>Research</h5>
 						<ul>
 							<li><a href="">link</a></li>
@@ -246,7 +269,7 @@
 							<li>...</li>
 						</ul>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-4">
 						<h5>Resources</h5>
 						<ul>
 							<li><a href="">link</a></li>
@@ -256,7 +279,7 @@
 							<li>...</li>
 						</ul>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-4">
 						<h5>Get to know us</h5>
 						<ul>
 							<li><a href="">link</a></li>
@@ -266,7 +289,7 @@
 							<li>...</li>
 						</ul>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-4">
 						<h5>Services</h5>
 						<ul>
 							<li><a href="">link</a></li>
@@ -276,7 +299,7 @@
 							<li>...</li>
 						</ul>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-4">
 						<h5>Working knowing</h5>
 						<ul>
 							<li><a href="">link</a></li>

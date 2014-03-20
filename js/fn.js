@@ -22,4 +22,38 @@
 	$('.login-cover').on('click.toggleMobileLoginTrigger', function(){
 		$('.login-mobile-trigger').click();
 	})
+	$('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });
+
+    $('.btn-file :file').on('change.customFilePicker', function(e) {
+	    var $this = $(this);
+	    var filename = $this.val().replace(/.*(\/|\\)/, '');
+
+	    $this.closest('.form-group').find('.filename').text(filename);
+	    console.log(filename);
+    })
+
+	$('[data-ride="toggle-select"]').on('change.toggleSelectionForm', function(e) {
+		var num = $(this).find('option:selected').index();
+		var target = $('#' + $(this).data('toggle')).children('select');
+		target.each(function(i,e){
+			if(num!=i)
+				$(e).addClass('hide');
+			else
+				$(e).removeClass('hide');
+		})
+	})
+
+	$('.message-nav a').on('shown.bs.tab', function(e){
+		$(this).siblings('.active').removeClass('active');
+		$(this).addClass('active');
+	});
 })(jQuery)
