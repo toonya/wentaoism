@@ -838,7 +838,7 @@ nav.mobile .panel ul a {
 }
 .app {
   position: absolute;
-  top: 48px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -942,20 +942,31 @@ nav.mobile .panel ul a {
   padding: 6px 6px 6px 12px;
   display: block;
   transition: .5s;
+  position: relative;
 }
 .message-nav .item h4 {
   color: #000;
   margin-top: 0;
 }
-.message-nav .item span.reading-state {
+.message-nav .item span.state {
   padding-left: 24px;
 }
-.message-nav .item span.time,
-.message-nav .item span.state {
+.message-nav .item span.time {
   color: #aaa;
 }
 .message-nav .item.active {
   background: #ddd;
+}
+.message-nav .item.active::after {
+  content: '\e072';
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  font-size: 24px;
+  transform-origin: 50% 50%;
+  transform: translateY(-50%) rotate(180deg);
+  color: #fff;
+  font-family: 'Glyphicons Halflings';
 }
 .message-nav .item:hover {
   background: #ddd;
@@ -967,5 +978,8 @@ nav.mobile .panel ul a {
 .message-content {
   left: 20%;
   width: 80%;
+}
+.message-content .info {
+  padding: 0;
 }
 /* end. member message */
