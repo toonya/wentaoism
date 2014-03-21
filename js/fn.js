@@ -56,4 +56,20 @@
 		$(this).siblings('.active').removeClass('active');
 		$(this).addClass('active');
 	});
+
+
+
+	$('#open-review').one('click.runAniamtion', function(e){
+		$('.review').addClass('show');
+	})
+	$('#open-review').on('click.openReveiwPage', function(e){
+		e.preventDefault();
+		$(this).closest('.message-content').addClass('open-review');
+	})
+	$('#close-review').on('click.closeReveiwPage', function(e){
+		e.preventDefault();
+		$(this).closest('.message-content').removeClass('open-review');
+	})
+
+
 })(jQuery)

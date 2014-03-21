@@ -1284,9 +1284,37 @@ nav.mobile {
 .message-content {
 	left: 20%;
 	width: 80%;
+	overflow-x: hidden;
 
 	.info {
 		padding: 0;
+	}
+
+	.review {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		transform: translateX(100%);
+		visibility: hidden;
+	}
+	.review.show {
+		visibility: visible;
+	}
+
+	&.open-review {
+		.tab-content {
+			transform: translateX(-100%);
+		}
+
+		.review {
+			transform: translateX(0);
+		}
+	}
+
+	.page-slide {
+		transition: transform .65s ease;
 	}
 }
 /* end. member message */
