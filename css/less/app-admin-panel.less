@@ -1,0 +1,160 @@
+/* app */
+@z-app-content: 10;
+@z-app-nav: 100;
+@w-app-nav: @base*6;
+@h-app-top-bar: @base*2;
+
+.app-top-bar {
+	position: absolute;
+	padding:0;
+	height: @h-app-top-bar;
+	width: 100%;
+	border-bottom: #ccc 1px solid;
+
+	.right-info {
+		line-height: @h-app-top-bar;
+		position: absolute;
+		right: @base;
+
+		.item {
+			padding-left: @base;
+			float: left;
+		}
+	}
+
+	.logo {
+		width: @w-app-nav;
+		height: @h-app-top-bar;
+		display: inline-block;
+		position: absolute;
+		left: @base;
+
+		img {
+			height: @h-app-top-bar*.75;
+			.vertical-center();
+		}
+	}
+
+	.glyphicon {
+		line-height: @h-app-top-bar;
+		color: #ccc;
+		cursor: pointer;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.desktop {
+		padding-left: @w-app-nav * 2;
+	}
+
+	nav {
+		>ul>li {
+			float: left;
+		}
+		>ul>li>a {
+			line-height: @h-app-top-bar;
+			color: #ccc;
+			padding: 0 15px;
+
+
+			&:hover {
+				color: #fff;
+			}
+		}
+		a {
+			font-size: 1.2rem;
+		}
+
+		.open>a {
+			color: #fff;
+		}
+
+		>ul>li>a{
+			background: @c-black-blue !important;
+
+			&:hover {
+				background: @c-black-blue !important;
+			}
+		}
+
+	}
+}
+
+.app {
+	position: absolute;
+	top: @h-app-top-bar;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.app-nav, .app-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.app-nav {
+	left: 0;
+	width: @w-app-nav;
+	background: linear-gradient(-90deg, @c-dark-blue - #222222, @c-dark-blue 5px);
+	z-index: @z-app-nav;
+	padding: @base 0;
+
+	nav.bottom {
+		position: absolute;
+		bottom: @base*2;
+	}
+
+	.item>a {
+		display: block;
+		color: #fff;
+		overflow: hidden;
+		font-size: 24px;
+		box-sizing: border-box;
+		width: @w-app-nav;
+		overflow: hidden;
+		height: 48px;
+
+		.detail {
+			font-size: 14px;
+			line-height: 48px;
+			float: left;
+			font-family: "Microsoft YaHei", Arial, helvetica, sans-serif;
+		}
+
+		.icon {
+			float: left;
+			line-height: 48px;
+			height: 48px;
+			padding-left: 24px;
+			padding-right: 12px;
+		}
+
+		&:hover {
+			background: @c-black-blue;
+			width: @w-app-nav;
+			text-align: left;
+		}
+	}
+}
+
+.app-content {
+	left: @w-app-nav;
+	right: 0;
+	z-index: @z-app-content;
+	background: #fff;
+
+	.content {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		padding:@base @base*2;
+		overflow: auto;
+	}
+}
+/* end.app */

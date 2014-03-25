@@ -1,0 +1,133 @@
+// ----------------------------------------
+// ! variable
+// ----------------------------------------
+@base: 24px;
+@z-nav: 100;
+@z-nav-mobile: 10;
+@z-cover: @z-nav + 10;
+
+@mobile-nav-width: @base*10;
+@mobile-login-width: @base*10;
+
+@c-black-blue: #002830;
+@c-dark-blue: #0093B8;
+@c-light-blue: #E5FBFF;
+@c-dark-red: #C40000;
+@c-light-red: #FFE6E7;
+
+
+
+@keyframes shakeY {
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-2px);
+	}
+	75% {
+		transform: translateY(2px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes shakeX {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-2px);
+	}
+	75% {
+		transform: translateX(2px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* common style */
+.vertical-center {
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+.common-container {
+	background: #aaa;
+	padding: @base*2;
+
+}
+
+.vertical-bottom {
+	position: relative;
+
+	.vertical-bottom-target {
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+.white-block {
+	width: 100%;
+	height: @base;
+}
+
+.block-center {
+	display: block;
+	margin: 0 auto;
+}
+
+.full-height {
+	height: 100%;
+}
+
+body {
+	background: #000;
+	font-family: "Microsoft YaHei", Arial, helvetica, sans-serif;
+}
+
+html,body,.page {
+	width: 100%;
+	height: 100%;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.page {
+	background: #f4f4f4;
+	max-width: 1600px;
+	margin: 0 auto;
+	position: relative;
+	z-index: @z-nav;
+	transition: .65s ease transform;
+}
+.bluegreen {
+	color: #0096B8;
+}
+/* end. common style */
+
+
+/* button */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

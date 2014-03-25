@@ -52,7 +52,7 @@
 		})
 	})
 
-	$('.message-nav a').on('shown.bs.tab', function(e){
+	$('.list-panle-nav a').on('shown.bs.tab', function(e){
 		$(this).siblings('.active').removeClass('active');
 		$(this).addClass('active');
 	});
@@ -64,11 +64,11 @@
 	})
 	$('#open-review').on('click.openReveiwPage', function(e){
 		e.preventDefault();
-		$(this).closest('.message-content').addClass('open-review');
+		$(this).closest('.list-panle-content').addClass('open-review');
 	})
 	$('#close-review').on('click.closeReveiwPage', function(e){
 		e.preventDefault();
-		$(this).closest('.message-content').removeClass('open-review');
+		$(this).closest('.list-panle-content').removeClass('open-review');
 	})
 
 
