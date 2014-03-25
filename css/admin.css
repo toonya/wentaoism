@@ -347,6 +347,7 @@ form .btn {
 }
 .inline {
   display: inline-block !important;
+  width: auto;
 }
 .date-pick {
   width: 200px;
