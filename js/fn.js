@@ -71,5 +71,9 @@
 		$(this).closest('.list-panle-content').removeClass('open-review');
 	})
 
+	$('.checkall').on('change.toggleAll', function(e){
+		var $target = $($(this).data('target'));
+		$target.find('[type="checkbox"]').prop('checked',this.checked);
+	})
 
 })(jQuery)

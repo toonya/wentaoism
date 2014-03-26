@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>信息管理</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html" charset="utf-8">
+        <link href="" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/admin.css" type="text/css" media="screen" charset="utf-8">
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body class="admin">
+        <!-- page -->
+        <div class="page">
+            <div class="nav-cover hide"></div>
+            <div class="login-cover hide"></div>
+
+			<header>
+				<div class="app-top-bar">
+					<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
+					<div class="right-info">
+						<div class="item"><a href="#">首页</a></div>
+						<div class="item">欢迎您，<a href="#">某某管理员</a></div>
+					</div>
+				</div>
+			</header>
+
+            <div class="app">
+                <div class="app-nav">
+                    <nav>
+                    	<div class="item dropdown">
+                    		<a id="dropdown-order" data-hover="dropdown" data-toggle="dropdown" href="#"><div class="icon glyphicon glyphicon-file"></div><div class="detail">订单</div></a>
+	                    	  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-order">
+							    <li role="presentation"><a role="menuitem" href="#">全部订单</a></li>
+							    <li role="presentation" class="divider"></li>
+							    <li role="presentation"><a role="menuitem" href="#">待付款</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">写作中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">分配中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">审核中</a></li>
+							    <li role="presentation" class="divider"></li>
+							    <li role="presentation"><a role="menuitem" href="#">交易成功</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">交易关闭</a></li>
+							    <li role="presentation" class="divider"></li>
+							    <li role="presentation"><a role="menuitem" href="#">退款中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">已失效</a></li>
+							  </ul>
+
+                    	</div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-comment"></div><div class="detail">留言</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-bullhorn"></div><div class="detail">反馈</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-sort"></div><div class="detail">利润</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-tag"></div><div class="detail">优惠卷</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-usd"></div><div class="detail">价格</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-user"></div><div class="detail">用户</div></a></div>
+                    </nav>
+                    <nav class="bottom">
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-remove"></div><div class="detail">退出</div></a></div>
+                    </nav>
+                </div>
+                <div class="app-content">
+
+                	<!-- 分页面内容 -->
+
+					<div class="content">
+						<div class="page-header">
+						  <h4>留言管理</h4>
+						</div>
+
+						<form role="form" class="form-horizontal">
+						  <div class="row">
+						  	<div class="col-md-2">
+						  	  <select id="messageType" class="form-control input-sm">
+						  	    <option value="0">全部留言</option>
+						  	    <option value="1">已审核</option>
+						  	    <option value="2">未审核</option>
+						  	  </select>
+						  	</div>
+						  </div>
+						</form>
+						<div class="white-block"></div>
+						<div class="panel panel-default">
+						  <!-- Default panel contents -->
+						  <div class="panel-heading" style="padding-left:8px;"><input type="checkbox" class="checkall" data-target="#order-list"> 全选  <a href="#" class="pl">通过审核</a><a href="#" class="pl">删除</a></div>
+						  <!-- Table -->
+							<table class="table table-striped" id="order-list">
+						      <thead>
+						        <tr>
+						          <th></th>
+						          <th class="col-md-6">留言内容</th>
+						          <th>发送人</th>
+						          <th>收件人</th>
+						          <th>时间</th>
+						          <th>状态</th>
+						          <th>操作</th>
+						        </tr>
+						      </thead>
+						      <tbody>
+						        <tr>
+						          <th><input type="checkbox"></th>
+						          <td><a href="#">请问你期待的定金是多少？</a></td>
+						          <td>Gareth</td>
+						          <td>Mansy</td>
+						          <td>2014-03-03<br />17:00</td>
+						          <td class="text-danger">未审核</td>
+						          <td>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-ok"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-remove"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-pencil"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-send"></span></a>
+						          </td>
+						        </tr>
+						        <tr>
+						          <th><input type="checkbox"></th>
+						          <td><a href="#">请问你期待的定金是多少？</a></td>
+						          <td>Gareth</td>
+						          <td>Mansy</td>
+						          <td>2014-03-03<br />17:00</td>
+						          <td class="text-danger">未审核</td>
+						          <td>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-ok"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-remove"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-pencil"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-send"></span></a>
+						          </td>
+						        </tr>
+						        <tr>
+						          <th><input type="checkbox"></th>
+						          <td><a href="#">请问你期待的定金是多少？</a></td>
+						          <td>Gareth</td>
+						          <td>Mansy</td>
+						          <td>2014-03-03<br />17:00</td>
+						          <td class="text-success">已审核</td>
+						          <td>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-ok"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-remove"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-pencil"></span></a>
+						          	<a href="#" class="control"><span class="glyphicon glyphicon-send"></span></a>
+						          </td>
+						        </tr>
+						      </tbody>
+						    </table>
+						</div>
+						<div class="text-center">
+							<ul class="pagination">
+							  <li><a href="#">&laquo;</a></li>
+							  <li class="active"><a href="#">1</a></li>
+							  <li><a href="#">2</a></li>
+							  <li><a href="#">3</a></li>
+							  <li><a href="#">4</a></li>
+							  <li><a href="#">5</a></li>
+							  <li><a href="#">...</a></li>
+							  <li><a href="#">21</a></li>
+							  <li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
+
+                	<!-- END.分页面内容 -->
+
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/fn.js"></script>
+    </body>
+</html>

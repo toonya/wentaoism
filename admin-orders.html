@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>在线下单</title>
+        <title>订单管理</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="text/html" charset="utf-8">
         <link href="" rel="stylesheet" media="screen">
@@ -18,9 +18,9 @@
 
 			<header>
 				<div class="app-top-bar">
-					<div class="logo"><img src="images/logo.gif" alt="" /></div>
+					<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
 					<div class="right-info">
-						<div class="item"><a href="#">返回首页</a></div>
+						<div class="item"><a href="#">首页</a></div>
 						<div class="item">欢迎您，<a href="#">某某管理员</a></div>
 					</div>
 				</div>
@@ -47,7 +47,6 @@
 							  </ul>
 
                     	</div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-inbox"></div><div class="detail">论文</div></a></div>
                     	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-comment"></div><div class="detail">留言</div></a></div>
                     	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-bullhorn"></div><div class="detail">反馈</div></a></div>
                     	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-sort"></div><div class="detail">利润</div></a></div>
@@ -84,10 +83,10 @@
 						  </div><!-- /.navbar-collapse --><!-- /.container-fluid -->
 						</nav>
 
-						<form role="form">
+						<form role="form" class="form-horizontal">
 						  <div class="row">
-						  	<div class="form-group col-md-2">
-						  	  <select id="orderState" class="form-control input-sm">
+						  	<div class="col-md-2">
+						  	  <select id="orderType" class="form-control input-sm">
 						  	    <option value="0">全部订单</option>
 						  	    <option value="1">待付款</option>
 						  	    <option value="2">写作中</option>
@@ -105,7 +104,7 @@
 						  </div>
 						  <hr />
 						  <div class="row">
-						  	<div class="form-group col-md-8">
+						  	<div class="col-md-8">
 						  	  论文标题 ：<input id="title" type="text" class="form-control input-inline input-sm" /> <button type="submit" class="btn btn-sm btn-primary">搜索</button> <span class="error-info text-danger hide">请输入</span>
 						  	  <a data-toggle="collapse" data-parent="#more-item" href="#more" href="#" class="pl">更多选项</a>
 						  	</div>
@@ -113,9 +112,67 @@
 						  </div>
 
 						  <div class="panel-group" id="more-item">
-						    <div id="more" class="panel-collapse collapse in">
+						    <div id="more" class="panel-collapse collapse">
 						    	<hr />
-						    	<div class="form-group inline date input-group form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeFrom" data-link-format="yyyy-mm-dd">
+								<div class="col-md-4">
+									<div class="form-group row">
+									    <label for="timeFrom" class="col-sm-4 control-label">成交时间 ： 从</label>
+										<div class="input-group date col-md-8 form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeFrom" data-link-format="yyyy-mm-dd">
+						                    <input type="text" class="form-control" id="timeFrom" placeholder="">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+											<div class="error-info text-danger"></div>
+						                </div>
+								    </div>
+									<div class="form-group b0 row">
+									    <label for="timeTo" class="col-sm-4 control-label">到</label>
+										<div class="input-group date col-md-8 form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeTo" data-link-format="yyyy-mm-dd">
+						                    <input type="text" class="form-control" id="timeTo" placeholder="">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+											<div class="error-info text-danger"></div>
+						                </div>
+								    </div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+									    <label for="nickname" class="col-sm-4 control-label">买家昵称 :</label>
+										<div class="col-md-8">
+											<input type="text" class="form-control input-sm" id="nickname" placeholder="">
+										</div>
+										<div class="error-info text-danger"></div>
+								    </div>
+									<div class="form-group b0">
+									    <label for="commentState" class="col-sm-4 control-label">评价状态 :</label>
+										<div class="col-md-4">
+											<select id="commentState" class="form-control input-sm">
+										  	    <option value="0">全部</option>
+										  	    <option value="1">...</option>
+										  	</select>
+										</div>
+										<div class="error-info text-danger"></div>
+								    </div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+									    <label for="orderNum" class="col-sm-4 control-label">订单编号 :</label>
+										<div class="col-md-8">
+											<input type="text" class="form-control input-sm" id="orderNum" placeholder="">
+										</div>
+										<div class="error-info text-danger"></div>
+								    </div>
+									<div class="form-group b0">
+									    <label for="tradeState" class="col-sm-4 control-label">交易状态 :</label>
+										<div class="col-md-4">
+											<select id="tradeState" class="form-control input-sm">
+										  	    <option value="0">全部</option>
+										  	    <option value="1">...</option>
+										  	</select>
+										</div>
+										<div class="error-info text-danger"></div>
+								    </div>
+								</div>
+						    	<!--
+<div class="form-group inline date input-group form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeFrom" data-link-format="yyyy-mm-dd">
 						    		成交时间 ：从
 						    		<input type="text" class="form-control input-sm input-inline" id="timeFrom" placeholder=""><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 									<div class="error-info text-danger"></div>
@@ -144,11 +201,85 @@
 						    		 订单编号 : <input type="text" class="form-control input-sm input-inline" id="orderNum" placeholder="">
 						    		 <span class="error-info text-danger"></span>
 						    	</div>
+-->
+								<div class="clearfix"></div>
 						    </div>
 						  </div>
-						  <hr />
 						</form>
+						<div class="white-block"></div>
+						<div class="panel panel-default">
+						  <!-- Default panel contents -->
+						  <div class="panel-heading" style="padding-left:8px;"><input type="checkbox" class="checkall" data-target="#order-list"> 全选  <a href="#" class="pl">删除</a></div>
 
+						  <!-- Table -->
+							<table class="table table-striped" id="order-list">
+						      <thead>
+						        <tr>
+						          <th></th>
+						          <th>订单编号</th>
+						          <th>成交时间</th>
+						          <th class="col-md-4">论文题目</th>
+						          <th>课程名称</th>
+						          <th>写手</th>
+						          <th>总金额</th>
+						          <th>已支付</th>
+						          <th>交易状态</th>
+						          <th>操作</th>
+						        </tr>
+						      </thead>
+						      <tbody>
+						        <tr>
+						          <th><input type="checkbox"></th>
+						          <td><a href="#">WD123123213</a></td>
+						          <td>2014-03-03<br />17:00</td>
+						          <td>论资本主义...论资本主义...论资本主义...论资本主义...</td>
+						          <td>西方经济学</td>
+						          <td>Gareth M</td>
+						          <td>$150</td>
+						          <td>$75</td>
+						          <td>写作</td>
+						          <td><a class="btn-default btn">删除</a><br /><a class="btn-default btn">编辑</a></td>
+						        </tr>
+						        <tr>
+						          <th><input type="checkbox"></th>
+						          <td><a href="#">WD123123213</a></td>
+						          <td>2014-03-03<br />17:00</td>
+						          <td>论资本主义...</td>
+						          <td>西方经济学</td>
+						          <td>Gareth M</td>
+						          <td>$150</td>
+						          <td>$75</td>
+						          <td>写作</td>
+						          <td><a class="btn-default btn">删除</a><br /><a class="btn-default btn">编辑</a></td>
+						        </tr>
+						        <tr>
+						          <th><input type="checkbox"></th>
+						          <td><a href="#">WD123123213</a></td>
+						          <td>2014-03-03<br />17:00</td>
+						          <td>论资本主义...</td>
+						          <td>西方经济学</td>
+						          <td>Gareth M</td>
+						          <td>$150</td>
+						          <td>$75</td>
+						          <td>写作</td>
+						          <td><a class="btn-default btn">删除</a><br /><a class="btn-default btn">编辑</a></td>
+						        </tr>
+						      </tbody>
+						    </table>
+						</div>
+						<div class="text-center">
+							<ul class="pagination">
+							  <li><a href="#">&laquo;</a></li>
+							  <li class="active"><a href="#">1</a></li>
+							  <li><a href="#">2</a></li>
+							  <li><a href="#">3</a></li>
+							  <li><a href="#">4</a></li>
+							  <li><a href="#">5</a></li>
+							  <li><a href="#">...</a></li>
+							  <li><a href="#">21</a></li>
+							  <li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
 					</div>
 
                 	<!-- END.分页面内容 -->

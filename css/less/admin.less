@@ -28,7 +28,7 @@
 	background: @c-dark-blue;
 }
 
-hr {
+hr.t0 {
 	margin-top: 0;
 }
 
@@ -67,7 +67,10 @@ form .btn {
 	display: inline-block;
 	width: auto;
 }
-
+.input-group-addon {
+	background: none;
+	border: none;
+}
 .inline .input-group-addon {
 	line-height: inherit;
 	background: none;
@@ -81,4 +84,34 @@ form .btn {
 
 .panel-group {
 	margin-bottom: 0;
+}
+
+label {
+	font-weight: normal;
+}
+
+.form-group.b0 {
+	margin-bottom: 0;
+}
+.message-table {
+	tr {
+		th:nth-child(1) {
+			width: 72px;
+		}
+
+		td:nth-child(3),td:nth-child(4),td:nth-child(5) {
+			width: 150px;
+		}
+
+		td:nth-child(6) {
+			width: 100px;
+		}
+	}
+}
+
+table .text-red {
+	color: red;
+}
+table .text-yellow {
+	color: #EEBB00;
 }

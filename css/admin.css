@@ -124,7 +124,7 @@ a:hover {
   left: 24px;
 }
 .app-top-bar .logo img {
-  height: 36px;
+  height: 26.400000000000002px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -180,6 +180,7 @@ a:hover {
   left: 0;
   width: 144px;
   background: linear-gradient(-90deg, #007196, #0093b8 5px);
+  background: linear-gradient(#0093b8, #002380);
   z-index: 100;
   padding: 24px 0;
 }
@@ -210,7 +211,7 @@ a:hover {
   padding-right: 12px;
 }
 .app-nav .item > a:hover {
-  background: #002830;
+  background: #333;
   width: 144px;
   text-align: left;
 }
@@ -332,7 +333,7 @@ a:hover {
 .badge {
   background: #0093b8;
 }
-hr {
+hr.t0 {
   margin-top: 0;
 }
 .input-inline {
@@ -364,6 +365,10 @@ form .btn {
   display: inline-block;
   width: auto;
 }
+.input-group-addon {
+  background: none;
+  border: none;
+}
 .inline .input-group-addon {
   line-height: inherit;
   background: none;
@@ -375,4 +380,27 @@ form .btn {
 }
 .panel-group {
   margin-bottom: 0;
+}
+label {
+  font-weight: normal;
+}
+.form-group.b0 {
+  margin-bottom: 0;
+}
+.message-table tr th:nth-child(1) {
+  width: 72px;
+}
+.message-table tr td:nth-child(3),
+.message-table tr td:nth-child(4),
+.message-table tr td:nth-child(5) {
+  width: 150px;
+}
+.message-table tr td:nth-child(6) {
+  width: 100px;
+}
+table .text-red {
+  color: red;
+}
+table .text-yellow {
+  color: #EEBB00;
 }
