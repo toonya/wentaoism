@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>在线下单</title>
+        <title>利润分成管理</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="text/html" charset="utf-8">
         <link href="" rel="stylesheet" media="screen">
@@ -18,9 +18,9 @@
 
 			<header>
 				<div class="app-top-bar">
-					<div class="logo"><img src="images/logo.gif" alt="" /></div>
+					<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
 					<div class="right-info">
-						<div class="item"><a href="#">返回首页</a></div>
+						<div class="item"><a href="#">首页</a></div>
 						<div class="item">欢迎您，<a href="#">某某管理员</a></div>
 					</div>
 				</div>
@@ -32,17 +32,18 @@
                     	<div class="item dropdown">
                     		<a id="dropdown-order" data-hover="dropdown" data-toggle="dropdown" href="#"><div class="icon glyphicon glyphicon-file"></div><div class="detail">订单</div></a>
 	                    	  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-order">
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">全部订单</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">全部订单</a></li>
 							    <li role="presentation" class="divider"></li>
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">写作中</a></li>
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">分配中</a></li>
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">审核中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">待付款</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">写作中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">分配中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">审核中</a></li>
 							    <li role="presentation" class="divider"></li>
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">交易成功</a></li>
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">交易关闭</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">交易成功</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">交易关闭</a></li>
 							    <li role="presentation" class="divider"></li>
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">退款中</a></li>
-							    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">已失效</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">退款中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">已失效</a></li>
 							  </ul>
 
                     	</div>
@@ -60,6 +61,64 @@
                 <div class="app-content">
 
                 	<!-- 分页面内容 -->
+
+					<div class="content">
+						<div class="page-header">
+						  <h4>利润分成管理</h4>
+						</div>
+
+						<div class="panel panel-default">
+						  <!-- Table -->
+							<table class="table table-striped" id="order-list">
+						      <thead>
+						        <tr>
+						          <th class="col-md-4">订单号</th>
+						          <th>金额</th>
+						          <th>推广员</th>
+						          <th>已推广订单数</th>
+						          <th>本单应得金额</th>
+						        </tr>
+						      </thead>
+						      <tbody>
+						        <tr>
+						          <td><a href="#">WD21321312312</a></td>
+						          <td>$25</td>
+						          <td>Gareth</td>
+						          <td>6</td>
+						          <td>5%</td>
+						        </tr>
+						        <tr>
+						          <td><a href="#">WD21321312312</a></td>
+						          <td>$25</td>
+						          <td>Gareth</td>
+						          <td>6</td>
+						          <td>5%</td>
+						        </tr>
+						        <tr>
+						          <td><a href="#">WD21321312312</a></td>
+						          <td>$25</td>
+						          <td>Gareth</td>
+						          <td>6</td>
+						          <td>5%</td>
+						        </tr>
+
+						      </tbody>
+						    </table>
+						</div>
+						<div class="text-center">
+							<ul class="pagination">
+							  <li><a href="#">&laquo;</a></li>
+							  <li class="active"><a href="#">1</a></li>
+							  <li><a href="#">2</a></li>
+							  <li><a href="#">3</a></li>
+							  <li><a href="#">4</a></li>
+							  <li><a href="#">5</a></li>
+							  <li><a>...</a></li>
+							  <li><a href="#">21</a></li>
+							  <li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
 
                 	<!-- END.分页面内容 -->
 
