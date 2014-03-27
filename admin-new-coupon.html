@@ -16,154 +16,157 @@
             <div class="nav-cover hide"></div>
             <div class="login-cover hide"></div>
 
-			<header>
-				<div class="app-top-bar">
-					<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
-					<div class="right-info">
-						<div class="item"><a href="#">首页</a></div>
-						<div class="item">欢迎您，<a href="#">某某管理员</a></div>
-					</div>
-				</div>
-			</header>
+            <header>
+                <div class="app-top-bar">
+                    <div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
+                    <div class="right-info">
+                        <div class="item"><a href="#">首页</a></div>
+                        <div class="item">欢迎您，<a href="#">某某管理员</a></div>
+                    </div>
+                </div>
+            </header>
 
             <div class="app">
                 <div class="app-nav">
                     <nav>
-                    	<div class="item dropdown">
-                    		<a id="dropdown-order" data-hover="dropdown" data-toggle="dropdown" href="#"><div class="icon glyphicon glyphicon-file"></div><div class="detail">订单</div></a>
-	                    	  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-order">
-							    <li role="presentation"><a role="menuitem" href="#">全部订单</a></li>
-							    <li role="presentation" class="divider"></li>
-							    <li role="presentation"><a role="menuitem" href="#">待付款</a></li>
-							    <li role="presentation"><a role="menuitem" href="#">写作中</a></li>
-							    <li role="presentation"><a role="menuitem" href="#">分配中</a></li>
-							    <li role="presentation"><a role="menuitem" href="#">审核中</a></li>
-							    <li role="presentation" class="divider"></li>
-							    <li role="presentation"><a role="menuitem" href="#">交易成功</a></li>
-							    <li role="presentation"><a role="menuitem" href="#">交易关闭</a></li>
-							    <li role="presentation" class="divider"></li>
-							    <li role="presentation"><a role="menuitem" href="#">退款中</a></li>
-							    <li role="presentation"><a role="menuitem" href="#">已失效</a></li>
-							  </ul>
+                        <div class="item dropdown">
+                            <a id="dropdown-order" data-hover="dropdown" data-toggle="dropdown" href="#"><div class="icon glyphicon glyphicon-file"></div><div class="detail">订单</div></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-order">
+                                <li role="presentation"><a role="menuitem" href="#">全部订单</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" href="#">待付款</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">写作中</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">分配中</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">审核中</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" href="#">交易成功</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">交易关闭</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" href="#">退款中</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">已失效</a></li>
+                            </ul>
 
-                    	</div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-comment"></div><div class="detail">留言</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-bullhorn"></div><div class="detail">反馈</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-sort"></div><div class="detail">利润</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-tag"></div><div class="detail">优惠券</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-usd"></div><div class="detail">价格</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-user"></div><div class="detail">用户</div></a></div>
+                        </div>
+                        <div class="item"><a href="#"><div class="icon glyphicon glyphicon-comment"></div><div class="detail">留言</div></a></div>
+                        <div class="item"><a href="#"><div class="icon glyphicon glyphicon-bullhorn"></div><div class="detail">反馈</div></a></div>
+                        <div class="item"><a href="#"><div class="icon glyphicon glyphicon-sort"></div><div class="detail">利润</div></a></div>
+                        <div class="item"><a href="#"><div class="icon glyphicon glyphicon-tag"></div><div class="detail">优惠券</div></a></div>
+                        <div class="item"><a href="#"><div class="icon glyphicon glyphicon-usd"></div><div class="detail">价格</div></a></div>
+                        <div class="item"><a href="#"><div class="icon glyphicon glyphicon-user"></div><div class="detail">用户</div></a></div>
                     </nav>
                     <nav class="bottom">
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-remove"></div><div class="detail">退出</div></a></div>
+                        <div class="item"><a href="#"><div class="icon glyphicon glyphicon-remove"></div><div class="detail">退出</div></a></div>
                     </nav>
                 </div>
                 <div class="app-content">
 
-                	<!-- 分页面内容 -->
+                    <!-- 分页面内容 -->
 
-					<div class="content">
-						<div class="page-header">
-						  <h4>新建优惠券</h4>
-						</div>
+                    <div class="content">
+                        <div class="page-header">
+                            <h4>新建优惠券</h4>
+                        </div>
 
-						<form role="form" class="form-horizontal">
-						  <div class="row">
-						  	<div class="col-md-2">
-						  	  <select id="orderType" class="form-control input-sm">
-						  	    <option value="0">全部订单</option>
-						  	    <option value="1">待付款</option>
-						  	    <option value="2">写作中</option>
-						  	    <option value="3">分配中</option>
-						  	    <option value="4">审核中</option>
-						  	    <option value="5">交易成功</option>
-						  	    <option value="6">交易关闭</option>
-						  	    <option value="7">退款中</option>
-						  	    <option value="8">已失效</option>
-						  	  </select>
-						  	</div>
-						  	<div class="col-md-10 text-right">
-						  		<a href="#" class="btn btn-primary">+ 新建订单</a>
-						  	</div>
-						  </div>
-						  <hr />
-						  <div class="row">
-						  	<div class="col-md-8">
-						  	  论文标题 ：<input id="title" type="text" class="form-control input-inline input-sm" /> <button type="submit" class="btn btn-sm btn-primary">搜索</button> <span class="error-info text-danger hide">请输入</span>
-						  	  <a data-toggle="collapse" data-parent="#more-item" href="#more" href="#" class="pl">更多选项</a>
-						  	</div>
+                        <form role="form" class="form-horizontal">
 
-						  </div>
+                            <div class="form-group">
+                                <label for="couponValue" class="col-sm-2 control-label">优惠券值 <span class="text-red">*</span></label>
+                                <div class="col-md-2 row">
+                                    <input type="text" class="form-control input-sm" id="couponValue" placeholder="">
+                                </div>
+                            </div>
 
-						  <div class="panel-group" id="more-item">
-						    <div id="more" class="panel-collapse collapse">
-						    	<hr />
-								<div class="col-md-4">
-									<div class="form-group row">
-									    <label for="timeFrom" class="col-sm-4 control-label">成交时间 ： 从</label>
-										<div class="input-group date col-md-8 form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeFrom" data-link-format="yyyy-mm-dd">
-						                    <input type="text" class="form-control" id="timeFrom" placeholder="">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-											<div class="error-info text-danger"></div>
-						                </div>
-								    </div>
-									<div class="form-group b0 row">
-									    <label for="timeTo" class="col-sm-4 control-label">到</label>
-										<div class="input-group date col-md-8 form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeTo" data-link-format="yyyy-mm-dd">
-						                    <input type="text" class="form-control" id="timeTo" placeholder="">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-											<div class="error-info text-danger"></div>
-						                </div>
-								    </div>
-								</div>
+                            <div class="clearfix"></div>
+                            <div class="form-group">
+                                <label for="couponUseFor" class="col-sm-2 control-label">适用产品<span class="text-red">*</span><br /><small>(可多选) </small></label>
+                                <div class="col-md-10 row">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor01" value="1"> 原创论文
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor02" value="2"> 留学PS写作
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor03" value="3"> 求职CV/Resume创作
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor04" value="4"> 论文编辑润色
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor05" value="5"> 留学CV/Resume润色
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor06" value="6"> 求职Cover letter提升
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor07" value="7"> 论文抄袭率检查
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor08" value="8"> 留学 Sample essay
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponUseFor09" value="9"> 所有
+                                    </label>
+                                </div>
+                                <div class="error-info text-danger"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="couponTimeFrom" class="col-sm-2 control-label">有效期</label>
+                                <div class="input-group date col-md-2 form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeFrom" data-link-format="yyyy-mm-dd">
+                                    <input type="text" class="form-control" id="timeFrom" placeholder="">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    <div class="error-info text-danger"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="couponTimeTo" class="col-sm-2 control-label">至</label>
+                                <div class="input-group date col-md-2 form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeTo" data-link-format="yyyy-mm-dd">
+                                    <input type="text" class="form-control" id="timeTo" placeholder="">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    <div class="error-info text-danger"></div>
+                                </div>
+                            </div>
 
-								<div class="col-md-4">
-									<div class="form-group">
-									    <label for="nickname" class="col-sm-4 control-label">买家昵称 :</label>
-										<div class="col-md-8">
-											<input type="text" class="form-control input-sm" id="nickname" placeholder="">
-										</div>
-										<div class="error-info text-danger"></div>
-								    </div>
-									<div class="form-group b0">
-									    <label for="commentState" class="col-sm-4 control-label">评价状态 :</label>
-										<div class="col-md-4">
-											<select id="commentState" class="form-control input-sm">
-										  	    <option value="0">全部</option>
-										  	    <option value="1">...</option>
-										  	</select>
-										</div>
-										<div class="error-info text-danger"></div>
-								    </div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-									    <label for="orderNum" class="col-sm-4 control-label">订单编号 :</label>
-										<div class="col-md-8">
-											<input type="text" class="form-control input-sm" id="orderNum" placeholder="">
-										</div>
-										<div class="error-info text-danger"></div>
-								    </div>
-									<div class="form-group b0">
-									    <label for="tradeState" class="col-sm-4 control-label">交易状态 :</label>
-										<div class="col-md-4">
-											<select id="tradeState" class="form-control input-sm">
-										  	    <option value="0">全部</option>
-										  	    <option value="1">...</option>
-										  	</select>
-										</div>
-										<div class="error-info text-danger"></div>
-								    </div>
-								</div>
-								<div class="clearfix"></div>
-						    </div>
-						  </div>
-						</form>
+                            <div class="form-group">
+                                <label for="couponUseRestriction" class="col-sm-2 control-label">使用条件</label>
+                                <div class="col-md-4 row">
+                                    <label class="radio">
+                                        <input type="radio" id="couponUseRestriction01" value="1"> 过往订单总额满 <input type="text" id="" class="inline" style="width:50px" /> 美元
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" id="couponUseRestriction02" value="2"> 成功介绍一位朋友来下单
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" id="couponUseRestriction03" value="3"> 订单总额满 <input type="text" id="" class="inline" style="width:50px" /> 美元
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="couponLife" class="col-sm-2 control-label">是否重复使用<span class="text-red">*</span></label>
+                                <div class="col-md-10 row">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponLife01" value="1"> 可以
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="couponLife02" value="2"> 不可以
+                                    </label>
+                                </div>
+                                <div class="error-info text-danger"></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 row">
+                                    <button type="quit" class="btn btn-default">撤销</button>
+                                    <button type="submit" class="btn btn-primary">提交</button>
+                                </div>
+                                <div class="error-info text-danger"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
 
 
-					</div>
+                    </div>
 
-                	<!-- END.分页面内容 -->
+                    <!-- END.分页面内容 -->
 
                 </div>
             </div>
