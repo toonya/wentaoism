@@ -76,4 +76,43 @@
 		$target.find('[type="checkbox"]').prop('checked',this.checked);
 	})
 
+	$('.add-row, .add-col').on('click', function(e){
+		e.preventDefault();
+		var add_handle = $(this).hasClass('add-row')? 'row' : 'col';
+
+		switch(add_handle){
+
+			case 'row' :
+				console.log('row');
+				var $template = $('#price-list tbody tr').last().clone();
+				$template.find('input').val('').attr('placeholder','点击输入');
+				$('#price-list tbody').append($template);
+			break;
+
+			case 'col' :
+				console.log('col');
+				var $template_tbody = $('#price-list tbody tr td').last().clone();
+				var $template_head  = $('#price-list thead tr:last th').last().clone();
+				$template_tbody.find('input').val('').attr('placeholder','点击输入');
+				$template_head.find('input').val('').attr('placeholder','点击输入');
+				$('#price-list tbody tr').append($template_tbody);
+				$('#price-list thead tr:last').append($template_head);
+
+			break;
+
+			default:
+				alert('发生错误，请联系管理员');
+		}
+
+	})
+
+	$('#price-list input').on('keypress',function (evt) {
+		//Deterime where our character code is coming from within the event
+		var charCode = evt.charCode || evt.keyCode;
+		if (charCode  == 13) { //Enter key's keycode
+			$(this).blur();
+		}
+	});
+
+
 })(jQuery)

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>价格管理</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html" charset="utf-8">
+        <link href="" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/admin.css" type="text/css" media="screen" charset="utf-8">
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body class="admin">
+        <!-- page -->
+        <div class="page">
+            <div class="nav-cover hide"></div>
+            <div class="login-cover hide"></div>
+
+			<header>
+				<div class="app-top-bar">
+					<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
+					<div class="right-info">
+						<div class="item"><a href="#">首页</a></div>
+						<div class="item">欢迎您，<a href="#">某某管理员</a></div>
+					</div>
+				</div>
+			</header>
+
+            <div class="app">
+                <div class="app-nav">
+                    <nav>
+                    	<div class="item dropdown">
+                    		<a id="dropdown-order" data-hover="dropdown" data-toggle="dropdown" href="#"><div class="icon glyphicon glyphicon-file"></div><div class="detail">订单</div></a>
+	                    	  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-order">
+							    <li role="presentation"><a role="menuitem" href="#">全部订单</a></li>
+							    <li role="presentation" class="divider"></li>
+							    <li role="presentation"><a role="menuitem" href="#">待付款</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">写作中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">分配中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">审核中</a></li>
+							    <li role="presentation" class="divider"></li>
+							    <li role="presentation"><a role="menuitem" href="#">交易成功</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">交易关闭</a></li>
+							    <li role="presentation" class="divider"></li>
+							    <li role="presentation"><a role="menuitem" href="#">退款中</a></li>
+							    <li role="presentation"><a role="menuitem" href="#">已失效</a></li>
+							  </ul>
+
+                    	</div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-comment"></div><div class="detail">留言</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-bullhorn"></div><div class="detail">反馈</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-sort"></div><div class="detail">利润</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-tag"></div><div class="detail">优惠券</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-usd"></div><div class="detail">价格</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-user"></div><div class="detail">用户</div></a></div>
+                    </nav>
+                    <nav class="bottom">
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-remove"></div><div class="detail">退出</div></a></div>
+                    </nav>
+                </div>
+                <div class="app-content">
+
+                	<!-- 分页面内容 -->
+
+					<div class="content">
+						<div class="page-header">
+						  <h4>价格管理</h4>
+						</div>
+
+						<form action="">
+							<div class="pull-right">
+								<button class="btn btn-default btn-sm add-row">增加一行</button>
+								<button class="btn btn-default btn-sm add-col">增加一列</button>
+								<span class="pl"><button type="submit" class="btn btn-primary btn-sm">保存修改</button></span>
+							</div>
+							<small class="text-muted">修改后请点击右侧的保存按钮</small>
+							<div class="clearfix"></div>
+							<div class="white-block"></div>
+							<div class="panel panel-default">
+							  <!-- Default panel contents -->
+							  <!-- Table -->
+								<table class="table table-e-w table-striped" id="price-list">
+							      <thead>
+							        <tr>
+							          <th rowspan="2">写作时间</th>
+
+							          <td>学术等级</td>
+							        </tr>
+							        <tr id="t-base">
+							          <th><input type="text" value="高中"></th>
+							          <th><input type="text" value="大一，大二"></th>
+							          <th><input type="text" value="大三，大四"></th>
+							          <th><input type="text" value="硕士"></th>
+									  <th><input type="text" value="博士"></th>
+							        </tr>
+							      </thead>
+							      <tbody>
+							        <tr>
+							          <th><input type="text" value="一个月 *"/></th>
+							          <td><input type="text" value="n/a"></td>
+							          <td><input type="text" value="n/a"></td>
+							          <td><input type="text" value="$17"></td>
+							          <td><input type="text" value="$24"></td>
+							          <td><input type="text" value="$27"></td>
+							        </tr>
+							        <tr>
+							          <th><input type="text" value="14天"></th>
+							          <td><input type="text" value="$13"></td>
+							          <td><input type="text" value="$15"></td>
+							          <td><input type="text" value="$18"></td>
+							          <td><input type="text" value="$25"></td>
+							          <td><input type="text" value="$28"></td>
+							        </tr>
+							        <tr>
+							          <th><input type="text" value="7天"></th>
+							          <td><input type="text" value="$15"></td>
+							          <td><input type="text" value="$17"></td>
+							          <td><input type="text" value="$19"></td>
+							          <td><input type="text" value="$27"></td>
+							          <td><input type="text" value="$31"></td>
+							        </tr>
+							        <tr>
+							          <th><input type="text" value="5天"></th>
+							          <td><input type="text" value="$17"></td>
+							          <td><input type="text" value="$19"></td>
+							          <td><input type="text" value="$21"></td>
+							          <td><input type="text" value="$29"></td>
+							          <td><input type="text" value="$35"></td>
+							        </tr>
+							        <tr>
+							          <th><input type="text" value="3天"></th>
+							          <td><input type="text" value="$19"></td>
+							          <td><input type="text" value="$21"></td>
+							          <td><input type="text" value="$23"></td>
+							          <td><input type="text" value="$33"></td>
+							          <td><input type="text" value="$37"></td>
+							        </tr>
+							        <tr>
+							          <th><input type="text" value="48小时"></th>
+							          <td><input type="text" value="$21"></td>
+							          <td><input type="text" value="$24"></td>
+							          <td><input type="text" value="$26"></td>
+							          <td><input type="text" value="$36"></td>
+							          <td><input type="text" value="$45"></td>
+							        </tr>
+							        <tr>
+							          <th><input type="text" value="24小时"></th>
+							          <td><input type="text" value="$24"></td>
+							          <td><input type="text" value="$27"></td>
+							          <td><input type="text" value="$30"></td>
+							          <td><input type="text" value="$39"></td>
+							          <td><input type="text" value="$51"></td>
+							        </tr>
+							        <tr>
+							          <th><input type="text" value="8小时"></th>
+							          <td><input type="text" value="$28"></td>
+							          <td><input type="text" value="$33"></td>
+							          <td><input type="text" value="$39"></td>
+							          <td><input type="text" value="$48"></td>
+							          <td><input type="text" value="n/a"></td>
+							        </tr>
+							      </tbody>
+							    </table>
+							</div>
+						<p class="text-danger">* 仅针对30页以上的写作订单</p>
+						</form>
+					</div>
+
+                	<!-- END.分页面内容 -->
+
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/fn.js"></script>
+    </body>
+</html>

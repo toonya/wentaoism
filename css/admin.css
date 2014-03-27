@@ -409,3 +409,14 @@ label {
   margin-left: 0;
   margin-right: 10px;
 }
+.table-e-w th {
+  width: 1%;
+}
+#price-list input {
+  border: none;
+  background: none;
+  width: 90%;
+}
+#price-list input:focus {
+  background: #fff;
+}
