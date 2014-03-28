@@ -936,3 +936,38 @@ nav.mobile {
 	}
 }
 /* end. order */
+
+
+.user-bar {
+	position: relative;
+	background: @c-black-blue;
+	color: #fff;
+	padding:0;
+	height: @h-app-top-bar;
+	width: 100%;
+	border-bottom: #ccc 1px solid;
+
+	.container {
+		position: relative;
+		height: 100%;
+	}
+
+	.right-info {
+		line-height: @h-app-top-bar;
+		position: absolute;
+		right: @base;
+
+		.item {
+			padding-left: @base;
+			float: left;
+
+			a {
+				color: @c-light-blue - #210 ;
+			}
+		}
+	}
+}
+
+.logined .login {
+	display: none !important;
+}
