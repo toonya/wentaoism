@@ -37,7 +37,7 @@
 	    var $this = $(this);
 	    var filename = $this.val().replace(/.*(\/|\\)/, '');
 
-	    $this.closest('.form-group').find('.filename').text(filename);
+	    $this.parent().find('.filename').text('('+filename+')');
 	    console.log(filename);
     })
 
@@ -113,6 +113,5 @@
 			$(this).blur();
 		}
 	});
-
 
 })(jQuery)

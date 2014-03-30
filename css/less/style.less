@@ -1,7 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Gentium+Basic);
 @import "common.less";
-@import "app.less";
+/* app frame */
+@import "app-two.less";
+/* app frame end */
 @import "list-panel.less";
+
 
 // ----------------------------------------
 // ! header
@@ -914,26 +917,7 @@ nav.mobile {
 
 /* order */
 .order {
-	background: #fff;
-	.panel {
-		box-shadow: 0 0 5px #aaa;
-	}
-	.panel-body {
-		padding: 0;
-	}
-	.form-group {
-		padding: @base*.5 @base*2;
-	}
 
-	.form-group:nth-child(2n) {
-		//background: #eee;
-	}
-
-	hr {
-		margin: 0;
-		border-style: dotted;
-		border-color: #555;
-	}
 }
 /* end. order */
 
@@ -971,3 +955,45 @@ nav.mobile {
 .logined .login {
 	display: none !important;
 }
+
+
+/* 下单页面 */
+.simpleForm {
+
+	border: solid #eee 1px;
+
+	padding-bottom: @base;
+	position: relative;
+
+	color: #888;
+
+	.glyphicon-info-sign {
+		top: 2px;
+	}
+
+	h5 {
+		background: @c-light-blue - #220;
+		padding: 12px;
+		color: @c-dark-blue - #230;
+		position: relative;
+		margin: 0 -1px 0 -1px;
+		font-weight: bold;
+	}
+
+	.form-group {
+		padding: 0;
+	}
+
+	label {
+		font-weight: normal;
+	}
+
+	.ptop {
+		padding-top: @base;
+	}
+
+	input[type=radio]/* , input[type=checkbox]  */{
+		margin-top: 2px;
+	}
+}
+/* 下单页面 */
