@@ -107,6 +107,9 @@ a:hover {
   display: inline-block !important;
   width: auto;
 }
+.vm {
+  vertical-align: middle;
+}
 /* app */
 .app-top-bar {
   position: absolute;

@@ -114,4 +114,28 @@
 		}
 	});
 
+	$('[data-bind="word-per-page"]').on('numInput',function(){
+		/* word per page */
+		var wpp = $('[data-words]:checked').data('words');
+		var pages = $(this).val();
+		var words = wpp * pages;
+
+		$(this).closest('.form-group').find('.word-count').text(words);
+	});
+
+	$('[data-words]').on('change',function(){
+		$('[data-bind="word-per-page"]').trigger('numInput');
+	});
+
+	$('[data-bind="word-per-page"]').trigger('numInput');
+
+
+	$('[data-ride="new-item"]').on('click', function(){
+		var data = $(this).data();
+		var template = '<span class="btn btn-default btn-file">'+
+							'追加材料 <input id="" type="file"><span class="filename">(点击上传)</span>'+
+						'</span>';
+		$(template).insertBefore($(this));
+	})
+
 })(jQuery)

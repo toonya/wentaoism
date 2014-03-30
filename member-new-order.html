@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
     <head>
         <title>在线下单</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +77,7 @@
                     	    <div class="form-group">
 							    <label for="" class="col-sm-2 row control-label">文章类型 <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
 								<div class="col-md-9">
-									<input type="text" class="form-control input-sm" id="" placeholder="">
+									<select class="form-control input-sm"><option name="-1" selected="selected">请选择</option><option name="0">Argumentative essays</option><option name="1">Book/movie/article Review</option><option name="2">Business Plan</option><option name="3">Case Study</option><option name="4">Coursework</option><option name="5">Critical Thinking</option><option name="6">Dissertation</option><option name="7">Admission Essay</option><option name="8">Dissertation</option><option name="9">Presentation or Speech</option><option name="10">Research Paper</option><option name="11">Term Paper</option><option name="12">Memo</option><option other="true" name="13">其它</option></select>
 								</div>
 								<div class="error-info text-danger"></div>
 						    </div>
@@ -105,9 +105,9 @@
                     	    <div class="form-group">
 							    <label for="" class="col-sm-2 row control-label">引用数量 <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
 								<div class="col-md-9">
-									<input type="text" class="form-control input-sm" id="" placeholder="">
+									<input type="text" data-ride="num" data-min="0" data-error=".error" class="form-control input-sm" id="" placeholder="" />
+									<span class="error text-danger inline"></span>
 								</div>
-								<div class="error-info text-danger"></div>
 						    </div>
                     	    <div class="form-group">
 							    <label for="" class="col-sm-2 row control-label">引用载体 <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
@@ -135,20 +135,15 @@
 								<div class="col-md-9">
 									<span class="btn btn-default btn-file">
 										课程大纲 <input id="" type="file"><span class="filename">(点击上传)</span>
-									</span>
-									<span class="btn btn-default btn-file">
+									</span><span class="btn btn-default btn-file">
 										文章要求 <input id="" type="file"><span class="filename">(点击上传)</span>
-									</span>
-									<span class="btn btn-default btn-file">
+									</span><span class="btn btn-default btn-file">
 										阅读材料1 <input id="" type="file"><span class="filename">(点击上传)</span>
-									</span>
-									<span class="btn btn-default btn-file">
+									</span><span class="btn btn-default btn-file">
 										阅读材料2 <input id="" type="file"><span class="filename">(点击上传)</span>
-									</span>
-									<span class="btn btn-default btn-file">
+									</span><span class="btn btn-default btn-file">
 										阅读材料3 <input id="" type="file"><span class="filename">(点击上传)</span>
-									</span>
-									<span class="btn btn-default">+ 新增材料</span>
+									</span><span data-ride="new-item" class="btn btn-file btn-default">+ 新增材料</span>
 								</div>
 								<div class="error-info text-danger"></div>
 						    </div>
@@ -157,13 +152,16 @@
                     	    <div class="form-group ptop">
 							    <label for="" class="col-sm-2 row control-label">页数 <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
 								<div class="col-md-9">
-									<input type="text" class="form-control input-sm" id="" placeholder="">
-									<span class="text-count"></span>
+									<input type="text" data-ride="num" data-error=".error" data-bind="word-per-page" data-min="0" class="form-control input-sm" id="" placeholder="" value="10" />
+									<span class="word-count pl vm inline"></span>
+									<span class="vm">words</span>
+									<span class="error vm text-danger inline"></span>
+									<br />
 									<label class="radio-inline">
-                                        <input name="radio3" type="radio" id="" value="1"> 双倍行距
+                                        <input name="radio3" checked="checked" data-words="275" type="radio" id="" value="1"> 双倍行距
                                     </label>
 									<label class="radio-inline">
-                                        <input name="radio3" type="radio" id="" value="2"> 单倍行距
+                                        <input name="radio3" type="radio" data-words="550" id="" value="2"> 单倍行距
                                     </label>
 								</div>
 								<div class="error-info text-danger"></div>
@@ -192,7 +190,7 @@
                                     <label class="radio-inline">
                                         <input name="radio4" type="radio" id="" value="7"> 14 days
                                     </label>
-									<p>你的初稿将于3月30日上午10点（GTM+08）前提交。如果不符合，请重新选择一个初稿Deadline。<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
+									<p class="text-muted">你的初稿将于3月30日上午10点（GTM+08）前提交。如果不符合，请重新选择一个初稿Deadline。<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
 								</div>
 								<div class="error-info text-danger"></div>
 						    </div>
@@ -203,10 +201,10 @@
                                         <input name="radio5" type="radio" id="" value="1"> 优秀
                                     </label>
 									<label class="radio-inline">
-                                        <input name="radio5" type="radio" id="" value="2"> 高级+25%
+                                        <input name="radio5" type="radio" id="" value="2"> 高级<span class="text-muted">+25%</span>
                                     </label>
 									<label class="radio-inline">
-                                        <input name="radio5" type="radio" id="" value="3"> ENL(US/CA/UK/AU)+30%
+                                        <input name="radio5" type="radio" id="" value="3"> ENL(US/CA/UK/AU)<span class="text-muted">+30%</span>
                                     </label>
 								</div>
 								<div class="error-info text-danger"></div>
@@ -265,7 +263,7 @@
 							    <br />
 							    折扣 : -$9.99
 							    <br />
-							    <strong class="text-primary">总价:</strong> $56.10
+							    <strong class="text-primary">总价 :</strong> $56.10
 							    <div class="white-block"></div>
 							    <div class="white-block"></div>
 							    <div class="btn btn-success">
@@ -278,10 +276,11 @@
                 </div>
             </div>
         </div>
-        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/bootstrap-hover-dropdown.min.js"></script>
         <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/bootstrap-number-input.js"></script>
         <script src="js/fn.js"></script>
     </body>
 </html>
