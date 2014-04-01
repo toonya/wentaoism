@@ -56,9 +56,50 @@
 		$('.time').on('click', 'input' , function(){
 			$(this).next('span').click();
 		})
+
+		var getGroupTime = function(group) {
+			if(!group)
+				return;
+
+			var groupDate = $('[data-group="' + group + '"][data-type="date"] input').val();
+			var groupTime = $('[data-group="' + group + '"][data-type="time"] input').val();
+			return new Date(groupDate + ' ' + groupTime);
+		}
+
+		$('.time').on('dp.change', function(e){
+			var _final = getGroupTime('final'),
+				_draft = getGroupTime('draft'),
+				duration = _final - _draft;
+			if( _final && _draft && duration/1000/60/60/24 < 1){
+
+				$('.time-error').removeClass('hide');
+				console.log(duration/1000/60/60/24);
+			}
+			if( _final && _draft && duration/1000/60/60/24 >= 1){
+
+				$('.time-error').addClass('hide');
+				console.log(duration/1000/60/60/24);
+			}
+			if($(this).data('group')=='draft')
+				show_time();
+		})
+
+
+		 var show_time = function(){
+			 var time = getGroupTime('draft');
+			 var text = time.getUTCMonth()+1 +"月"+time.getDate()+'日 '+time.getHours()+'时'+time.getMinutes()+'分 ';
+
+			 console.log(time.getMonth());
+			 $('.show-draft-time').text(text);
+		 }
+
+		 $('.time').trigger('dp.change');
+		 show_time();
+
 	 }
 
 	 _DateTimePicker();
+
 
     /* end datepicker */
 
@@ -178,6 +219,17 @@
 
 	$('.gmt-select').each(function(){
 		new GMTRefresh($(this));
+	}).on('change',function(){
+		show_gmt();
 	})
+
+	var show_gmt = function(){
+		 var gmt = $('.gmt-select').val();
+
+		 $('.show-draft-gmt').text(gmt);
+	}
+
+	show_gmt();
+
 
 })(jQuery)

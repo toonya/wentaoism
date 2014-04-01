@@ -172,30 +172,30 @@
 									<div class="col-md-3 row">
 										<select id="" class="form-control gmt-select input-sm">
 									  	    <option value="-1">请选择时区</option>
-									  	    <option value="1">GMT +1  (Rome)</option>
-									  	    <option value="2">GMT +2  (Israel)</option>
-									  	    <option value="3">GMT +3  (Moscow)</option>
-									  	    <option value="4">GMT +4  (Baku)</option>
-									  	    <option value="5">GMT +5  (New Delhi)</option>
-									  	    <option value="6">GMT +6  (Dhakar)</option>
-									  	    <option value="7">GMT +7  (Bangkok)</option>
-									  	    <option value="8">GMT +8  (China)</option>
-									  	    <option value="9">GMT +9  (Tokyo)</option>
+									  	    <option value="+01">GMT +1  (Rome)</option>
+									  	    <option value="+02">GMT +2  (Israel)</option>
+									  	    <option value="+03">GMT +3  (Moscow)</option>
+									  	    <option value="+04">GMT +4  (Baku)</option>
+									  	    <option value="+05">GMT +5  (New Delhi)</option>
+									  	    <option value="+06">GMT +6  (Dhakar)</option>
+									  	    <option value="+07">GMT +7  (Bangkok)</option>
+									  	    <option value="+08">GMT +8  (China)</option>
+									  	    <option value="+09">GMT +9  (Tokyo)</option>
 									  	    <option value="10">GMT +10 (Sydney)</option>
 									  	    <option value="11">GMT +11 (Magadan)</option>
 									  	    <option value="12">GMT +12 (Wellington)</option>
-									  	    <option value="13">GMT -12 (Eniwetok)</option>
-									  	    <option value="14">GMT -11 (Samoa)</option>
-									  	    <option value="15">GMT -10 (Hawaii)</option>
-									  	    <option value="16">GMT -9  (Alaska)</option>
-									  	    <option value="17">GMT -8  (Pacific Time)</option>
-									  	    <option value="18">GMT -7  (Mountain Time)</option>
-									  	    <option value="19">GMT -6  (Central Time)</option>
-									  	    <option value="20">GMT -5  (Eastern Time)</option>
-									  	    <option value="21">GMT -4  (Atlantic Time)</option>
-									  	    <option value="22">GMT -3  (Brazilia)</option>
-									  	    <option value="23">GMT -2  (Mid-Atlantic)</option>
-									  	    <option value="24">GMT -1  (Azores)</option>
+									  	    <option value="-12">GMT -12 (Eniwetok)</option>
+									  	    <option value="-11">GMT -11 (Samoa)</option>
+									  	    <option value="-10">GMT -10 (Hawaii)</option>
+									  	    <option value="-09">GMT -9  (Alaska)</option>
+									  	    <option value="-08">GMT -8  (Pacific Time)</option>
+									  	    <option value="-07">GMT -7  (Mountain Time)</option>
+									  	    <option value="-06">GMT -6  (Central Time)</option>
+									  	    <option value="-05">GMT -5  (Eastern Time)</option>
+									  	    <option value="-04">GMT -4  (Atlantic Time)</option>
+									  	    <option value="-03">GMT -3  (Brazilia)</option>
+									  	    <option value="-02">GMT -2  (Mid-Atlantic)</option>
+									  	    <option value="-01">GMT -1  (Azores)</option>
 									  	</select>
 									</div>
 								</div>
@@ -207,13 +207,13 @@
 									<div class="row">
 										<div class="col-md-3">
 											<div class="input-group time"  data-group="draft" data-type="date" data-date-format="YYYY/MM/DD">
-			                                    <input type="text" class="form-control input-sm" id="" placeholder="">
+			                                    <input type="text" class="form-control input-sm" id="" value="2014/04/08" placeholder="">
 			                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 			                                </div>
 										</div>
 										<div class="col-md-3">
 								            <div class="input-group time" data-type="time" data-group="draft">
-								           		<input type="text" class="input-sm form-control">
+								           		<input type="text" class="input-sm form-control" value="7:45 PM">
 			                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
 			                                </div>
 								        </div>
@@ -221,7 +221,7 @@
 									        <p class="text-danger error"></p>
 								        </div>
 									</div>
-									<p class="text-muted">你的初稿将于3月30日上午10点（GTM+08）前提交。如果不符合，请重新选择一个初稿Deadline。<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
+									<p class="text-muted">你的初稿将于 <span class="show-draft-time"></span>（GTM <span class="show-draft-gmt"></span> ）前提交。如果不符合，请重新选择一个初稿Deadline。<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
 								</div>
 						    </div>
 						    <div class="form-group">
@@ -230,18 +230,18 @@
 									<div class="row">
 										<div class="col-md-3">
 											<div class="input-group time" data-group="final" data-type="date" data-date-format="YYYY/MM/DD">
-			                                    <input type="text" class="form-control input-sm" id="" placeholder="">
+			                                    <input type="text" class="form-control input-sm" id="" placeholder="" value="2014/04/08">
 			                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 			                                </div>
 										</div>
 										<div class="col-md-3">
 								            <div class="input-group time" data-type="time" data-group="final">
-								           		<input type="text" class="input-sm form-control">
+								           		<input type="text" class="input-sm form-control"  value="7:45 PM" />
 			                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
 			                                </div>
 								        </div>
 								        <div class="col-md-6">
-									        <p class="text-danger hide error">与初稿Deadline 间隔至少24小时</p>
+									        <p class="text-danger hide time-error">终稿Deadline 必须大于 初稿Deadline, 至少24小时</p>
 								        </div>
 									</div>
 									<p class="text-muted">与初稿Deadline 间隔至少24小时，便于修改<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
