@@ -117,19 +117,19 @@
 								<div class="col-md-4">
 									<div class="form-group row">
 									    <label for="timeFrom" class="col-sm-5 control-label">成交时间 ： 从</label>
-										<div class="input-group date col-md-7 form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeFrom" data-link-format="yyyy-mm-dd">
-						                    <input type="text" class="form-control" id="timeFrom" placeholder="">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-											<div class="error-info text-danger"></div>
-						                </div>
+		                                <div class="input-group time col-md-7" data-date-format="YYYY/MM/DD" data-no-min data-type="date">
+		                                    <input type="text" class="form-control" id="timeFrom" placeholder="">
+		                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		                                    <div class="error-info text-danger"></div>
+		                                </div>
 								    </div>
 									<div class="form-group b0 row">
 									    <label for="timeTo" class="col-sm-5 control-label">到</label>
-										<div class="input-group date col-md-7 form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="timeTo" data-link-format="yyyy-mm-dd">
-						                    <input type="text" class="form-control" id="timeTo" placeholder="">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-											<div class="error-info text-danger"></div>
-						                </div>
+		                                <div class="input-group time col-md-7" data-date-format="YYYY/MM/DD" data-no-min data-type="date">
+		                                    <input type="text" class="form-control" id="timeTo" placeholder="">
+		                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		                                    <div class="error-info text-danger"></div>
+		                                </div>
 								    </div>
 								</div>
 
@@ -289,6 +289,7 @@
         </div>
         <script src="http://code.jquery.com/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/moment.min.js"></script>
         <script src="js/bootstrap-hover-dropdown.min.js"></script>
         <script src="js/bootstrap-datetimepicker.min.js"></script>
         <script src="js/fn.js"></script>

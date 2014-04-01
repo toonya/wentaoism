@@ -1,4 +1,7 @@
 (function($){
+
+	"use strict";
+
 	$('.nav-mobile-trigger').on('click.toggleMobileNav', function(e){
 		e.preventDefault();
 
@@ -22,16 +25,42 @@
 	$('.login-cover').on('click.toggleMobileLoginTrigger', function(){
 		$('.login-mobile-trigger').click();
 	})
-	$('.form_date').datetimepicker({
-        language:  'fr',
-        weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 2,
-		minView: 2,
-		forceParse: 0
-    });
+
+	/**
+	 *
+	 * set the datepicker config
+	 *
+	 * */
+	 var _DateTimePicker = function(){
+	 	var today = new Date();
+	 		today = today.setDate(today.getDate()-1);
+
+	 	/* init time picker */
+		$('.time[data-type="time"]').datetimepicker({
+			pickDate: false
+		})
+
+		/* init date picker */
+		$('.time[data-type="date"]').not('[data-no-min]').datetimepicker({
+			pickTime: false,
+			useCurrent: false,
+			minDate: today
+		})
+
+		$('[data-no-min]').datetimepicker({
+			pickTime: false,
+			useCurrent: false
+		})
+
+		/* input trigger */
+		$('.time').on('click', 'input' , function(){
+			$(this).next('span').click();
+		})
+	 }
+
+	 _DateTimePicker();
+
+    /* end datepicker */
 
     $('.btn-file :file').on('change.customFilePicker', function(e) {
 	    var $this = $(this);
@@ -136,6 +165,19 @@
 							'追加材料 <input id="" type="file"><span class="filename">(点击上传)</span>'+
 						'</span>';
 		$(template).insertBefore($(this));
+	})
+
+	var GMTRefresh = function(target) {
+		var time = new Date(),
+			localGMT = time.getTimezoneOffset()/60,
+			GMTIndex;
+		localGMT<0 ? GMTIndex = - localGMT : GMTIndex = 25 - localGMT;
+
+		target.children().eq(GMTIndex).prop('selected','selected');
+	}
+
+	$('.gmt-select').each(function(){
+		new GMTRefresh($(this));
 	})
 
 })(jQuery)
