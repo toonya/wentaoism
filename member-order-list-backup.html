@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>在线下单</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html" charset="utf-8">
+        <link href="" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body class="home">
+        <!-- page -->
+        <div class="page">
+            <div class="nav-cover hide"></div>
+            <div class="login-cover hide"></div>
+            <div class="app order">
+                <div class="app-nav">
+                    <nav>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-file"></div><div class="detail">在线下单</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-folder-close"></div><div class="detail">全部订单</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-comment"></div><div class="detail">消息通知</div></a></div>
+                    </nav>
+                    <nav class="bottom">
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-user"></div><div class="detail">个人资料</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-remove"></div><div class="detail">退出登录</div></a></div>
+                    </nav>
+                </div>
+                <div class="app-content">
+					<div class="list-panle">
+						<div class="list-panle-nav">
+							<div class="btn-danger title">进行中的订单</div>
+							<a class="item active" data-toggle="tab" href="#msg-01">
+								<h4>课程名称</h4>
+								<div><span class="time">2014-01-12</span><span class="state text-danger">已交稿，待审核</span></div>
+							</a>
+							<a class="item" data-toggle="tab" href="#msg-02">
+								<h4>课程名称</h4>
+								<div><span class="time">2014-01-10</span><span class="state text-danger">正在写作</span></div>
+							</a>
+							<div class="btn-danger title">已结束的订单</div>
+							<a class="item" data-toggle="tab" href="#msg-03">
+								<h4>课程名称</h4>
+								<div><span class="time">2014-01-03</span><span class="state text-success">交易成功</span></div>
+							</a>
+							<a class="item" data-toggle="tab" href="#msg-04">
+								<h4>课程名称</h4>
+								<div><span class="time">2014-01-01</span><span class="state text-success">交易成功</span></div>
+							</a>
+						</div>
+						<div class="list-panle-content">
+							<div class="tab-content page-slide">
+								<div class="tab-pane active" id="msg-01">
+									<div class="content">
+										<h4>课程名称 : ...</h4>
+										<div class="state text-danger">订单状态 : 写作完成</div>
+										<div class="text-center"><a href="http://baidu.com" class="btn btn-primary">下载论文</a> <a href="#review" id="open-review" class="btn btn-primary">审核论文</a></div>
+										<div class="white-block"></div>
+										<hr />
+										<div class="white-block"></div>
+										<div class="order-info">
+
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>联系人信息 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">您的邮箱 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">QQ号 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">微信号 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										 	<div class="clearfix"></div>
+										 	<div class="white-block"></div>
+										 	<hr />
+										 	<div class="white-block"></div>
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>订单服务项目信息 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">订单号 :</div>
+										 			<div class="col-md-7">
+										 				 WD212192189
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">服务项目 :</div>
+										 			<div class="col-md-7">
+										 				<span class="service-area">课程论文</span> / <span class="service-type">原创论文服务</span>
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">课程名称 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">文章类型 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">页数 :</div>
+										 			<div class="col-md-7">
+										 				25
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">引用载体 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">需要引用的文献数量 :</div>
+										 			<div class="col-md-7">
+										 				20
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">初稿交付日期 :</div>
+										 			<div class="col-md-7">
+										 				2014-01-01
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">Deadline日期 :</div>
+										 			<div class="col-md-7">
+										 				2014-01-10
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">其它注意事项 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										 	<div class="col-md-6 row">
+										 		<h4>附件 :</h4>
+										 		<div class="white-block"></div>
+										 		<a href="#">课程大纲</a> <br />
+												<a href="#">文章要求</a> <br />
+												<a href="#">阅读材料1</a> <br />
+												<a href="#">阅读材料2</a> <br />
+												<a href="#">阅读材料3</a> <br />
+												<a href="#">其他材料</a> <br />
+										 	</div>
+										 	<div class="clearfix"></div>
+										 	<div class="white-block"></div>
+										 	<hr />
+										 	<div class="white-block"></div>
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>状态历史记录 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">2014-01-01 :</div>
+										 			<div class="col-md-7">
+										 				提交订单
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">2014-01-01 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="msg-02">
+									<div class="content">
+										<h4>课程名称 : ...</h4>
+										<div class="state text-danger">订单状态 : 正在写作</div>
+										<div class="white-block"></div>
+										<hr />
+										<div class="white-block"></div>
+										<div class="order-info">
+
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>联系人信息 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">您的邮箱 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">QQ号 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">微信号 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										 	<div class="clearfix"></div>
+										 	<div class="white-block"></div>
+										 	<hr />
+										 	<div class="white-block"></div>
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>订单服务项目信息 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">订单号 :</div>
+										 			<div class="col-md-7">
+										 				 WD212192189
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">服务项目 :</div>
+										 			<div class="col-md-7">
+										 				<span class="service-area">课程论文</span> / <span class="service-type">原创论文服务</span>
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">课程名称 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">文章类型 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">页数 :</div>
+										 			<div class="col-md-7">
+										 				25
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">引用载体 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">需要引用的文献数量 :</div>
+										 			<div class="col-md-7">
+										 				20
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">初稿交付日期 :</div>
+										 			<div class="col-md-7">
+										 				2014-01-01
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">Deadline日期 :</div>
+										 			<div class="col-md-7">
+										 				2014-01-10
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">其它注意事项 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										 	<div class="col-md-6 row">
+										 		<h4>附件 :</h4>
+										 		<div class="white-block"></div>
+										 		<a href="#">课程大纲</a> <br />
+												<a href="#">文章要求</a> <br />
+												<a href="#">阅读材料1</a> <br />
+												<a href="#">阅读材料2</a> <br />
+												<a href="#">阅读材料3</a> <br />
+												<a href="#">其他材料</a> <br />
+										 	</div>
+										 	<div class="clearfix"></div>
+										 	<div class="white-block"></div>
+										 	<hr />
+										 	<div class="white-block"></div>
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>状态历史记录 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">2014-01-01 :</div>
+										 			<div class="col-md-7">
+										 				提交订单
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">2014-01-01 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="msg-03">
+									<div class="content">
+										<h4>课程名称 : ...</h4>
+										<div class="state text-success">订单状态 : 交易成功</div>
+										<div class="white-block"></div>
+										<hr />
+										<div class="white-block"></div>
+										<div class="order-info">
+
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>联系人信息 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">您的邮箱 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">QQ号 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">微信号 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										 	<div class="clearfix"></div>
+										 	<div class="white-block"></div>
+										 	<hr />
+										 	<div class="white-block"></div>
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>订单服务项目信息 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">订单号 :</div>
+										 			<div class="col-md-7">
+										 				 WD212192189
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">服务项目 :</div>
+										 			<div class="col-md-7">
+										 				<span class="service-area">课程论文</span> / <span class="service-type">原创论文服务</span>
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">课程名称 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">文章类型 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">页数 :</div>
+										 			<div class="col-md-7">
+										 				25
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">引用载体 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">需要引用的文献数量 :</div>
+										 			<div class="col-md-7">
+										 				20
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">初稿交付日期 :</div>
+										 			<div class="col-md-7">
+										 				2014-01-01
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">Deadline日期 :</div>
+										 			<div class="col-md-7">
+										 				2014-01-10
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">其它注意事项 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										 	<div class="col-md-6 row">
+										 		<h4>附件 :</h4>
+										 		<div class="white-block"></div>
+										 		<a href="#">课程大纲</a> <br />
+												<a href="#">文章要求</a> <br />
+												<a href="#">阅读材料1</a> <br />
+												<a href="#">阅读材料2</a> <br />
+												<a href="#">阅读材料3</a> <br />
+												<a href="#">其他材料</a> <br />
+										 	</div>
+										 	<div class="clearfix"></div>
+										 	<div class="white-block"></div>
+										 	<hr />
+										 	<div class="white-block"></div>
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>状态历史记录 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">2014-01-01 :</div>
+										 			<div class="col-md-7">
+										 				提交订单
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">2014-01-01 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="msg-04">
+									<div class="content">
+										<h4>课程名称 : ...</h4>
+										<div class="state text-success">订单状态 : 交易成功</div>
+										<div class="white-block"></div>
+										<hr />
+										<div class="white-block"></div>
+										<div class="order-info">
+
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>联系人信息 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">您的邮箱 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">QQ号 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">微信号 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										 	<div class="clearfix"></div>
+										 	<div class="white-block"></div>
+										 	<hr />
+										 	<div class="white-block"></div>
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>订单服务项目信息 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">订单号 :</div>
+										 			<div class="col-md-7">
+										 				 WD212192189
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">服务项目 :</div>
+										 			<div class="col-md-7">
+										 				<span class="service-area">课程论文</span> / <span class="service-type">原创论文服务</span>
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">课程名称 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">文章类型 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">页数 :</div>
+										 			<div class="col-md-7">
+										 				25
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">引用载体 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">需要引用的文献数量 :</div>
+										 			<div class="col-md-7">
+										 				20
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">初稿交付日期 :</div>
+										 			<div class="col-md-7">
+										 				2014-01-01
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">Deadline日期 :</div>
+										 			<div class="col-md-7">
+										 				2014-01-10
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">其它注意事项 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										 	<div class="col-md-6 row">
+										 		<h4>附件 :</h4>
+										 		<div class="white-block"></div>
+										 		<a href="#">课程大纲</a> <br />
+												<a href="#">文章要求</a> <br />
+												<a href="#">阅读材料1</a> <br />
+												<a href="#">阅读材料2</a> <br />
+												<a href="#">阅读材料3</a> <br />
+												<a href="#">其他材料</a> <br />
+										 	</div>
+										 	<div class="clearfix"></div>
+										 	<div class="white-block"></div>
+										 	<hr />
+										 	<div class="white-block"></div>
+										 	<div class="col-md-6">
+										 		<div class="row">
+										 			<h4>状态历史记录 :</h4>
+										 		</div>
+										 		<div class="white-block"></div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">2014-01-01 :</div>
+										 			<div class="col-md-7">
+										 				提交订单
+										 			</div>
+										 		</div>
+										 		<div class="row">
+										 			<div class="col-md-5 text-right row">2014-01-01 :</div>
+										 			<div class="col-md-7">
+										 				...
+										 			</div>
+										 		</div>
+										 	</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="review page-slide">
+								<div class="content">
+									<a href="" id="close-review" class="btn btn-primary">返回订单</a> <a href="http://baidu.com" class="btn btn-primary">下载论文</a>
+									<div class="white-block"></div>
+									<hr />
+									<div class="white-block"></div>
+									<h4>课程名称 : ...</h4>
+									<div class="state text-success">论文状态: 等待审核</div>
+									<div class="white-block"></div>
+									<hr />
+									<div class="white-block"></div>
+
+									<form class="form-horizontal" role="form">
+									  <div class="form-group">
+									    <label for="Revise" class="col-sm-2 control-label">是否需要修改</label>
+									    <div class="col-sm-10">
+									      <div class="checkbox">
+									        <label>
+									          <input type="checkbox" id="Revise"> 需要
+									        </label>
+									      </div>
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <label for="ReviseNotice" class="col-sm-2 control-label">修改意见</label>
+									    <div class="col-sm-10">
+									      <textarea class="form-control" rows="8" id="ReviseNotice"></textarea>
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <div class="col-sm-offset-2 col-sm-10">
+									      <button type="submit" class="btn btn-default">提交</button>
+									    </div>
+									  </div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/fn.js"></script>
+    </body>
+</html>

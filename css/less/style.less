@@ -1009,3 +1009,50 @@ nav.mobile {
 .btn-file {
 	margin: 3px 2px;
 }
+
+
+/* message list */
+
+.message-list {
+	.come, .to {
+
+		clear: both;
+		margin-bottom: 18px;
+		margin-top: 6px;
+
+		.message-body {
+
+			border-radius: 5px;
+			padding: 12px 24px;
+
+			&::after {
+				content: '\e072';
+				position: absolute;
+				border-radius: 5px;
+				top: 5px;
+				font-size: 15px;
+				font-family: 'Glyphicons Halflings';
+			}
+		}
+	}
+
+	.come {
+		.message-body::after {
+			right: -13px;
+			color:#E3E3E3;
+		}
+	}
+	.to {
+		.message-body::after {
+			transform: rotate(180deg);
+			left: -10px;
+			color: #3388CD;
+		}
+	}
+
+	.message-user {
+		padding-top: 5px;
+	}
+}
+
+/* message list */

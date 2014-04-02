@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app>
     <head>
-        <title>消息通知</title>
+        <title>通讯历史</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="text/html" charset="utf-8">
         <link href="" rel="stylesheet" media="screen">
@@ -48,61 +48,44 @@
                     <div class="content">
 
 						<div class="page-header">
-						  <h4>消息通知</h4>
+						  <h4>与 <span class="text-primary"><span class="glyphicon glyphicon-user"></span> Gareth M</span> 的通讯记录</h4>
 						</div>
-						<form role="form" class="form-horizontal">
-						  <div class="row">
-						  	<div class="col-md-2">
-						  	  <select id="orderType" class="form-control input-sm">
-						  	    <option value="0">全部消息</option>
-						  	    <option value="1">系统消息</option>
-						  	    <option value="2">写手消息</option>
-						  	  </select>
-						  	</div>
-						  	<div class="col-md-10 text-right">
-						  		<a href="#" class="btn btn-primary"><span style="top:2px" class="glyphicon glyphicon-envelope"></span> 新消息</a>
-						  	</div>
-						  </div>
-						</form>
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-6">
+								<textarea type="text" class="form-control input-sm" rows="1"></textarea>
+							</div>
+							<div class="col-md-2 row">
+								<a href="#" class="btn btn-sm btn-primary"><span style="top:2px" class="glyphicon glyphicon-envelope"></span> 发送消息</a>
+							</div>
+						</div>
 						<div class="white-block"></div>
-						<div class="panel">
-						  <!-- Default panel contents -->
-						  <div class="panel-heading" style="padding-left:8px;"><input type="checkbox" class="checkall" data-target="#order-list"> 全选  <a href="#" class="pl">删除</a></div>
+						<!-- Table -->
+						<div class="message-list col-md-11">
 
-						  <!-- Table -->
-							<table class="table table-striped" id="order-list">
-						      <tbody>
-						        <tr>
-						          <th><input type="checkbox"></th>
-						          <td><a href="#"><span class="glyphicon glyphicon-user"></span> Grareth M</a></td>
-						          <td class="col-md-6">好的，我将竭力为您写作！Lorem ipsum dolor sit amet.</td>
-						          <td>2014-03-03 17:00</td>
-						          <td>写手消息</td>
-						          <td class="">未读</td>
-						          <td><a href="#"><span class="glyphicon glyphicon-comment"></span></a></td>
-						        </tr>
-						        <tr>
-						          <th><input type="checkbox"></th>
-						          <td><a href="#"><span class="glyphicon glyphicon-user"></span> Mansy Yu</a></td>
-						          <td class="col-md-6">这太难了，您需要加钱... Lorem ipsum dolor sit amet.</td>
-						          <td>2014-03-03 17:00</td>
-						          <td>写手消息</td>
-						          <td class="text-muted">已读</td>
-						          <td><a href="#"><span class="glyphicon glyphicon-comment"></span></a></td>
-						        </tr>
-						        <tr>
-						          <th><input type="checkbox"></th>
-						          <td><a href="#"><span class="glyphicon glyphicon-user"></span> Mansy Yu</a></td>
-						          <td class="col-md-6">Lorem ipsum dolor sit amet.</td>
-						          <td>2014-03-03 17:00</td>
-						          <td>写手消息</td>
-						          <td class="text-muted">已读</td>
-						          <td><a href="#"><span class="glyphicon glyphicon-comment"></span></a></td>
-						        </tr>
-						      </tbody>
-						    </table>
+							<!-- 收到消息 -->
+							<div class="text-muted col-md-offset-5"><small>2014/04/03 12:00</small></div>
+							<div class="col-md-8 col-md-offset-4 come">
+								<div class="message-body col-md-9  well">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nobis, soluta, ad dolore aperiam nesciunt eligendi et dolorum omnis ducimus iure ipsa obcaecati natus consequuntur ipsam excepturi magni recusandae similique nihil iusto reiciendis maxime repellendus praesentium impedit accusamus voluptatum doloremque sed animi repudiandae vel odit sint laudantium voluptate minus ratione!</div>
+								<div class="col-md-3 message-user">
+									<span class="glyphicon glyphicon-user"></span> Gareth Ma
+								</div>
+							</div>
+							<!-- 收到消息 -->
+							<!-- 发送消息 -->
+							<div class="text-muted col-md-offset-5"><small>2014/04/03 12:00</small></div>
+							<div class="col-md-8 to">
+								<div class="col-md-3 message-user text-right">
+									Me <span class="glyphicon glyphicon-user"></span>
+								</div>
+								<div class="message-body col-md-9  bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ex!</div>
+							</div>
+							<!-- 发送消息 -->
+
+							<div class="clearfix"></div>
 						</div>
-						<div class="text-center">
+						<div class="white-block"></div>
+						<div class="text-center hide">
 							<ul class="pagination" style=" margin-top: 0px; ">
 							  <li><a href="#">&laquo;</a></li>
 							  <li class="active"><a href="#">1</a></li>
