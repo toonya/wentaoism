@@ -1118,3 +1118,25 @@ nav.mobile .panel ul a {
   padding-top: 5px;
 }
 /* message list */
+/* writer info */
+.popover {
+  width: 360px;
+  max-width: 360px;
+}
+.mark {
+  background-position: 0 -90px;
+  background-repeat: no-repeat;
+  background-size: 175px 175px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+  color: #fff;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 12px;
+  font-style: italic;
+}
+/* writer info */

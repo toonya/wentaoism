@@ -231,5 +231,17 @@
 
 	show_gmt();
 
+	$('.review [data-trigger]').on('change',function(){
+		console.log($(this).data('trigger'));
+		$('.comment .form-group').not($(this)).addClass('hide');
+		$($(this).data('trigger')).removeClass('hide');
+	})
+
+	$('.writer a').popover({
+		trigger: 'hover',
+		placement: 'auto',
+		html: true,
+		content: function(){return $(this).next('.writer-info').html();}
+	})
 
 })(jQuery)
