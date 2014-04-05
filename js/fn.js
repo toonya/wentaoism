@@ -89,7 +89,7 @@
 			 var time = getGroupTime('draft');
 			 var text = time.getUTCMonth()+1 +"月"+time.getDate()+'日 '+time.getHours()+'时'+time.getMinutes()+'分 ';
 
-			 console.log(time.getMonth());
+			 //console.log(time.getMonth());
 			 $('.show-draft-time').text(text);
 		 }
 
