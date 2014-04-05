@@ -243,5 +243,11 @@
 		html: true,
 		content: function(){return $(this).next('.writer-info').html();}
 	})
+	$('.order-popover a').popover({
+		trigger: 'hover',
+		placement: 'auto',
+		html: true,
+		content: function(){return $(this).next('.writer-info').html();}
+	})
 
 })(jQuery)

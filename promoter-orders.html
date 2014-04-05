@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>推广订单</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html" charset="utf-8">
+        <link href="" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body class="home">
+        <!-- page -->
+        <div class="page">
+            <div class="nav-cover hide"></div>
+            <div class="login-cover hide"></div>
+
+			<header>
+				<div class="app-top-bar">
+					<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
+					<div class="right-info">
+						<div class="item"><a href="#">回首页</a></div>
+						<div class="item">欢迎你，Gareth <span class="text-muted">[ 销售代理 ]</span></div>
+						<div class="item"><a href="#">退出</a></div>
+					</div>
+				</div>
+			</header>
+
+
+            <div class="app order">
+                <div class="app-nav">
+                    <nav>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-list-alt"></div><div class="detail">推广订单</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-user"></div><div class="detail">个人资料</div></a></div>
+                    </nav>
+                    <nav class="bottom">
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-globe"></div><div class="detail">中国</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon"></div><div class="detail">2014-03-20</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon"></div><div class="detail">11:11</div></a></div>
+                    </nav>
+                </div>
+                <div class="app-content">
+                    <div class="content">
+
+						<div class="page-header">
+						  <h4>推广订单</h4>
+						</div>
+
+						<div class="panel panel-default">
+
+						  <!-- Table -->
+							<table class="table table-striped" id="order-list">
+						      <tbody>
+						      	<tr>
+							      	<th>序号</th>
+							      	<th>订单号</th>
+							      	<th>下单客户</th>
+							      	<th>订单金额</th>
+							      	<th>分成金额</th>
+						      	</tr>
+						      	<tr>
+							      	<td>1</td>
+							      	<td><div class="order-popover">
+						 					<a href="#" data-container="body" data-toggle="popover" data-placement="left">WD21321321321</a>
+						 					<div class="hide writer-info">
+						 						<div class="row" style="padding-left:14px;">
+						 							<div class="pull-right mark" style="background-image:url(images/asset/star-points.png);">5.0</div>
+								 					<div class="col-md-9">
+									 					<h4>课程名称：西方经济学</h4>
+									 					<span>论文标题：西方经济学一</span> <br />
+									 					<small>写手：Gareth Ma</small>
+									 					<div class="white-block"></div>
+									 					<div class="muted">
+									 						<small>
+									 							评价:
+									 							<span class="text-success">[好评]</span>
+									 							<span class="hide text-muter">[一般]</span>
+									 							<span class="hide text-danger">[差评]</span>
+									 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, deleniti!
+									 						</small>
+									 					</div>
+									 					<hr />
+									 					<small>下单时间：2014/03/03 11:12</small>
+									 					<hr />
+									 					<small>评价时间：2014/03/08 12:20</small>
+									 					<div class="white-block"></div>
+								 					</div>
+								 				</div>
+						 					</div>
+						 				</div></td>
+							      	<td>Mansy</td>
+							      	<td>$25</td>
+							      	<td>$2.5</td>
+						      	</tr>
+						      	<tr>
+							      	<td>2</td>
+							      	<td><a href="#"><div class="order-popover">
+						 					<a href="#" data-container="body" data-toggle="popover" data-placement="left">WD21321321321</a>
+						 					<div class="hide writer-info">
+						 						<div class="row" style="padding-left:14px;">
+						 							<div class="pull-right mark" style="background-image:url(images/asset/star-points.png);">5.0</div>
+								 					<div class="col-md-9">
+									 					<h4>课程名称：西方经济学</h4>
+									 					<span>论文标题：西方经济学一</span> <br />
+									 					<small>写手：Gareth Ma</small>
+									 					<div class="white-block"></div>
+									 					<div class="muted">
+									 						<small>
+									 							评价:
+									 							<span class="text-success">[好评]</span>
+									 							<span class="hide text-muter">[一般]</span>
+									 							<span class="hide text-danger">[差评]</span>
+									 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, deleniti!
+									 						</small>
+									 					</div>
+									 					<hr />
+									 					<small>下单时间：2014/03/03 11:12</small>
+									 					<hr />
+									 					<small>评价时间：2014/03/08 12:20</small>
+									 					<div class="white-block"></div>
+								 					</div>
+								 				</div>
+						 					</div>
+						 				</div></a></td>
+							      	<td>Lorem</td>
+							      	<td>$38</td>
+							      	<td>$3.8</td>
+						      	</tr>
+						      	<tr>
+							      	<td>3</td>
+							      	<td><a href="#"><div class="order-popover">
+						 					<a href="#" data-container="body" data-toggle="popover" data-placement="left">WD21321321321</a>
+						 					<div class="hide writer-info">
+						 						<div class="row" style="padding-left:14px;">
+						 							<div class="pull-right mark" style="background-image:url(images/asset/star-points.png);">5.0</div>
+								 					<div class="col-md-9">
+									 					<h4>课程名称：西方经济学</h4>
+									 					<span>论文标题：西方经济学一</span> <br />
+									 					<small>写手：Gareth Ma</small>
+									 					<div class="white-block"></div>
+									 					<div class="muted">
+									 						<small>
+									 							评价:
+									 							<span class="text-success">[好评]</span>
+									 							<span class="hide text-muter">[一般]</span>
+									 							<span class="hide text-danger">[差评]</span>
+									 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, deleniti!
+									 						</small>
+									 					</div>
+									 					<hr />
+									 					<small>下单时间：2014/03/03 11:12</small>
+									 					<hr />
+									 					<small>评价时间：2014/03/08 12:20</small>
+									 					<div class="white-block"></div>
+								 					</div>
+								 				</div>
+						 					</div>
+						 				</div></a></td>
+							      	<td>Lorem ipsum.</td>
+							      	<td>$100</td>
+							      	<td>$10</td>
+						      	</tr>
+						      </tbody>
+						    </table>
+						</div>
+						<div class="text-center">
+							<ul class="pagination" data-ride="pagination" data-max="22" data-current="1" data-url="#" style=" margin-top: 0px; ">
+							  <li><a data-to="pre" href="#">上一页</a></li>
+							  <li><a data-to="next" href="#">下一页</a></li>
+							</ul>
+						</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/bootstrap-pagination.js"></script>
+        <script src="js/fn.js"></script>
+    </body>
+</html>
