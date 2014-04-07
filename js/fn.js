@@ -230,10 +230,11 @@
 				if(unit == 'd')
 						hours = hours * 24;
 
-				var group = new Date();
-				group.setHours(group.getHours()+hours);
+				var time = new Date();
+				time.setHours(time.getHours()+hours);
+			 	time.setHours(time.getHours()+this.getGMTHours());
 
-				return group;
+				return time;
 			}
 
 			var groupDate = $('[data-group="' + group + '"][data-type="date"] input').val();
@@ -246,10 +247,6 @@
 
 		show_time : function(){
 			 var time = this.getGroupTime('draft');
-
-			 if($('[data-group="draft"]').attr('type')=='radio')
-			 	time.setHours(time.getHours()+this.getGMTHours());
-
 			 var text = time.getUTCMonth()+1 +"月"+time.getDate()+'日 '+time.getHours()+'时'+time.getMinutes()+'分 ';
 
 			 //console.log(time.getMonth());
@@ -260,6 +257,7 @@
 			var _final = this.getGroupTime('final'),
 				_draft = this.getGroupTime('draft'),
 				duration = _final - _draft;
+
 			if( _final && _draft && duration/1000/60/60/24 < 1){
 
 				$('.time-error').removeClass('hide');
