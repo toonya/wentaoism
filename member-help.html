@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>帮助中心</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html" charset="utf-8">
+        <link href="" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body class="home">
+        <!-- page -->
+        <div class="page">
+            <div class="nav-cover hide"></div>
+            <div class="login-cover hide"></div>
+
+			<header>
+				<div class="app-top-bar">
+					<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
+					<div class="right-info">
+						<div class="item"><a href="#">回首页</a></div>
+						<div class="item">欢迎你，<a href="#">Gareth</a> <small class="text-muted">[ abc123@me.com ]</small></div>
+						<div class="item"><a href="#">退出</a></div>
+					</div>
+				</div>
+			</header>
+
+
+            <div class="app order">
+                <div class="app-nav">
+                    <nav>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-file"></div><div class="detail">我要下单</div></a></div>
+						<div class="white-block"></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-list-alt"></div><div class="detail">全部订单</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-tag"></div><div class="detail">折扣返券</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-user"></div><div class="detail">个人资料</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-comment"></div><div class="detail">消息通知</div></a></div>
+                    </nav>
+                    <nav class="bottom">
+                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-globe"></div><div class="detail">中国</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon"></div><div class="detail">2014-03-20</div></a></div>
+                    	<div class="item"><a href="#"><div class="icon"></div><div class="detail">11:11</div></a></div>
+                    </nav>
+                </div>
+                <div class="app-content">
+                    <div class="content">
+                    	<!-- order-panel 01 -->
+
+						<div class="row help-center">
+							<div class="col-md-9">
+								<div class="well">
+									<h4>帮助中心</h4>
+									<div class="row">
+										<div class="col-md-10">
+											<input type="text" class="form-control" placeholder="请输入关键字，如：忘记密码，查询订单..." />
+										</div>
+										<div class="col-md-2 row">
+											<button class="btn btn-primary">搜索</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-content">
+
+								</div>
+							</div>
+							<div class="col-md-3" role="nav">
+								<div class="well">
+									<a data-toggle="tab" href="#help00">会员账户管理</a>
+										<div class="pl"><a data-toggle="tab" href="#help01">注册及登录</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help02">设置时区</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help03">课程及导师</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help04">信息及隐私</a></div>
+									<a data-toggle="tab" href="#help10">订单管理</a>
+										<div class="pl"><a data-toggle="tab" href="#help11">需求统计</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help12">处理时间</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help13">即时评分</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help14">成绩反馈</a></div>
+									<a data-toggle="tab" href="#help20">质量保证</a>
+										<div class="pl"><a data-toggle="tab" href="#help21">顾问分配</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help22">反抄袭</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help23">修改政策</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help24">退款制度</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help25">争议解决制度</a></div>
+									<a data-toggle="tab" href="#help30">资费及优惠</a>
+										<div class="pl"><a data-toggle="tab" href="#help31">价格一览</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help32">支付方式</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help33">优惠政策</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help34">返现政策</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help35">提现方式</a></div>
+									<a data-toggle="tab" href="#help40">其他会员免费服务</a>
+										<div class="pl"><a data-toggle="tab" href="#help41">免费Course Hero素材</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help42">微信公众号知识推送</a></div>
+										<div class="pl"><a data-toggle="tab" href="#help43">学术资源库实用资源</a></div>
+								</div>
+							</div>
+						</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script>
+			var helps = {
+				help_name : '帮助中心',
+				help_center : '',
+				help_cat : [
+					{cat_name:'会员账户管理',cat_item:[
+						{item_name:'注册及登录',item_content:''},
+						{item_name:'设置时区',item_content:''},
+						{item_name:'课程及导师',item_content:''},
+						{item_name:'信息及隐私',item_content:''},
+					]},
+					{cat_name:'订单管理',cat_item:[
+						{item_name:'需求统计',item_content:''},
+						{item_name:'处理时间',item_content:''},
+						{item_name:'即时评分',item_content:''},
+						{item_name:'成绩反馈',item_content:''},
+					]},
+					{cat_name:'质量保证',cat_item:[
+						{item_name:'顾问分配',item_content:''},
+						{item_name:'反抄袭',item_content:''},
+						{item_name:'修改政策',item_content:''},
+						{item_name:'退款制度',item_content:''},
+						{item_name:'争议解决制度',item_content:''},
+					]},
+					{cat_name:'资费及优惠',cat_item:[
+						{item_name:'价格一览',item_content:''},
+						{item_name:'支付方式',item_content:''},
+						{item_name:'优惠政策',item_content:''},
+						{item_name:'返现政策',item_content:''},
+						{item_name:'提现方式',item_content:''},
+					]},
+					{cat_name:'其他会员免费服务',cat_item:[
+						{item_name:'免费Course Hero素材',item_content:''},
+						{item_name:'微信公众号知识推送',item_content:''},
+						{item_name:'学术资源库实用资源',item_content:''},
+					]},
+				]
+			}
+
+			var wd_helps = function(data){
+				this.init(data);
+			}
+			helps.prototype =  {
+				init: function(data) {
+					this.data = data;
+				},
+				render: function(){
+					if(!this.data)
+						return;
+				}
+			}
+
+			console.log(helps);
+			//console.log(helps.help_cat[0].cat_name + '' + helps.help_cat[0].cat_item[0].item_name);
+
+        </script>
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/fn.js"></script>
+    </body>
+</html>
