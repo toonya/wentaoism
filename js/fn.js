@@ -299,4 +299,55 @@
 
     /* end datepicker */
 
+    /* search help */
+
+    $('.search-help .btn').on('click',function(){
+	    var keywords = $('.search-help input[type="text"]').val();
+	    new help_search(keywords);
+    });
+
+    $('.search-help input[type="text"]').on('keypress',function (evt) {
+		//Deterime where our character code is coming from within the event
+		var charCode = evt.charCode || evt.keyCode;
+		if (charCode  == 13) { //Enter key's keycode
+			$(this).blur();
+			$('.search-help .btn').trigger('click');
+		}
+	});
+
+	var help_search = function(keywords){
+		this.init(keywords);
+	}
+	help_search.prototype = {
+		init : function(keywords) {
+			this.keywords = keywords;
+			this.$items = $('.tab-content .tab-pane');
+			this.$target = [];
+
+			this.search_item();
+			this.render();
+			console.log(this.$target);
+		},
+
+		search_item : function(){
+			this.$items.each($.proxy(function(i,e){
+				if($(e).text().search(this.keywords) != -1){  // 搜索文本
+					var text = $(e).find('ol.breadcrumb li.active').text(),
+						id   = $(e).attr('id'),
+						item = $('<div><a data-toggle="tab" href="#'+id+'">'+text+'</a></div>');
+					this.$target.push(item);
+				}
+			},this))
+		},
+
+		render : function(){
+			$('#search-help .panel-body').html('');
+			$.each(this.$target, function(){
+				$('#search-help .panel-body').append(this);
+			})
+		}
+	}
+
+    /* search help */
+
 })(jQuery)
