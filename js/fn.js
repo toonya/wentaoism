@@ -122,13 +122,12 @@
 
 	$('[data-bind="word-per-page"]').trigger('numInput');
 
-
+	/* ! for new file fn */
 	$('[data-ride="new-item"]').on('click', function(){
-		var data = $(this).data();
-		var template = '<span class="btn btn-default btn-file">'+
-							'追加材料 <input id="" type="file"><span class="filename">(点击上传)</span>'+
-						'</span>';
-		$(template).insertBefore($(this));
+		var $template = $('.changeable-item.file .hide').clone();
+		$template.removeClass('hide');
+
+		$('.changeable-item.file').append($template);
 	})
 
 	var GMTRefresh = function(target) {

@@ -1352,3 +1352,10 @@ nav.mobile .panel ul a {
   color: #999;
 }
 /* help center */
+/* changeable item */
+.changeable-item.file {
+  margin: 8px 2px 0;
+}
+.changeable-item.file span.btn {
+  margin: 0 3px 5px;
+}
