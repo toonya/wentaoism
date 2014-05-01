@@ -165,7 +165,6 @@
 							    <label for="" class="col-sm-2 row control-label">初稿Deadline <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
 								<div class="col-md-9">
 									<div class="row">
-<!--
 										<div class="col-md-3">
 											<div class="input-group time"  data-group="draft" data-type="date" data-date-format="YYYY/MM/DD">
 			                                    <input type="text" class="form-control input-sm" id="" value="2014/04/08" placeholder="">
@@ -178,8 +177,8 @@
 			                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
 			                                </div>
 								        </div>
--->
-								        <div class="col-md-3">
+								        <!--
+<div class="col-md-3">
 								            <label class="radio-inline">
 		                                        <input checked name="radio4" type="radio" id="" value="14" data-group="draft" data-unit="d" /> 14 days
 		                                    </label>
@@ -187,12 +186,13 @@
 		                                        <input name="radio4" type="radio" id="" value="8" data-group="draft"  data-unit="h" /> 8 hours
 		                                    </label>
 								        </div>
+-->
 
 								        <div class="col-md-3">
 									        <p class="text-danger error"></p>
 								        </div>
 									</div>
-									<p class="text-muted">你的初稿将于 <span class="show-draft-time"></span>（GTM <span class="show-draft-gmt"></span> ）前提交。如果不符合，请重新选择一个初稿Deadline。<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
+									<p class="text-muted">你的初稿将于 <span class="show-draft-time"></span> 前提交。如果不符合，请重新选择一个初稿Deadline。<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
 								</div>
 						    </div>
 						    <div class="form-group">
@@ -235,6 +235,7 @@
 							    <label for="" class="col-sm-2 row control-label">折扣 <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
 								<div class="col-md-9">
 									<label class="radio-inline">
+										<!-- 这里为读取用户拥有的折扣优惠 -->
                                         <input name="radio6" type="radio" id="" value="1"> 15%（终生）
                                     </label>
 								</div>
@@ -267,6 +268,7 @@
         <script src="js/bootstrap-hover-dropdown.min.js"></script>
         <script src="js/bootstrap-datetimepicker.min.js"></script>
         <script src="js/bootstrap-number-input.js"></script>
+        <script src="js/time-pick-config.js"></script>
         <script src="js/fn.js"></script>
     </body>
 </html>
