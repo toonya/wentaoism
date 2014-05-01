@@ -268,4 +268,14 @@
 		$(this).closest('form').addClass('hide');
 	});
 
+	// article type : other
+	$('[data-input-toggle] :radio').on('change', function(){
+		if($(this).data('trigger')) {
+			$(this).closest('[data-input-toggle]').find('.trigger-area').find('input').not( $($(this).data('trigger')) ).addClass('hide').val('');
+			$($(this).data('trigger')).removeClass('hide').val('');
+		}
+		else {
+			$(this).closest('[data-input-toggle]').find('.trigger-area').find('input').addClass('hide').val('');
+		}
+	})
 })(jQuery)

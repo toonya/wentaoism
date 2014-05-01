@@ -106,7 +106,7 @@
 						    </div>
                     	    <div class="form-group">
 							    <label for="" class="col-sm-2 row control-label">引用格式 <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
-								<div class="col-md-9">
+								<div class="col-md-9" data-input-toggle>
 									<label class="radio-inline">
                                         <input name="radio2" type="radio" id="" value="1"> MLA
                                     </label>
@@ -120,8 +120,12 @@
                                         <input name="radio2" type="radio" id="" value="4"> Not applicable
                                     </label>
 									<label class="radio-inline">
-                                        <input name="radio2" type="radio" id="" value="5"> other
+                                        <input data-trigger="#type-other" name="radio2" type="radio" id="" value="5"> other
                                     </label>
+
+                                    <div class="trigger-area">
+                                    	<input type="text" class="form-control hide input-sm" id="type-other" placeholder="输入你需要的引用格式名称">
+                                    </div>
 								</div>
 								<div class="error-info text-danger"></div>
 						    </div>
@@ -161,6 +165,41 @@
 								</div>
 								<div class="error-info text-danger"></div>
 						    </div>
+							<div class="form-group">
+							    <label for="" class="col-sm-2 row control-label">时区 <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
+								<div class="col-md-9">
+									<div class="col-md-3 row">
+										<select id="" class="form-control gmt-select input-sm">
+									  	    <option value="-1">请选择时区</option>
+									  	    <option value="+01">GMT +1  (Rome)</option>
+									  	    <option value="+02">GMT +2  (Israel)</option>
+									  	    <option value="+03">GMT +3  (Moscow)</option>
+									  	    <option value="+04">GMT +4  (Baku)</option>
+									  	    <option value="+05">GMT +5  (New Delhi)</option>
+									  	    <option value="+06">GMT +6  (Dhakar)</option>
+									  	    <option value="+07">GMT +7  (Bangkok)</option>
+									  	    <option value="+08">GMT +8  (China)</option>
+									  	    <option value="+09">GMT +9  (Tokyo)</option>
+									  	    <option value="10">GMT +10 (Sydney)</option>
+									  	    <option value="11">GMT +11 (Magadan)</option>
+									  	    <option value="12">GMT +12 (Wellington)</option>
+									  	    <option value="-12">GMT -12 (Eniwetok)</option>
+									  	    <option value="-11">GMT -11 (Samoa)</option>
+									  	    <option value="-10">GMT -10 (Hawaii)</option>
+									  	    <option value="-09">GMT -9  (Alaska)</option>
+									  	    <option value="-08">GMT -8  (Pacific Time)</option>
+									  	    <option value="-07">GMT -7  (Mountain Time)</option>
+									  	    <option value="-06">GMT -6  (Central Time)</option>
+									  	    <option value="-05">GMT -5  (Eastern Time)</option>
+									  	    <option value="-04">GMT -4  (Atlantic Time)</option>
+									  	    <option value="-03">GMT -3  (Brazilia)</option>
+									  	    <option value="-02">GMT -2  (Mid-Atlantic)</option>
+									  	    <option value="-01">GMT -1  (Azores)</option>
+									  	</select>
+									</div>
+								</div>
+								<div class="error-info text-danger"></div>
+						    </div>
 						    <div class="form-group">
 							    <label for="" class="col-sm-2 row control-label">初稿Deadline <span class="glyphicon glyphicon-info-sign text-primary"></span></label>
 								<div class="col-md-9">
@@ -192,7 +231,7 @@
 									        <p class="text-danger error"></p>
 								        </div>
 									</div>
-									<p class="text-muted">你的初稿将于 <span class="show-draft-time"></span> 前提交。如果不符合，请重新选择一个初稿Deadline。<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
+									<p class="text-muted">你的初稿将于 <span class="show-draft-time"></span>（GMT <span class="show-draft-gmt"></span> ）前提交。如果不符合，请重新选择一个初稿Deadline。<span class="glyphicon glyphicon-info-sign text-primary"></span></p>
 								</div>
 						    </div>
 						    <div class="form-group">

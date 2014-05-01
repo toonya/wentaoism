@@ -67,7 +67,7 @@
 
 				var time = new Date();
 				time.setHours(time.getHours()+hours);
-			 	time.setHours(time.getHours());
+			 	time.setHours(time.getHours() +this.getGMTHours() );
 
 				return time;
 			}
@@ -76,7 +76,7 @@
 			var groupTime = $('[data-group="' + group + '"][data-type="time"] input').val();
 			var time = new Date(groupDate + ' ' + groupTime);
 			if($('[data-group="draft"]').attr('type')=='radio')
-				time.setHours(time.getHours());
+				time.setHours(time.getHours() +this.getGMTHours() );
 			return time;
 		},
 
