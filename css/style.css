@@ -304,10 +304,11 @@ a:hover {
   color: #ccc;
 }
 .app-nav li.new-order a {
+  color: #006899;
   background: #C1D7FF;
 }
 .app-nav li.new-order a span {
-  color: #5C5C73;
+  color: #006899;
 }
 /* ! app content */
 .app-content {

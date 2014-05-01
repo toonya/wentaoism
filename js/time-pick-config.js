@@ -39,8 +39,14 @@
 		$('.gmt-select').on('change',$.proxy(this.show_time,this));
 
 		//for select
+/*
 		$(':radio[data-group="draft"]').on('change', $.proxy(this.refresh, this));
 		$(':radio[data-group="draft"]').on('change', $.proxy(this.show_time, this));
+*/
+
+
+		$('[data-group="draft"]').on('change', $.proxy(this.refresh, this));
+		$('[data-group="draft"]').on('change', $.proxy(this.show_time, this));
 
 		$('.time').trigger('dp.change');
 
@@ -61,7 +67,7 @@
 
 				var time = new Date();
 				time.setHours(time.getHours()+hours);
-			 	time.setHours(time.getHours()+this.getGMTHours());
+			 	time.setHours(time.getHours());
 
 				return time;
 			}
@@ -70,11 +76,12 @@
 			var groupTime = $('[data-group="' + group + '"][data-type="time"] input').val();
 			var time = new Date(groupDate + ' ' + groupTime);
 			if($('[data-group="draft"]').attr('type')=='radio')
-				time.setHours(time.getHours()+this.getGMTHours());
+				time.setHours(time.getHours());
 			return time;
 		},
 
 		show_time : function(){
+
 			 var time = this.getGroupTime('draft');
 			 var text = time.getUTCMonth()+1 +"月"+time.getDate()+'日 '+time.getHours()+'时'+time.getMinutes()+'分 ';
 
@@ -89,12 +96,12 @@
 
 			if( _final && _draft && duration/1000/60/60/24 < 1){
 
-				$('.time-error').removeClass('hide');
+				//$('.time-error').removeClass('hide');
 				//console.log(duration/1000/60/60/24)
 			}
 			if( _final && _draft && duration/1000/60/60/24 >= 1){
 
-				$('.time-error').addClass('hide');
+				//$('.time-error').addClass('hide');
 				//console.log(duration/1000/60/60/24);
 			}
 
