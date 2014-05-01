@@ -210,14 +210,10 @@ a:hover {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding-right: 24px;
-  min-width: 813px;
 }
 .app-top-bar .right-info .item {
   padding-left: 24px;
   float: left;
-}
-.app-top-bar .right-info a.btn {
-  margin-top: 3px;
 }
 .app-top-bar .logo {
   width: 144px;
@@ -451,6 +447,7 @@ header > .container nav.desktop {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 100;
+  min-width: 813px;
 }
 header > .container nav.desktop a {
   font-family: "Microsoft YaHei", Arial, helvetica, sans-serif;
@@ -475,6 +472,7 @@ header > .container nav.desktop .toggle-desktop-login {
   float: right;
   color: #fff;
   margin-left: 25px;
+  margin-top: 3px;
 }
 header > .container nav.desktop .dropdown-menu {
   background: rgba(255, 255, 255, 0.88);
