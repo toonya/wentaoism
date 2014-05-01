@@ -130,6 +130,14 @@
 		$('.changeable-item.file').append($template);
 	})
 
+	/* exonerate */
+	$('.exonerate :checkbox').on('change', function(){
+		if( this.checked )
+			$(this).closest('form').find('[type="submit"]').removeAttr('disabled');
+		else
+			$(this).closest('form').find('[type="submit"]').attr('disabled','disabled');
+	})
+
 	var GMTRefresh = function(target) {
 		var time = new Date(),
 			localGMT = time.getTimezoneOffset()/60,
