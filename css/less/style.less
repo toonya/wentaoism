@@ -40,13 +40,27 @@ header {
 				color: inherit;
 			}
 
-			.nav-pills>li.active>a {
-				background: none;
-				color: inherit;
+			ul.nav {
+				float: left;
+
+				&>li>a {
+					padding: 10px 25px;
+				}
+
+				&>li.active>a {
+					background: none;
+					color: inherit;
+				}
+				&>li.open>a {
+					background: none;
+					color: #0096B8;
+				}
 			}
-			.nav-pills>li.open>a {
-				background: none;
-				color: #0096B8;
+			.toggle-desktop-login {
+				background: #0096B8;
+				float: right;
+				color: #fff;
+				margin-left: 25px;
 			}
 
 			.dropdown-menu {
@@ -71,6 +85,46 @@ header {
 
 			.dropdown-menu>li>a:hover {
 				color: #0096B8;
+			}
+		}
+	}
+}
+
+/**
+ *
+ * ! desktop login area.
+ *
+ * */
+
+.login.desktop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.35);
+	z-index: 200;
+
+	form {
+		width: 320px;
+		left: 50%;
+		top: 35%;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		border-radius: 3px;
+		padding: 24px;
+
+		h3 {
+			position: relative;
+			margin-top: 0;
+			margin-bottom: 24px;
+
+			span {
+				position: absolute;
+				right: -15px;
+				top: -15px;
+				font-size: 12px;
+				cursor: pointer;
 			}
 		}
 	}
@@ -107,21 +161,53 @@ header {
 		}
 	}
 
-	.login {
+	.regist {
 		.vertical-center();
 		left: 55%;
 		background: url(../images/cloud.png);
-		width: 395px;
-		height: 242px;
+		width: 476px;
+		height: 290px;
 
 		form {
 			position: absolute;
 			width: 100%;
-			top: 100px;
-			left: 100px;
+			top: 80px;
+			left: 40px;
 
 			.form-group {
-				margin-bottom: 5px;
+				margin-bottom: 9px;
+				label {
+					font-weight: normal;
+				}
+			}
+
+			.btn-group .btn:first-child, .btn-group .btn:last-child {
+				background: #8FBFC7;
+			}
+
+			.picker {
+				>div:first-child {
+					padding-right: 0;
+
+					span {
+						right: 3px;
+					}
+				}
+
+				>div:last-child {
+					span {
+						right: 18px;
+					}
+				}
+
+				>div {
+					position: relative;
+
+					span {
+						position: absolute;
+						top: 7.5px;
+					}
+				}
 			}
 
 			.error-info {

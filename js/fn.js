@@ -294,7 +294,7 @@
 		}
 	 }
 
-	 new _DateTimePicker();
+	 //new _DateTimePicker();
 
 
     /* end datepicker */
@@ -349,5 +349,45 @@
 	}
 
     /* search help */
+
+    /* ! desktop login toggle */
+    $('.toggle-desktop-login').on('click', function(e){
+	    e.preventDefault();
+	    $('.desktop.login').toggleClass('hide');
+    })
+
+    // form validation
+    $('form [data-required] :input')
+	.each(function(i,e){
+		$(this).not('[required]').on('beginValid', function(){
+			$(this).attr('required','required');
+		});
+		$(this).on('stopValid', function(){
+			$(this).removeAttr('required');
+		});
+	})
+	.closest('form')
+	.on('submit', function(e){
+		e.preventDefault();
+		var $group  =  $(this).find('[data-required]');
+		$group.each(function(i,e){
+			$(this).find(':input').trigger('beginValid');
+
+		if( $(this).find(':invalid').size() == 0 )
+			$(this).trigger('submit');
+
+		})
+
+	})
+	.on('reset',function(){
+		$(this).find(':input').each(function(i,e){
+			$(this).trigger('stopValid');
+		})
+	})
+	.on('click', '.btn-close', function(e){
+		e.preventDefault();
+
+		$(this).closest('form').addClass('hide');
+	});
 
 })(jQuery)

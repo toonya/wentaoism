@@ -1,367 +1,437 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
         <title>文道 | Wendaoism</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="text/html" charset="utf-8">
         <link href="" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
-        <script src="js/prefixfree.min.js"></script>
-	</head>
-	<body class="home logined">
-		<!-- mobile -->
-		<nav class="hidden-md hidden-lg mobile hide">
-			<div class="panel-group" id="accordion">
-			  <div class="panel">
-			    <div class="panel-heading">
-			      <h4 class="panel-title">
-			        <a href="#">
-			          首页
-			        </a>
-			      </h4>
-			    </div>
-			  </div>
-			  <div class="panel">
-			    <div class="panel-heading">
-			      <h4 class="panel-title">
-			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse02">
-			          关于我们 <span class="caret"></span>
-			        </a>
-			      </h4>
-			    </div>
-			    <div id="collapse02" class="panel-collapse collapse">
-			      <div class="panel-body">
-			      	<ul>
-						<li><a href="">公司简介</a></li>
-						<li><a href="">服务流程</a></li>
-						<li><a href="">顾问团队</a></li>
-					</ul>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="panel">
-			    <div class="panel-heading">
-			      <h4 class="panel-title">
-			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse03">
-			          课程论文解决方案 <span class="caret"></span>
-			        </a>
-			      </h4>
-			    </div>
-			    <div id="collapse03" class="panel-collapse collapse">
-			      <div class="panel-body">
-			      	<ul>
-						<li><a href="">原创范文服务</a></li>
-						<li><a href="">编辑润色服务</a></li>
-						<li><a href="">抄袭率检查服务</a></li>
-						<li><a href="">服务标准</a></li>
-						<li><a href="">案例展示</a></li>
-					</ul>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="panel">
-			    <div class="panel-heading">
-			      <h4 class="panel-title">
-			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse04">
-			          留学文书提升方案 <span class="caret"></span>
-			        </a>
-			      </h4>
-			    </div>
-			    <div id="collapse04" class="panel-collapse collapse">
-			      <div class="panel-body">
-			      	<ul>
-						<li><a href="">PS写作</a></li>
-						<li><a href="">CV/Resume润色</a></li>
-						<li><a href="">sample essay写作</a></li>
-						<li><a href="">案例展示</a></li>
-					</ul>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="panel">
-			    <div class="panel-heading">
-			      <h4 class="panel-title">
-			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse05">
-			          求职文书优化方案 <span class="caret"></span>
-			        </a>
-			      </h4>
-			    </div>
-			    <div id="collapse05" class="panel-collapse collapse">
-			      <div class="panel-body">
-			      	<ul>
-						<li><a href="">CV/Resume创作</a></li>
-						<li><a href="">Cover Letter提升</a></li>
-						<li><a href="">案例展示</a></li>
-					</ul>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="panel">
-			    <div class="panel-heading">
-			      <h4 class="panel-title">
-			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse06">
-			          帮助中心 <span class="caret"></span>
-			        </a>
-			      </h4>
-			    </div>
-			    <div id="collapse06" class="panel-collapse collapse">
-			      <div class="panel-body">
-			      	<ul>
-						<li><a href="">学术资源库</a></li>
-						<li><a href="">问答中心</a></li>
-					</ul>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		</nav>
-		<div class="hidden-md hidden-lg login mobile hide">
-			<form class="form-horizontal col-xs-12  vertical-center" role="form">
-		      <div class="error-info hide text-danger">账号错误</div>
-			  <div class="form-group">
-			    <div class="col-xs-12">
-			      <input type="email" class="form-control" id="inputEmail3" placeholder="用户名/Email">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <div class="col-xs-12">
-			      <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <div class="col-xs-12 vertical-bottom">
-					<button type="submit" class="btn btn-block btn-primary pull-right">登录</button>
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <div class="col-xs-12 text-center">
-					<a class="text-muted" href="">注册</a> <span class="text-muted">|</span> <a class="text-muted" href="">忘记密码</a>
-			    </div>
-			  </div>
-			</form>
-		</div>
-		<!-- mobile end -->
-		<!-- logined -->
-		<div class="user-bar">
-			<div class="container">
-				<div class="right-info">
-					<div class="item"><a href="#">返回后台</a></div>
-					<div class="item">欢迎您，<a href="#">某某用户</a></div>
-					<div class="item"><a href="#">退出登录</a></div>
-				</div>
-			</div>
-		</div>
-		<!-- logined end -->
-		<!-- page -->
-		<div class="page">
-			<div class="nav-cover hide"></div>
-			<div class="login-cover hide"></div>
-			<header>
-				<div class="container">
-					<div class="full-height">
-						<h1>
-							<img class="img-responsive" src="images/logo.gif" alt="logo">
-						</h1>
-					</div>
-					<nav class="visible-md visible-lg desktop">
-						<ul class="nav nav-pills">
-							<li class="active"><a href="">首页</a></li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">关于我们<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="">公司简介</a></li>
-									<li><a href="">服务流程</a></li>
-									<li><a href="">顾问团队</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">课程论文解决方案<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="">原创范文服务</a></li>
-									<li><a href="">编辑润色服务</a></li>
-									<li><a href="">抄袭率检查服务</a></li>
-									<li><a href="">服务标准</a></li>
-									<li><a href="">案例展示</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">留学文书提升方案<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="">PS写作</a></li>
-									<li><a href="">CV/Resume润色</a></li>
-									<li><a href="">sample essay写作</a></li>
-									<li><a href="">案例展示</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">求职文书优化方案<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="">CV/Resume创作</a></li>
-									<li><a href="">Cover Letter提升</a></li>
-									<li><a href="">案例展示</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">帮助中心<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="">学术资源库</a></li>
-									<li><a href="">问答中心</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					<nav class="visible-xs visible-sm nav-mobile-trigger vertical-center"><a href=""><span class="glyphicon glyphicon-align-justify"></span></a></nav>
-					<nav class="visible-xs visible-sm login-mobile-trigger vertical-center"><a href=""><span class="glyphicon glyphicon-user"></span></a></nav>
-				</div>
-			</header>
+    </head>
+    <body class="home">
+        <!-- for user logined -->
+        <div class="user-bar hide">
+            <div class="container">
+                <div class="right-info">
+                    <div class="item"><a href="#">返回后台</a></div>
+                    <div class="item">欢迎您，<a href="#">某某用户</a></div>
+                    <div class="item"><a href="#">退出登录</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- logined end -->
 
-			<!-- banner -->
+        <!-- ! mobile navigation -->
+        <nav class="hidden-md hidden-lg mobile hide">
+            <div class="panel-group" id="accordion">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#">
+                                首页
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse02">
+                                关于我们 <span class="caret"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse02" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="">公司简介</a></li>
+                                <li><a href="">服务流程</a></li>
+                                <li><a href="">顾问团队</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse03">
+                                课程论文解决方案 <span class="caret"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse03" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="">原创范文服务</a></li>
+                                <li><a href="">编辑润色服务</a></li>
+                                <li><a href="">抄袭率检查服务</a></li>
+                                <li><a href="">服务标准</a></li>
+                                <li><a href="">案例展示</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse04">
+                                留学文书提升方案 <span class="caret"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse04" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="">PS写作</a></li>
+                                <li><a href="">CV/Resume润色</a></li>
+                                <li><a href="">sample essay写作</a></li>
+                                <li><a href="">案例展示</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse05">
+                                求职文书优化方案 <span class="caret"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse05" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="">CV/Resume创作</a></li>
+                                <li><a href="">Cover Letter提升</a></li>
+                                <li><a href="">案例展示</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse06">
+                                帮助中心 <span class="caret"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse06" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="">学术资源库</a></li>
+                                <li><a href="">问答中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-			<div class="banner visible-md visible-lg">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				  </ol>
+        <!-- ! mobile login -->
+        <div class="hidden-md hidden-lg login mobile hide">
+            <form class="form-horizontal col-xs-12  vertical-center" role="form">
+                <div class="error-info hide text-danger">账号错误</div>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="用户名/Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 vertical-bottom">
+                        <button type="submit" class="btn btn-block btn-primary pull-right">登录</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 text-center">
+                        <a class="text-muted" href="">注册</a> <span class="text-muted">|</span> <a class="text-muted" href="">忘记密码</a>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-				    <div class="item active" style="background-image:url(images/banner-1.jpg);"></div>
-				    <div class="item" style="background-image:url(images/banner-2.jpg);"></div>
-				    <div class="item" style="background-image:url(images/banner-3.jpg);"></div>
-				  </div>
+        <!-- ! desktop login -->
+        <div class="login desktop hide">
+            <form class="form-horizontal vertical-center" role="form">
+	        	<h3>登录您的账号 <span class="glyphicon glyphicon-remove toggle-desktop-login"></span></h3>
+                <div class="error-info hide text-danger">账号错误</div>
+                <div class="form-group">
+                    <div data-required class="col-xs-12">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="用户名/Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div data-required class="col-xs-12">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 vertical-bottom">
+                        <button type="submit" class="btn btn-block btn-primary pull-right">登录</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 text-center">
+                        <a class="text-muted" href="">注册</a> <span class="text-muted">|</span> <a class="text-muted" href="">忘记密码</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- mobile end -->
+        <!-- page -->
+        <div class="page">
+            <div class="nav-cover hide"></div>
+            <div class="login-cover hide"></div>
+            <header>
+                <div class="container">
+                    <div class="full-height">
+                        <h1>
+                            <img class="img-responsive" src="images/logo.gif" alt="logo">
+                        </h1>
+                    </div>
+                    <nav class="visible-md visible-lg desktop">
+                        <ul class="nav nav-pills">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">关于我们</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">公司简介</a></li>
+                                    <li><a href="">服务流程</a></li>
+                                    <li><a href="">顾问团队</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">课程论文解决方案</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">原创范文服务</a></li>
+                                    <li><a href="">编辑润色服务</a></li>
+                                    <li><a href="">抄袭率检查服务</a></li>
+                                    <li><a href="">服务标准</a></li>
+                                    <li><a href="">案例展示</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">留学文书提升方案</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">PS写作</a></li>
+                                    <li><a href="">CV/Resume润色</a></li>
+                                    <li><a href="">sample essay写作</a></li>
+                                    <li><a href="">案例展示</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">求职文书优化方案</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">CV/Resume创作</a></li>
+                                    <li><a href="">Cover Letter提升</a></li>
+                                    <li><a href="">案例展示</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#">帮助中心</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">学术资源库</a></li>
+                                    <li><a href="">问答中心</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="" class="btn toggle-desktop-login">我的账户</a>
+                    </nav>
+                    <nav class="visible-xs visible-sm nav-mobile-trigger vertical-center"><a href=""><span class="glyphicon glyphicon-align-justify"></span></a></nav>
+                    <nav class="visible-xs visible-sm login-mobile-trigger vertical-center"><a href=""><span class="glyphicon glyphicon-user"></span></a></nav>
+                </div>
+            </header>
 
-				</div>
+            <!-- banner -->
 
-				<div class="login">
-					<form class="form-horizontal" role="form">
-				      <div class="error-info hide text-danger">账号错误</div>
-					  <div class="form-group">
-					    <div class="col-sm-6">
-					      <input type="email" class="form-control" id="inputEmail3" placeholder="用户名/Email" required>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <div class="col-sm-6">
-					      <input type="password" class="form-control" id="inputPassword3" placeholder="密码" required>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <div class="col-sm-6 vertical-bottom">
-							<span class="vertical-bottom-target"><a href="">注册</a> <span class="text-muted">|</span> <a href="">忘记密码</a></span>
-							<button type="submit" class="btn btn-primary pull-right">登录</button>
-					    </div>
-					  </div>
-					</form>
-				</div>
-			</div>
+            <div class="banner visible-md visible-lg">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
 
-			<!-- banner end -->
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" style="background-image:url(images/banner-1.jpg);"></div>
+                        <div class="item" style="background-image:url(images/banner-2.jpg);"></div>
+                        <div class="item" style="background-image:url(images/banner-3.jpg);"></div>
+                    </div>
 
-			<div class="main">
-				<div class="container">
-					<div class="ad ad-01 col-sm-8">
-						<div class="row">
-							<img src="images/advantage01.png" alt="advantage01" class="img-responsive">
-							<div class="blue-radius col-sm-9">
-								优选的写作顾问（均为美国TOP50在读或已毕业 GPA3.5以上的学霸）
-							</div>
-						</div>
-					</div>
-					<div class="ad ad-01 col-sm-4">
-						<div class="row">
-							<div>
-								<img src="images/advantage02.png" alt="advantage01" class="img-responsive pull-right">
-								<div class="clearfix"></div>
-							</div>
-							<div class="blue-radius">
-								以客户为中心（30%的预付款；退款承诺）
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container advantage-section-two">
-					<div class="col-xs-12 col-sm-6 col-md-4 item">
-						<img src="images/advantage03.png" alt="advantage03" class="img-responsive">
-						<div class="info info-01">
-							<a href="">关于我们</a>
-							<a href="">博客</a>
-							<a href="">客户评价</a>
-							<a href="">案例展示</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 item"><img src="images/advantage04.png" alt="advantage04" class="img-responsive">
-						<div class="info info-02">
-							<a href="">个人陈述</a>
-							<a href="">简历</a>
-							<a href="">推荐信</a>
-							<a href="">学术论文</a>
-							<a href="">顾问团队</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 item"><img src="images/advantage05.png" alt="advantage04" class="img-responsive">
-						<div class="info info-03">
-							<a href="">学术资源库</a>
-							<a href="">问答中心</a>
-						</div>
-					</div>
-					<div class="clearfix visible-md visible-lg"></div>
-					<div class="col-xs-12 col-sm-6 col-md-4 item"><img src="images/advantage06.png" alt="advantage04" class="img-responsive">
-						<div class="info info-04">
-							<a href="">服务流程</a>
-							<a href="">常见问题</a>
-							<a href="">付款方式</a>
-							<a href="">反抄袭</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 item"><img src="images/advantage07.png" alt="advantage04" class="img-responsive">
-						<div class="info info-05">
-							<a href="">最新优惠</a>
-							<a href="">省钱功率</a>
-							<a href="">返利攻略</a>
-						</div>
-					</div>
-					<div class="  col-xs-10 col-sm-6 col-md-4 item"><div class="xueba">
-						<img src="images/xueba.png" alt="advantage04" class="img-responsive">
-					</div></div>
-				</div>
-			</div>
-			<footer>
-				<div class="container">
-					<div class="col-sm-5 col-md-4 col-xs-12 pull-right">
-						<h4>新闻公告</h4>
-						<ul>
-							<li><a href="" class="text-muted">2014年春节期间正常营业的通知</a></li>
-							<li><a href="" class="text-muted">关于2014元旦正常营业的通知</a></li>
-							<li><a href="" class="text-muted">WS自动化系统启用正式域名</a></li>
-							<li><a href="" class="text-muted">2014年春节期间正常营业的通知</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-3 col-md-2 col-xs-12">
-						<h4>关于我们</h4>
-						<ul class="xs-float">
-							<li><a href="" class="text-muted">公司简介</a></li>
-							<li><a href="" class="text-muted">服务流程</a></li>
-							<li><a href="" class="text-muted">顾问团队</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-3 col-md-2 col-xs-12">
-						<h4>联系我们</h4>
-					</div>
-				</div>
-				<div class="white-block"></div>
-				<div class="copyright text-center text-muted container">
-					版权所有：LunTaoism 地址：西安市雁塔区朱雀街132号阳阳国际广场B座17层 陕ICP备11005121号
-				</div>
-				<div class="white-block visible-lg visible-md"></div>
-			</footer>
-		</div>
-		<script src="http://code.jquery.com/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="js/bootstrap-hover-dropdown.min.js"></script>
-		<script src="js/fn.js"></script>
-	</body>
+                </div>
+
+                <!-- ! desktop regist area -->
+                <div class="regist">
+                    <form class="form-horizontal" role="form">
+                        <div class="error-info hide text-danger">错误信息</div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-6 row">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" data-required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">论文类型</label>
+                            <div class="col-sm-6 row">
+                                <select id="" class="form-control input-sm">
+								  	    <option value="">请选择</option>
+								  	    <option value="1">type #1</option>
+								  	    <option value="2">type #2</option>
+								  	</select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">页数</label>
+                            <div class="col-sm-6 row">
+                                <input type="text" data-ride="num" data-min="0" data-error=".error" class="form-control input-sm" id="" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Deadline</label>
+                            <div class="col-sm-6 row">
+                                <div class="row picker">
+                                	<div class="col-sm-6">
+                                	    <input type="text" class="form-control input-sm date-picker" data-date-format="YYYY/MM/DD" id="" placeholder="选择日期" value="2014/04/08">
+                                	    <span class="glyphicon glyphicon-calendar"></span>
+                                	</div>
+                                	<div class="col-sm-6">
+                                	    <input type="text" class="form-control input-sm time-picker" data-date-format="hh:mm a" id="" placeholder="选择时间" value="13:45 pm">
+                                	    <span class="glyphicon glyphicon-time"></span>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label"></label>
+                            <div class="col-sm-6 row vertical-bottom">
+                                <button type="submit" class="btn btn-primary">继续</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- banner end -->
+
+            <div class="main">
+                <div class="container">
+                    <div class="ad ad-01 col-sm-8">
+                        <div class="row">
+                            <img src="images/advantage01.png" alt="advantage01" class="img-responsive">
+                            <div class="blue-radius col-sm-9">
+                                优选的写作顾问（均为美国TOP50在读或已毕业 GPA3.5以上的学霸）
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad ad-01 col-sm-4">
+                        <div class="row">
+                            <div>
+                                <img src="images/advantage02.png" alt="advantage01" class="img-responsive pull-right">
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blue-radius">
+                                以客户为中心（30%的预付款；退款承诺）
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container advantage-section-two">
+                    <div class="col-xs-12 col-sm-6 col-md-4 item">
+                        <img src="images/advantage03.png" alt="advantage03" class="img-responsive">
+                        <div class="info info-01">
+                            <a href="">关于我们</a>
+                            <a href="">博客</a>
+                            <a href="">客户评价</a>
+                            <a href="">案例展示</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item"><img src="images/advantage04.png" alt="advantage04" class="img-responsive">
+                        <div class="info info-02">
+                            <a href="">个人陈述</a>
+                            <a href="">简历</a>
+                            <a href="">推荐信</a>
+                            <a href="">学术论文</a>
+                            <a href="">顾问团队</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item"><img src="images/advantage05.png" alt="advantage04" class="img-responsive">
+                        <div class="info info-03">
+                            <a href="">学术资源库</a>
+                            <a href="">问答中心</a>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-md visible-lg"></div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item"><img src="images/advantage06.png" alt="advantage04" class="img-responsive">
+                        <div class="info info-04">
+                            <a href="">服务流程</a>
+                            <a href="">常见问题</a>
+                            <a href="">付款方式</a>
+                            <a href="">反抄袭</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item"><img src="images/advantage07.png" alt="advantage04" class="img-responsive">
+                        <div class="info info-05">
+                            <a href="">最新优惠</a>
+                            <a href="">省钱功率</a>
+                            <a href="">返利攻略</a>
+                        </div>
+                    </div>
+                    <div class="  col-xs-10 col-sm-6 col-md-4 item"><div class="xueba">
+                        <img src="images/xueba.png" alt="advantage04" class="img-responsive">
+                        </div></div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="col-sm-6 col-md-4 col-xs-12 pull-right">
+                        <h4>新闻公告</h4>
+                        <ul>
+                            <li><a href="" class="text-muted">2014年春节期间正常营业的通知</a></li>
+                            <li><a href="" class="text-muted">关于2014元旦正常营业的通知</a></li>
+                            <li><a href="" class="text-muted">WS自动化系统启用正式域名</a></li>
+                            <li><a href="" class="text-muted">2014年春节期间正常营业的通知</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-xs-12">
+                        <h4>关于我们</h4>
+                        <ul class="xs-float">
+                            <li><a href="" class="text-muted">公司简介</a></li>
+                            <li><a href="" class="text-muted">服务流程</a></li>
+                            <li><a href="" class="text-muted">顾问团队</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-xs-12">
+                        <h4>联系我们</h4>
+                    </div>
+                </div>
+                <div class="white-block"></div>
+                <div class="copyright text-center text-muted container">
+                    版权所有：LunTaoism 地址：西安市雁塔区朱雀街132号阳阳国际广场B座17层 陕ICP备11005121号
+                </div>
+                <div class="white-block visible-lg visible-md"></div>
+            </footer>
+        </div>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/bootstrap-number-input.js"></script>
+        <script src="js/fn.js"></script>
+        <script>
+        	$('.date-picker').datetimepicker({
+	        	pickTime: false
+        	})
+        	$('.time-picker').datetimepicker({
+	        	pickDate: false
+        	})
+        </script>
+    </body>
 </html>
