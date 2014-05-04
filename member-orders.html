@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>全部订单</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html" charset="utf-8">
+        <link href="" rel="stylesheet" media="screen">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <!-- page -->
+        <div class="page">
+			<header>
+				<div class="app-top-bar">
+					<div class="app-container">
+						<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
+						<div class="right-info">
+							<div class="item"><a href="#">回首页</a></div>
+							<div class="item">欢迎你，<a href="#">Gareth</a> <small class="text-muted">[ abc123@me.com ]</small></div>
+							<div class="item"><a href="#">退出</a></div>
+						</div>
+					</div>
+					<div class="decoration-border"></div>
+				</div>
+			</header>
+
+
+            <div class="app app-container">
+                <div class="app-nav">
+                    <nav>
+                    	<ul class="nav nav-tabs">
+							<li class="active"><a href="member-orders.html"> <span class="glyphicon glyphicon-list-alt"></span> 全部订单</a></li>
+							<li><a href="member-profile.html"> <span class="glyphicon glyphicon-user"></span> 我的资料</a></li>
+							<li><a href="member-coupon.html"> <span class="glyphicon glyphicon-tag"></span> 折扣优惠</a></li>
+							<li class="new-order"><a href="member-new-order.html"> <span class="glyphicon glyphicon-file"></span> 我要下单</a></li>
+						</ul>
+                    </nav>
+                </div>
+                <div class="app-content">
+                    <div class="content">
+						<!-- 当前订单 -->
+						<div class="current-order">
+							<div class="page-header blue-border">
+							  <h4>当前订单</h4>
+							</div>
+							<div class="item-desc text-center">
+								<div class="row">
+									<div class="col-sm-2">订单号</div>
+									<div class="col-sm-5">标题/细节</div>
+									<div class="col-sm-1">金额</div>
+									<div class="col-sm-4">备注/操作</div>
+								</div>
+							</div>
+							<div class="well-items">
+								<!-- 有订单的话给no-item 添加class “hide” -->
+								<div class="no-item text-muted text-center well">
+									没有订单
+								</div>
+							</div>
+						</div>
+						<!-- End 当前订单 -->
+						<!-- 已完成的订单 -->
+						<div class="finished-order">
+							<div class="page-header gray-border">
+							  <h4>已完成订单</h4>
+							</div>
+							<div class="item-desc text-center">
+								<div class="row">
+									<div class="col-sm-2">订单号</div>
+									<div class="col-sm-5">标题/细节</div>
+									<div class="col-sm-1">金额</div>
+									<div class="col-sm-4">备注/操作</div>
+								</div>
+							</div>
+							<div class="well-items">
+								<!-- 没有订单的话给no-item 去掉class “hide” -->
+								<div class="no-item item text-muted text-center well hide">
+									没有订单
+								</div>
+
+								<!-- 订单记录开始 -->
+								<div class="well item">
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="order-number">
+												<!-- 订单号 -->
+												<strong>10294757</strong>
+											</div>
+											<div class="order-message">
+												<!-- 打开消息 如果有未读信息，添加class "new-info" -->
+												<a href="" class="new-info"><span class="glyphicon glyphicon-envelope"></span>
+													<span>消息</span>
+													<!-- 消息数目 -->
+													<span class="badge">2</span>
+												</a>
+											</div>
+											<div class="order-message">
+												<!-- 下载文件 -->
+												<a href="#" class="new-info"><span class="glyphicon glyphicon-save"></span>
+													<span>文件</span>
+													<!-- 文件数目 -->
+													<span class="badge">2</span>
+												</a>
+											</div>
+										</div>
+										<div class="col-sm-5">
+											<div class="order-type">
+												<!-- 服务形式 -->
+												<a href="#">写手选题</a>
+											</div>
+											<div>
+												<!-- 论文信息 -->
+												<strong>5 页</strong> / Criminal Justice
+											</div>
+											<div>
+												<!-- 截止情况 -->
+												Deadline : 超时
+											</div>
+										</div>
+										<div class="col-sm-2 text-center">
+											<div class="order-fee">
+												<!-- 订单费用 -->
+												<strong>$308.55</strong>
+											</div>
+											<div>
+												<!-- 折扣信息 -->
+												<small>含15%折扣</small>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="order-note">
+												<!-- 备忘录 -->
+												您的订单已取消。更多疑问请联系客服。
+											</div>
+											<div class="re-order">
+												<!-- 根据本订单信息，再次下单 -->
+												<a href="#"><span class="glyphicon glyphicon-refresh"></span>
+													<span>再次下单</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End. 订单记录开始 -->
+
+								<!-- 订单记录开始 -->
+								<div class="well item">
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="order-number">
+												<strong>10294757</strong>
+											</div>
+											<div class="order-message">
+												<a href=""><span class="glyphicon glyphicon-envelope"></span>
+													<span>消息</span>
+													<span class="badge"></span>
+												</a>
+											</div>
+											<div class="order-message">
+												<a href="#"><span class="glyphicon glyphicon-save"></span>
+													<span>文件</span>
+													<span class="badge"></span>
+												</a>
+											</div>
+										</div>
+										<div class="col-sm-5">
+											<div class="order-type">
+												<a href="#">再次下单：订单＃3282485</a>
+											</div>
+											<div>
+												<strong>5 页</strong> / Criminal Justice
+											</div>
+											<div>
+												Deadline : 超时
+											</div>
+										</div>
+										<div class="col-sm-2 text-center">
+											<div class="order-fee">
+												<strong>$308.55</strong>
+											</div>
+											<div>
+												<small>含15%折扣</small>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="order-note">
+												您的订单已通过审核。
+											</div>
+											<div class="re-order">
+												<a href="#"><span class="glyphicon glyphicon-refresh"></span>
+													<span>再次下单</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End. 订单记录开始 -->
+							</div>
+
+							<div class="show-more-order">
+								<a href=""><i class="fa fa-angle-down pull-left"></i> <i class="fa fa-angle-down pull-right"></i> 显示更多已完成的订单</a>
+							</div>
+						</div>
+						<!-- End 已完成的订单 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/bootstrap-pagination.js"></script>
+        <script src="js/fn.js"></script>
+    </body>
+</html>

@@ -302,6 +302,7 @@ a:hover {
 }
 .app-nav li.active > a:hover {
   color: #0098BB;
+  cursor: not-allowed;
 }
 .app-nav li.active > a span {
   color: #ccc;
@@ -313,6 +314,10 @@ a:hover {
 .app-nav li.new-order a span {
   color: #006899;
 }
+.app-nav li.new-order.active:hover a {
+  color: #006899;
+  background: #C1D7FF;
+}
 /* ! app content */
 .app-content {
   left: 144px;
@@ -321,14 +326,119 @@ a:hover {
   background: #fff;
 }
 .app-content .content {
-  padding: 12px;
+  padding: 15px;
 }
 .app-content .page-header {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
 }
+.app-content .page-header h4 {
+  font-weight: bold;
+}
+.app-content .page-header.blue-border {
+  border: none;
+  position: relative;
+  margin-bottom: 24px;
+  color: #3388CD;
+}
+.app-content .page-header.blue-border::after {
+  content: " ";
+  height: 3px;
+  width: 100%;
+  background: #3388CD;
+  border-radius: 1px;
+  position: absolute;
+}
+.app-content .page-header.gray-border {
+  border: none;
+  position: relative;
+  margin-bottom: 24px;
+  color: #555;
+}
+.app-content .page-header.gray-border::after {
+  content: " ";
+  height: 3px;
+  width: 100%;
+  background: #aaa;
+  border-radius: 1px;
+  position: absolute;
+}
 /* end.app */
+/* items */
+.finished-order {
+  margin-top: 48px;
+}
+.show-more-order a {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed));
+  background: -webkit-linear-gradient(#ffffff 0%, #ededed 100%);
+  background: linear-gradient(#ffffff 0%, #ededed 100%);
+  text-align: center;
+  padding: 6px;
+  border: 1px #DEDEDE solid;
+  border-radius: 3px;
+  display: block;
+}
+.show-more-order a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff));
+  background: -webkit-linear-gradient(#ededed 0%, #ffffff 100%);
+  background: linear-gradient(#ededed 0%, #ffffff 100%);
+  color: #3397DD;
+}
+.show-more-order a i {
+  font-size: 20px;
+}
+.well-items {
+  margin-top: 12px;
+  font-size: 12px;
+}
+.well-items .item {
+  margin-bottom: 12px;
+}
+.well-items .item > div > :nth-child(1),
+.well-items .item > div > :nth-child(2),
+.well-items .item > div > :nth-child(3) {
+  position: relative;
+}
+.well-items .item > div > :nth-child(1)::after,
+.well-items .item > div > :nth-child(2)::after,
+.well-items .item > div > :nth-child(3)::after {
+  background: #E4E4E4;
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 59px;
+  right: 0;
+  top: 0;
+}
+.well-items .badge {
+  font-size: 10px;
+  padding: 1px 6px;
+  background: #3388CD;
+  color: #fff;
+}
+.well-items .order-message .new-info span {
+  color: #388B20;
+}
+.well-items .order-message .new-info .badge {
+  background: #388B20;
+  color: #fff;
+}
+.well-items .order-number,
+.well-items .order-fee,
+.well-items .order-type,
+.well-items .order-note {
+  padding-bottom: 8px;
+}
+.well-items .well {
+  padding: 15px;
+  background: #F9F9F9;
+  border-color: #DEDEDE;
+}
+.well-items .well:hover {
+  background: #F5FBFE;
+  border-color: #1C85D0;
+}
 /* app frame end */
 /* member message */
 .list-panle-nav,

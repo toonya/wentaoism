@@ -152,6 +152,7 @@
 
 		&:hover {
 			color: #0098BB;
+			cursor: not-allowed;
 		}
 
 		span {
@@ -167,6 +168,13 @@
 				color: #006899;
 			}
 		}
+
+		&.active:hover {
+			a {
+				color: #006899;
+				background: #C1D7FF;
+			}
+		}
 	}
 }
 
@@ -179,13 +187,133 @@
 	background: #fff;
 
 	.content {
-		padding: 12px;
+		padding: 15px;
 	}
 
 	.page-header {
 		margin: 0;
 		margin-bottom: 8px;
 		padding: 0;
+
+		h4 {
+			font-weight: bold;
+		}
+
+		&.blue-border {
+			border:none;
+			position: relative;
+			margin-bottom: 24px;
+			color: #3388CD;
+
+			&::after {
+				content: " ";
+				height: 3px;
+				width: 100%;
+				background: #3388CD;
+				border-radius: 1px;
+				position: absolute;
+			}
+		}
+
+		&.gray-border {
+			border:none;
+			position: relative;
+			margin-bottom: 24px;
+			color: #555;
+
+			&::after {
+				content: " ";
+				height: 3px;
+				width: 100%;
+				background: #aaa;
+				border-radius: 1px;
+				position: absolute;
+			}
+		}
 	}
 }
 /* end.app */
+
+/* items */
+.finished-order {
+	margin-top: 48px;
+}
+
+.show-more-order a{
+	background: linear-gradient(#fff 0%, #EDEDED 100%);
+	text-align: center;
+	padding: 6px;
+	border: 1px #DEDEDE solid;
+	border-radius: 3px;
+	display: block;
+
+	&:hover {
+		background: linear-gradient(#EDEDED 0%, #fff 100%);
+		color: #3397DD;
+	}
+
+	i {
+		font-size: 20px;
+	}
+}
+
+.well-items {
+	margin-top: 12px;
+	font-size: 12px;
+
+	.item {
+		margin-bottom: 12px;
+
+		>div>:nth-child(1), >div>:nth-child(2), >div>:nth-child(3) {
+			position: relative;
+
+			&::after {
+				background: #E4E4E4;
+				content: " ";
+				position: absolute;
+				width: 1px;
+				height: 59px;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.badge {
+		font-size: 10px;
+		padding: 1px 6px;
+		background: #3388CD;
+		color: #fff;
+	}
+
+	.order-message .new-info {
+		span {
+			color: #388B20;
+		}
+
+		.badge {
+			background: #388B20;
+			color: #fff;
+		}
+	}
+
+
+	.order-number, .order-fee, .order-type, .order-note  {
+		padding-bottom: 8px;
+	}
+
+	.well {
+		padding: 15px;
+		background: #F9F9F9;
+		border-color: #DEDEDE;
+
+		&:hover {
+			background: #F5FBFE;
+			border-color: #1C85D0;
+		}
+	}
+
+	.glyphicon::before {
+		//vertical-align: middle;
+	}
+}
