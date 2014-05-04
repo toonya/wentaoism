@@ -322,7 +322,6 @@ a:hover {
 }
 .app-content .content {
   padding: 12px;
-  overflow: auto;
 }
 .app-content .page-header {
   margin: 0;

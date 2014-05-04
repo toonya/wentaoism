@@ -679,24 +679,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/LOGO.png": {
+	"\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3468,
-		"inputAbbreviatedPath": "\/images\/LOGO.png",
-		"outputAbbreviatedPath": "\/images\/LOGO.png",
+		"inputAbbreviatedPath": "\/images\/logo.png",
+		"outputAbbreviatedPath": "\/images\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/s-LOGO.png": {
+	"\/images\/s-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 16584,
-		"inputAbbreviatedPath": "\/images\/s-LOGO.png",
-		"outputAbbreviatedPath": "\/images\/s-LOGO.png",
+		"inputAbbreviatedPath": "\/images\/s-logo.png",
+		"outputAbbreviatedPath": "\/images\/s-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
