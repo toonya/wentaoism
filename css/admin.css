@@ -275,7 +275,6 @@ a:hover {
   position: relative;
   border-right: 1px solid #E0E0E0;
   color: #5C5C73;
-  font-weight: bold;
 }
 .app-nav ul li > a:hover {
   color: #0098BB;
@@ -326,6 +325,77 @@ a:hover {
 .app-content .content {
   padding: 15px;
 }
+.app-content .two-line h4 {
+  margin: 19px 0 0;
+}
+.app-content .order-state {
+  padding: 12px 0;
+  margin-top: 12px;
+  border-top: #0098BB 3px solid;
+  background: #d0e6ff;
+}
+.app-content .order-state .status-info {
+  background: #eb9d00;
+  color: #fff;
+  padding: 3px 24px 3px 30px;
+  position: relative;
+  margin-right: -5px;
+}
+.app-content .order-state .status-info::after {
+  position: absolute;
+  content: " ";
+  height: 15.5px;
+  width: 15.5px;
+  background: #eb9d00;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 3.5px;
+  right: -8.2px;
+}
+.app-content .order-state .deadline-info {
+  background: #eee;
+  color: #555;
+  padding: 3px 6px 3px 48px;
+}
+.app-content .order-state .status-info,
+.app-content .order-state .deadline-info {
+  font-size: 12px;
+}
+.app-content .order-detail {
+  margin-top: 24px;
+}
+.app-content .order-detail .info-list {
+  border: #DDDDDD 1px solid;
+  border-top: none;
+  background: #F9F9F9;
+  padding: 24px;
+}
+.app-content .order-detail .info-list .page-header::after {
+  background: #ddd;
+}
+.app-content .order-detail .info-list .page-header {
+  margin-bottom: 36px;
+}
+.app-content .order-detail .info-list .item {
+  margin: 9px 0;
+}
+.app-content .order-detail .info-list .item .col-sm-3 {
+  text-align: right;
+}
+.app-content .order-detail .info-list .item .col-sm-3::after {
+  content: ":";
+  position: relative;
+  margin-right: -8px;
+  margin-left: 6px;
+}
+.app-content .order-detail .info-list .item.totle {
+  margin-top: 36px;
+  font-size: 18px;
+}
+.app-content .order-detail nav ul li.active a {
+  background: #F9F9F9;
+}
 .app-content .page-header {
   margin: 0;
   margin-bottom: 8px;
@@ -347,6 +417,9 @@ a:hover {
   background: #3388CD;
   border-radius: 1px;
   position: absolute;
+}
+.app-content .page-header.no-border {
+  border: none;
 }
 .app-content .page-header.gray-border {
   border: none;

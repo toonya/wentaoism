@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>全部订单</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html" charset="utf-8">
+        <link href="" rel="stylesheet" media="screen">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <!-- page -->
+        <div class="page">
+			<header>
+				<div class="app-top-bar">
+					<div class="app-container">
+						<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
+						<div class="right-info">
+							<div class="item"><a href="#">回首页</a></div>
+							<div class="item">欢迎你，<a href="#">Gareth</a> <small class="text-muted">[ abc123@me.com ]</small></div>
+							<div class="item"><a href="#">退出</a></div>
+						</div>
+					</div>
+					<div class="decoration-border"></div>
+				</div>
+			</header>
+
+
+            <div class="app app-container">
+                <div class="app-nav">
+                    <nav>
+                    	<ul class="nav nav-tabs">
+							<li class=""><a href="member-orders.html"> <span class="glyphicon glyphicon-list-alt"></span> 全部订单</a></li>
+							<li><a href="member-profile.html"> <span class="glyphicon glyphicon-user"></span> 我的资料</a></li>
+							<li><a href="member-coupon.html"> <span class="glyphicon glyphicon-tag"></span> 折扣优惠</a></li>
+							<li class="new-order"><a href="member-new-order.html"> <span class="glyphicon glyphicon-file"></span> 我要下单</a></li>
+						</ul>
+                    </nav>
+                </div>
+                <div class="app-content">
+                    <div class="content">
+						<!-- 订单 基本信息 -->
+						<div class="order-basic">
+							<div class="page-header no-border two-line">
+							  <div class="row">
+							  	<div class="col-sm-2 text-right">
+							  		<div class="text-success">订单号:</div>
+							  		<strong>#10294757</strong>
+							  	</div>
+							  	<h4 class="col-sm-10">写手选题</h4>
+							  </div>
+							</div>
+							<div class="order-state">
+								<div class="row">
+									<div class="col-sm-2 text-right">
+										订单状态:
+									</div>
+									<div class="col-sm-6">
+										您的订单已取消。更多疑问请联系客服。
+									</div>
+									<div class="col-sm4">
+										<span class="status-info">已取消</span>
+										<span class="deadline-info">Deadline: 超时</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End 订单基本信息 -->
+						<!-- 订单详细信息 -->
+						<div class="order-detail">
+							<nav>
+		                    	<ul class="nav nav-tabs">
+									<li class="active"><a href="member-order-info.html"> 订单信息 </a></li>
+									<li><a href="member-order-message.html"> 消息 </a></li>
+									<li><a href="member-order-file.html"> 文件 </a></li>
+								</ul>
+		                    </nav>
+							<div class="info-list">
+								<div class="page-header gray-border">
+								  <h4>Details</h4>
+								</div>
+
+								<div class="item row">
+									<div class="col-sm-3">初稿Deadline</div>
+									<div class="col-sm-9">超时</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">学位水平</div>
+									<div class="col-sm-9">College(1-2 years: Freshmen, Sophomore)</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">论文说明</div>
+									<div class="col-sm-9">sdasdsa</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">指定写手的ID</div>
+									<div class="col-sm-9">A1464</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">课程名称</div>
+									<div class="col-sm-9">Criminal Justice</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">题目</div>
+									<div class="col-sm-9">写手选题</div>
+								</div>
+								<div class="item row">
+									<div class=" col-sm-3">引用数量</div>
+									<div class="col-sm-9">4</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">引用格式</div>
+									<div class="col-sm-9">Not applicable</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">论文金额</div>
+									<div class="col-sm-9">$330(5页，单倍行距，2750 words)</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">PPT金额</div>
+									<div class="col-sm-9">$33(2页)</div>
+								</div>
+								<div class="item row">
+									<div class="col-sm-3">折扣</div>
+									<div class="col-sm-9">15%(-$54.45)</div>
+								</div>
+
+								<div class="item totle row">
+									<div class="col-sm-3"><strong>总价</strong></div>
+									<div class="col-sm-9"><strong>$308.55</strong></div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/bootstrap-pagination.js"></script>
+        <script src="js/fn.js"></script>
+    </body>
+</html>
