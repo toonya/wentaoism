@@ -285,4 +285,13 @@
 			$(this).closest('[data-input-toggle]').find('.trigger-area').find('input').addClass('hide').val('');
 		}
 	})
+
+	// open message.
+
+	$('.collapse').on('show.bs.collapse', function () {
+		$(this).closest('.panel').addClass('active')
+	}).on('hide.bs.collapse', function () {
+		$(this).closest('.panel').removeClass('active')
+	})
+
 })(jQuery)
