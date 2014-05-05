@@ -150,11 +150,10 @@ a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  font-size: 999px;
+  min-width: 100px;
+  min-height: 50px;
+  font-size: 99px;
   text-align: right;
-  filter: alpha(opacity=0);
   opacity: 0;
   outline: none;
   background: white;
@@ -610,18 +609,18 @@ a.btn-white2gray i.big {
 .file-panel a.file-name {
   color: #555;
 }
-.file-panel .new-file-notice {
-  color: green;
-  border: 1px solid green;
-  padding: 3px;
-  border-radius: 5px;
-  font-size: 9px;
-}
 .file-panel .file-name-before {
   display: inline-block;
   width: 40px;
   text-align: center;
   margin-right: 8px;
+}
+.btn-notice {
+  color: green;
+  border: 1px solid green;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 9px;
 }
 .site_file {
   position: relative;
