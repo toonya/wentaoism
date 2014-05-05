@@ -171,6 +171,7 @@ div.btn-file .hidden-file {
 /* form */
 .inline {
   display: inline-block !important;
+  vertical-align: top;
   width: auto;
 }
 .vm {
