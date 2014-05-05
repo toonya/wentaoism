@@ -1610,6 +1610,10 @@ nav.mobile .panel ul a {
   border: solid #eee 1px;
   padding-bottom: 24px;
   position: relative;
+  /* input[type=radio], input[type=checkbox]  {
+		margin-top: 3px;
+	}
+	*/
 }
 .simpleForm .glyphicon-info-sign {
   top: 2px;
@@ -1630,9 +1634,6 @@ nav.mobile .panel ul a {
 }
 .simpleForm .ptop {
   padding-top: 24px;
-}
-.simpleForm input[type=radio] {
-  margin-top: 3px;
 }
 /* 下单页面 */
 .pl {
