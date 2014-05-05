@@ -1612,7 +1612,7 @@ nav.mobile .panel ul a {
   position: relative;
 }
 .simpleForm .glyphicon-info-sign {
-  top: 3px;
+  top: 2px;
 }
 .simpleForm h5 {
   background: #c3d9ff;
@@ -1632,7 +1632,7 @@ nav.mobile .panel ul a {
   padding-top: 24px;
 }
 .simpleForm input[type=radio] {
-  margin-top: 2px;
+  margin-top: 3px;
 }
 /* 下单页面 */
 .pl {
