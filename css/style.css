@@ -364,38 +364,38 @@ a:hover {
 .app-content .order-state .deadline-info {
   font-size: 12px;
 }
-.app-content .order-detail {
+.app-content .order-info-container {
   margin-top: 24px;
 }
-.app-content .order-detail .info-list {
+.app-content .order-info-container .info-wrapper {
   border: #DDDDDD 1px solid;
   border-top: none;
   background: #F9F9F9;
   padding: 24px;
 }
-.app-content .order-detail .info-list .page-header::after {
+.app-content .order-info-container .info-wrapper .page-header::after {
   background: #ddd;
 }
-.app-content .order-detail .info-list .page-header {
+.app-content .order-info-container .info-wrapper .page-header {
   margin-bottom: 36px;
 }
-.app-content .order-detail .info-list .item {
+.app-content .order-info-container .info-wrapper .item {
   margin: 9px 0;
 }
-.app-content .order-detail .info-list .item .col-sm-3 {
+.app-content .order-info-container .info-wrapper .item .col-sm-3 {
   text-align: right;
 }
-.app-content .order-detail .info-list .item .col-sm-3::after {
+.app-content .order-info-container .info-wrapper .item .col-sm-3::after {
   content: ":";
   position: relative;
   margin-right: -8px;
   margin-left: 6px;
 }
-.app-content .order-detail .info-list .item.totle {
+.app-content .order-info-container .info-wrapper .item.totle {
   margin-top: 36px;
   font-size: 18px;
 }
-.app-content .order-detail nav ul li.active a {
+.app-content .order-info-container nav ul li.active a {
   background: #F9F9F9;
 }
 .app-content .page-header {
