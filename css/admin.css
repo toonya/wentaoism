@@ -440,7 +440,7 @@ a:hover {
 .finished-order {
   margin-top: 48px;
 }
-.show-more-order a {
+a.btn-white2gray {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed));
   background: -webkit-linear-gradient(#ffffff 0%, #ededed 100%);
   background: linear-gradient(#ffffff 0%, #ededed 100%);
@@ -448,15 +448,17 @@ a:hover {
   padding: 6px;
   border: 1px #DEDEDE solid;
   border-radius: 3px;
+}
+a.btn-white2gray.btn-block {
   display: block;
 }
-.show-more-order a:hover {
+a.btn-white2gray:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff));
   background: -webkit-linear-gradient(#ededed 0%, #ffffff 100%);
   background: linear-gradient(#ededed 0%, #ffffff 100%);
   color: #3397DD;
 }
-.show-more-order a i {
+a.btn-white2gray i {
   font-size: 20px;
 }
 .well-items {
