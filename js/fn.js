@@ -128,9 +128,7 @@
 	$('[data-bind="word-per-page"]').trigger('numInput');
 
 	/* ! for new file fn */
-	$('[data-ride="new-item"]').on('click', function(e){
-		e.stopImmediatePropagation();
-
+	$('[data-ride="new-item"]').on('click', function(){
 		var $template = $('.changeable-item.file .hide').clone();
 		$template.removeClass('hide');
 
