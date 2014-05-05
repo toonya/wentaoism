@@ -602,6 +602,14 @@ a.btn-white2gray i.big {
 .modal-body {
   padding: 15px;
 }
+.modal-body .btn {
+  margin: 0;
+}
+.modal-body .add-file {
+  line-height: 30px;
+  text-align: center;
+  display: block;
+}
 /* member message */
 .list-panle-nav,
 .list-panle-content {

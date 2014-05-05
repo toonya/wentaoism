@@ -294,4 +294,20 @@
 		$(this).closest('.panel').removeClass('active')
 	})
 
+	// order-file new file
+	$('#upload-file .add-file').click(function(e){
+		e.preventDefault();
+
+		var $container = $(this).closest('form').find('.changeable-items'),
+			$template  = $container.find('.item').last().clone();
+
+		// process template
+		$template.find('input').each(function(i,e){
+			var name = $(e).data('name') + '[' + ($(e).data('index')+1) + ']';
+			$(this).attr('name', name).val('');
+		})
+
+		$container.append($template);
+	})
+
 })(jQuery)
