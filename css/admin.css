@@ -555,9 +555,52 @@ a.btn-white2gray i.big {
   font-size: 14px;
   display: block;
 }
+.table-panel .panel-title .row > :nth-child(1),
+.table-panel .panel-title .row > :nth-child(2),
+.table-panel .panel-title .row > :nth-child(3) {
+  position: relative;
+}
+.table-panel .panel-title .row > :nth-child(1)::after,
+.table-panel .panel-title .row > :nth-child(2)::after,
+.table-panel .panel-title .row > :nth-child(3)::after {
+  background: #E4E4E4;
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  right: 0;
+  top: 0;
+}
 .table-panel .panel-body {
+  border: none !important;
   color: #333;
   padding-bottom: 24px;
+}
+/* dialog */
+.middle-dialog {
+  margin-top: 150px;
+}
+.big-dialog {
+  width: 720px;
+}
+.modal-header.color-header {
+  border: none;
+  position: relative;
+  color: #1C87AE;
+  padding-bottom: 8px;
+}
+.modal-header.color-header::after {
+  content: ' ';
+  position: absolute;
+  background: #1C87AE;
+  height: 3px;
+  border-radius: 1px;
+  width: 688px;
+  bottom: 0;
+  left: 15px;
+}
+.modal-body {
+  padding: 15px;
 }
 /* member message */
 .list-panle-nav,

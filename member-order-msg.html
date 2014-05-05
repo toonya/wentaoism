@@ -11,6 +11,52 @@
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
     </head>
     <body>
+
+        <!-- 弹出表单 发送给写手 -->
+        <div class="modal fade" id="send-writer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog middle-dialog big-dialog">
+                <div class="modal-content">
+                    <div class="modal-header color-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">给写手发消息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+	                        <div class="form-group"><textarea name="" id="" rows="5" class="form-control"></textarea></div>
+	                        <div class="form-group text-right">
+								<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+								<button type="button" class="btn btn-primary">发送</button>
+	                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End 弹出表单 -->
+
+        <!-- 弹出表单 发送给客服 -->
+        <div class="modal fade" id="send-support" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog middle-dialog big-dialog">
+                <div class="modal-content">
+                    <div class="modal-header color-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">给客服发消息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+	                        <div class="form-group"><textarea name="" id="" rows="5" class="form-control"></textarea></div>
+	                        <div class="form-group text-right">
+								<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+								<button type="button" class="btn btn-primary">发送</button>
+	                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End 弹出表单 -->
+
+
         <!-- page -->
         <div class="page">
             <header>
@@ -79,11 +125,11 @@
                                 </ul>
                             </nav>
                             <div class="info-wrapper">
-                                <a href="#" data-toggle="#sent-to-writer" class="btn-white2gray">
+                                <a href="#" data-toggle="modal" data-target="#send-writer" class="btn-white2gray">
                                     <i class="glyphicon glyphicon-envelope"></i>
                                     <i class="glyphicon glyphicon-pencil"></i>
                                     <span>给写手发消息</span></a>
-                                <a href="#" data-toggle="#sent-to-support" class="btn-white2gray">
+                                <a href="#" data-toggle="modal" data-target="#send-support" class="btn-white2gray">
                                     <i class="glyphicon glyphicon-envelope"></i>
                                     <i class="glyphicon glyphicon-headphones"></i>
                                     <span>给客服发消息</span></a>
@@ -92,120 +138,120 @@
                                     <h4>消息</h4>
                                 </div>
 
-								<!-- 消息列表 -->
+                                <!-- 消息列表 -->
                                 <div class="panel-group table-panel" id="accordion">
-                                	<!-- 一条消息开始 -->
+                                    <!-- 一条消息开始 -->
                                     <div class="panel panel-white">
-                                    	<!-- 消息标题栏 -->
+                                        <!-- 消息标题栏 -->
                                         <div class="panel-heading">
                                             <div class="panel-title">
-                                            	<div class="row">
-                                            		<div class="col-sm-1">
-                                            			<!-- 如果是未读消息，这里保留class “text-primary” ，已读消息去掉 -->
-                                            			<span class="glyphicon glyphicon-envelope text-primary"></span>
-                                            		</div>
-                                            		<div class="col-sm-3">
-	                                            		<span class="text-success glyphicon glyphicon-arrow-right"></span>
-	                                            		<!-- 消息来源 -->
-	                                            		客服 <span class="glyphicon glyphicon-headphones"></span>
-	                                            		<!-- 某某写手 <span class="glyphicon glyphicon-pencil"></span> -->
-                                            		</div>
-                                            		<div class="col-sm-5">
+                                                <div class="row">
+                                                    <div class="col-sm-1">
+                                                        <!-- 如果是未读消息，这里保留class “text-primary” ，已读消息去掉 -->
+                                                        <span class="glyphicon glyphicon-envelope text-primary"></span>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <span class="text-success glyphicon glyphicon-arrow-right"></span>
+                                                        <!-- 消息来源 -->
+                                                        客服 <span class="glyphicon glyphicon-headphones"></span>
+                                                        <!-- 某某写手 <span class="glyphicon glyphicon-pencil"></span> -->
+                                                    </div>
+                                                    <div class="col-sm-5">
 
-														<!--
-															消息标题
-															href 对应展开的条目ID
-														-->
-	                                            		<a data-toggle="collapse" data-parent="#accordion" href="#collapse01">
-		                                                    请考虑重新下单
-		                                                </a>
-                                            		</div>
-                                            		<!-- 消息发送时间 -->
-                                            		<div class="col-sm-3">2014－04-02 7:04 PM</div>
-                                            	</div>
+                                                        <!--
+消息标题
+href 对应展开的条目ID
+-->
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse01">
+                                                            请考虑重新下单
+                                                        </a>
+                                                    </div>
+                                                    <!-- 消息发送时间 -->
+                                                    <div class="col-sm-3">2014－04-02 7:04 PM</div>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- End 标题栏 -->
                                         <!-- 消息主体 -->
                                         <div id="collapse01" class="panel-collapse collapse">
                                             <div class="panel-body">
-												<div class="row">
-													<div class="col-sm-4"></div>
-													<div class="col-sm-5">
-														<!-- 消息内容 -->
-														<div class="msg-content">
-															<p>亲爱的 xx 用户</p>
-															<p>现在通知您，您的订单已经被取消。</p>
-															<p>不需要再进行任何操作。</p>
-															<p>如果您有任何问题，我们很乐意为您解答。</p>
-															<a href="member-orders.html" class="btn btn-sm btn-success">订单页面</a>
-														</div>
-														<!-- End 消息内容 -->
-														<hr />
-														<!-- 回复消息 -->
-														<form action="">
-															<p>回复本消息</p>
-															<div class="form-group">
-																<textarea name="" id="" class="form-control" rows="6"></textarea>
-															</div>
-															<div class="form-group">
-																<a data-toggle="collapse" data-parent="#accordion" href="#collapse01" class="btn btn-sm btn-default">
-																	取消
-																</a>
-																<button type="submit" class="btn btn-sm btn-primary">发送</button>
-															</div>
-														</form>
-														<!-- End 回复消息 -->
-													</div>
-												</div>
+                                                <div class="row">
+                                                    <div class="col-sm-4"></div>
+                                                    <div class="col-sm-5">
+                                                        <!-- 消息内容 -->
+                                                        <div class="msg-content">
+                                                            <p>亲爱的 xx 用户</p>
+                                                            <p>现在通知您，您的订单已经被取消。</p>
+                                                            <p>不需要再进行任何操作。</p>
+                                                            <p>如果您有任何问题，我们很乐意为您解答。</p>
+                                                            <a href="member-orders.html" class="btn btn-sm btn-success">订单页面</a>
+                                                        </div>
+                                                        <!-- End 消息内容 -->
+                                                        <hr />
+                                                        <!-- 回复消息 -->
+                                                        <form action="">
+                                                            <p>回复本消息</p>
+                                                            <div class="form-group">
+                                                                <textarea name="" id="" class="form-control" rows="6"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" class="btn btn-sm btn-default">
+                                                                    取消
+                                                                </a>
+                                                                <button type="submit" class="btn btn-sm btn-primary">发送</button>
+                                                            </div>
+                                                        </form>
+                                                        <!-- End 回复消息 -->
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- End 消息主体 -->
                                     </div>
-									<!-- End 一条消息 -->
+                                    <!-- End 一条消息 -->
 
                                     <div class="panel panel-white">
                                         <div class="panel-heading">
                                             <div class="panel-title">
-                                            	<div class="row">
-                                            		<div class="col-sm-1"><span class="glyphicon glyphicon-envelope"></span></div>
-                                            		<div class="col-sm-3">
-	                                            		<span class="text-success glyphicon glyphicon-arrow-right"></span> 客服 <span class="glyphicon glyphicon-headphones"></span>
-                                            		</div>
-                                            		<div class="col-sm-5">
-	                                            		<a data-toggle="collapse" data-parent="#accordion" href="#collapse02">
-		                                                    请尽快完成支付
-		                                                </a>
-                                            		</div>
-                                            		<div class="col-sm-3">2014－04-02 7:04 PM</div>
-                                            	</div>
+                                                <div class="row">
+                                                    <div class="col-sm-1"><span class="glyphicon glyphicon-envelope"></span></div>
+                                                    <div class="col-sm-3">
+                                                        <span class="text-success glyphicon glyphicon-arrow-right"></span> 客服 <span class="glyphicon glyphicon-headphones"></span>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse02">
+                                                            请尽快完成支付
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-3">2014－04-02 7:04 PM</div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div id="collapse02" class="panel-collapse collapse">
                                             <div class="panel-body">
-												<div class="row">
-													<div class="col-sm-4"></div>
-													<div class="col-sm-5">
-														<p>亲爱的 xx 用户</p>
-														<p>现在通知您，您的订单已经被取消。</p>
-														<p>不需要再进行任何操作。</p>
-														<p>如果您有任何问题，我们很乐意为您解答。</p>
-														<a href="member-orders.html" class="btn btn-sm btn-success">订单页面</a>
-														<hr />
-														<form action="">
-															<p>回复本消息</p>
-															<div class="form-group">
-																<textarea name="" id="" class="form-control" rows="6"></textarea>
-															</div>
-															<div class="form-group">
-																<a data-toggle="collapse" data-parent="#accordion" href="#collapse02" class="btn btn-sm btn-default">
-																	取消
-																</a>
-																<button type="submit" class="btn btn-sm btn-primary">发送</button>
-															</div>
-														</form>
-													</div>
-												</div>
+                                                <div class="row">
+                                                    <div class="col-sm-4"></div>
+                                                    <div class="col-sm-5">
+                                                        <p>亲爱的 xx 用户</p>
+                                                        <p>现在通知您，您的订单已经被取消。</p>
+                                                        <p>不需要再进行任何操作。</p>
+                                                        <p>如果您有任何问题，我们很乐意为您解答。</p>
+                                                        <a href="member-orders.html" class="btn btn-sm btn-success">订单页面</a>
+                                                        <hr />
+                                                        <form action="">
+                                                            <p>回复本消息</p>
+                                                            <div class="form-group">
+                                                                <textarea name="" id="" class="form-control" rows="6"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" class="btn btn-sm btn-default">
+                                                                    取消
+                                                                </a>
+                                                                <button type="submit" class="btn btn-sm btn-primary">发送</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

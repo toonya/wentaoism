@@ -466,10 +466,59 @@ a.btn-white2gray{
 			font-size: 14px;
 			display: block;
 		}
+
+		.row {
+			>:nth-child(1), >:nth-child(2), >:nth-child(3) {
+				position: relative;
+
+				&::after {
+					background: #E4E4E4;
+					content: " ";
+					position: absolute;
+					width: 1px;
+					height: 20px;
+					right: 0;
+					top: 0;
+				}
+			}
+		}
 	}
 
 	.panel-body {
+		border: none !important;
 		color: #333;
 		padding-bottom: 24px;
 	}
+}
+
+/* dialog */
+.middle-dialog {
+	margin-top: 150px;
+}
+.big-dialog {
+	width: 720px;
+}
+
+.modal-header {
+	&.color-header {
+		border: none;
+		position: relative;
+		color: #1C87AE;
+		padding-bottom: 8px;
+
+		&::after {
+			content: ' ';
+			position: absolute;
+			background: #1C87AE;
+			height: 3px;
+			border-radius: 1px;
+			width: 688px;
+			bottom: 0;
+			left: 15px;
+		}
+	}
+}
+
+.modal-body {
+	padding: 15px;
 }
