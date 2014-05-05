@@ -143,22 +143,12 @@ a:hover {
 /* end. common style */
 /* button */
 .btn-file {
-  position: relative;
-  overflow: hidden;
+  display: inline-block;
 }
-.btn-file input[type=file] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100px;
-  min-height: 50px;
-  font-size: 99px;
-  text-align: right;
-  opacity: 0;
-  outline: none;
-  background: white;
-  cursor: inherit;
-  display: block;
+.btn-file .hidden-file {
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 /* form */
 .inline {
@@ -668,7 +658,7 @@ a.btn-white2gray i.big {
 .modal-body {
   padding: 15px;
 }
-.modal-body .btn {
+.modal-body .btn-file {
   margin: 0;
 }
 .modal-body .add-file {

@@ -30,8 +30,13 @@
 	    var $this = $(this);
 	    var filename = $this.val().replace(/.*(\/|\\)/, '');
 
-	    $this.parent().find('.filename').text('('+filename+')');
+	    $this.closest('.btn-file').find('.filename').text('('+filename+')');
+
 	    console.log(filename);
+    })
+
+    $('.btn-file').on('click', '.btn', function(e){
+	    $(this).closest('.btn-file').find('input').trigger('click');
     })
 
 	$('[data-ride="toggle-select"]').on('change.toggleSelectionForm', function(e) {

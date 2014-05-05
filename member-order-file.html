@@ -21,47 +21,52 @@
                         <h4 class="modal-title" id="myModalLabel">上传文件</h4>
                     </div>
                     <div class="modal-body">
-                    	<div class="well hide well-success">
-	                    	上传成功
-                    	</div>
-                    	<div class="well hide well-failed">
-	                    	上传失败
-                    	</div>
-                    	<div class="well hide well-failed">
-	                    	订单已经取消，不能上传文件
-                    	</div>
+                        <div class="well hide well-success">
+                            上传成功
+                        </div>
+                        <div class="well hide well-failed">
+                            上传失败
+                        </div>
+                        <div class="well hide well-failed">
+                            订单已经取消，不能上传文件
+                        </div>
                         <form action="">
-                        	<div class="row">
-	                        	<div class="col-sm-1">
-		                        	<a href="#" class="add-file"><span class="glyphicon glyphicon-plus"></span></a>
-	                        	</div>
-	                        	<div class="col-sm-9">
-	                        		<div class="changeable-items">
-	                        			<div class="item form-group">
-					                        <span class="btn btn-sm btn-default btn-file">
-												<input data-name="orderFile" data-index=0 name="orderFile[0]" id="" type="file"><span class="filename">(点击上传)</span>
-						                    </span>
-											<select data-index=0 data-name="fileType" name="fileType[0]" class="form-control inline input-sm pull-right" name="" id="">
-						                        <option value="">请选择文件种类</option>
-						                        <option value="0">type #1</option>
-					                        </select>
-					                        <hr />
-				                        </div>
-	                        		</div>
-	                        	</div>
-                        	</div>
-							<div class="well">
-								<div class="form-group">
-									<div class="exonerate">
-										<input type="checkbox" name="" id="" /> 我确认上传的附件中不包含我的个人信息。
-									</div>
-								</div>
-							</div>
-							<hr />
-	                        <div class="form-group text-right">
-								<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-								<button type="submit" disabled class="btn btn-primary">上传</button>
-	                        </div>
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <a href="#" class="add-file"><span class="glyphicon glyphicon-plus"></span></a>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="changeable-items">
+                                        <div class="item form-group">
+                                            <div class="btn-file">
+                                                <span class="btn btn-sm btn-default">
+                                                    <span class="filename">(点击上传)</span>
+                                                </span>
+                                                <div class="hidden-file">
+                                                    <input data-name="orderFile" data-index=0 name="orderFile[0]" id="" type="file">
+                                                </div>
+                                            </div>
+                                            <select data-index=0 data-name="fileType" name="fileType[0]" class="form-control inline input-sm pull-right" name="" id="">
+                                                <option value="">请选择文件种类</option>
+                                                <option value="0">type #1</option>
+                                            </select>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="well">
+                                <div class="form-group">
+                                    <div class="exonerate">
+                                        <input type="checkbox" name="" id="" /> 我确认上传的附件中不包含我的个人信息。
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="form-group text-right">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="submit" disabled class="btn btn-primary">上传</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -140,164 +145,164 @@
                             <div class="info-wrapper">
 
                                 <div class="row">
-                                	<!-- 本站提供的文件 -->
-                                	<div class="col-sm-7 site_file">
-		                                <div class="page-header gray-border">
-		                                    <h4>由文道上传的文件</h4>
-		                                </div>
+                                    <!-- 本站提供的文件 -->
+                                    <div class="col-sm-7 site_file">
+                                        <div class="page-header gray-border">
+                                            <h4>由文道上传的文件</h4>
+                                        </div>
 
-		                                <!-- 文件列表 -->
-		                                <!-- 如果没有文件 去掉class “hide” -->
-		                                <div class="no-item text-center hide text-muted">
-			                                订单已取消。无文件上传。
-		                                </div>
-		                                <div class="panel-group file-panel table-panel" id="accordion">
-		                                    <!-- 一个文件项目开始 -->
-		                                    <div class="panel panel-white">
-		                                        <!-- 文件标题栏 -->
-		                                        <div class="panel-heading">
-		                                            <div class="panel-title no-border">
-		                                                <div class="row">
-		                                                    <div class="col-sm-1">
-		                                                        <span class="fa big fa-angle-right"></span>
-		                                                        <span class="fa big fa-angle-down"></span>
-		                                                    </div>
-		                                                    <div class="col-sm-7">
-		                                                        <!--
-																	文件名称
-																	href 对应展开的条目ID
-																-->
-		                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" class="file-name">
-		                                                        	<!-- 已读文件，去掉class “text－muted” -->
-		                                                        	<span class="glyphicon glyphicon-file file-name-before"></span>
-		                                                            <span>10294757_Order_4_.doc</span>
-		                                                        </a>
-		                                                    </div>
-		                                                    <!-- 文件发送时间 -->
-		                                                    <div class="col-sm-4 text-right">
-		                                                    	<span>4月2日 7:04 PM</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                        </div>
-		                                        <!-- End 标题栏 -->
-		                                        <!-- 文件主体 -->
-		                                        <div id="collapse01" class="panel-collapse collapse">
-		                                            <div class="panel-body">
-		                                                <!-- 文件内容 -->
-		                                                <div class="file-content">
-		                                                	<div class="text-right">
-																<div class="file-info">
-			                                                    	108天7小时之前<br />
-			                                                    	<strong>1858 words</strong>
-		                                                    	</div>
-		                                                	</div>
-		                                                    <div class="well well-success">
-			                                                    终稿已经完成，可以下载。
-		                                                    </div>
-		                                                    <a href="" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-save"></span>下载文件</a>
-		                                                </div>
-		                                                <!-- End 文件内容 -->
-		                                            </div>
-		                                        </div>
-		                                        <!-- End 文件主体 -->
-		                                    </div>
-		                                    <!-- End 一个文件项目 -->
+                                        <!-- 文件列表 -->
+                                        <!-- 如果没有文件 去掉class “hide” -->
+                                        <div class="no-item text-center hide text-muted">
+                                            订单已取消。无文件上传。
+                                        </div>
+                                        <div class="panel-group file-panel table-panel" id="accordion">
+                                            <!-- 一个文件项目开始 -->
+                                            <div class="panel panel-white">
+                                                <!-- 文件标题栏 -->
+                                                <div class="panel-heading">
+                                                    <div class="panel-title no-border">
+                                                        <div class="row">
+                                                            <div class="col-sm-1">
+                                                                <span class="fa big fa-angle-right"></span>
+                                                                <span class="fa big fa-angle-down"></span>
+                                                            </div>
+                                                            <div class="col-sm-7">
+                                                                <!--
+文件名称
+href 对应展开的条目ID
+-->
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" class="file-name">
+                                                                    <!-- 已读文件，去掉class “text－muted” -->
+                                                                    <span class="glyphicon glyphicon-file file-name-before"></span>
+                                                                    <span>10294757_Order_4_.doc</span>
+                                                                </a>
+                                                            </div>
+                                                            <!-- 文件发送时间 -->
+                                                            <div class="col-sm-4 text-right">
+                                                                <span>4月2日 7:04 PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End 标题栏 -->
+                                                <!-- 文件主体 -->
+                                                <div id="collapse01" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <!-- 文件内容 -->
+                                                        <div class="file-content">
+                                                            <div class="text-right">
+                                                                <div class="file-info">
+                                                                    108天7小时之前<br />
+                                                                    <strong>1858 words</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="well well-success">
+                                                                终稿已经完成，可以下载。
+                                                            </div>
+                                                            <a href="" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-save"></span>下载文件</a>
+                                                        </div>
+                                                        <!-- End 文件内容 -->
+                                                    </div>
+                                                </div>
+                                                <!-- End 文件主体 -->
+                                            </div>
+                                            <!-- End 一个文件项目 -->
 
-		                                    <!-- 一个文件项目开始 -->
-		                                    <div class="panel panel-white">
-		                                        <!-- 文件标题栏 -->
-		                                        <div class="panel-heading">
-		                                            <div class="panel-title no-border">
-		                                                <div class="row">
-		                                                    <div class="col-sm-1">
-		                                                        <span class="fa big fa-angle-right"></span>
-		                                                        <span class="fa big fa-angle-down"></span>
-		                                                    </div>
-		                                                    <div class="col-sm-7">
-		                                                        <!--
-																	文件名称
-																	href 对应展开的条目ID
-																-->
-		                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" class="file-name">
-		                                                        	<!-- 已读文件，去掉class “text－muted” -->
-		                                                        	<span class="btn-notice file-name-before">NEW</span>
-		                                                            10294757_Order_4_.doc
-		                                                        </a>
-		                                                    </div>
-		                                                    <!-- 文件发送时间 -->
-		                                                    <div class="col-sm-4 text-right">
-		                                                    	<span>4月2日 7:04 PM</span>
-		                                                    </div>
-		                                                </div>
-		                                            </div>
-		                                        </div>
-		                                        <!-- End 标题栏 -->
-		                                        <!-- 文件主体 -->
-		                                        <div id="collapse02" class="panel-collapse collapse">
-		                                            <div class="panel-body">
-		                                                <!-- 文件内容 -->
-		                                                <div class="file-content">
-		                                                	<div class="text-right">
-			                                                	<div class="file-info">
-			                                                    	108天7小时之前<br />
-			                                                    	<strong>1858 words</strong>
-		                                                    	</div>
-		                                                	</div>
-		                                                    <div class="well well-success">
-			                                                    终稿已经完成，可以下载。
-		                                                    </div>
-		                                                    <a href="" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-save"></span>下载文件</a>
-		                                                </div>
-		                                                <!-- End 文件内容 -->
-		                                            </div>
-		                                        </div>
-		                                        <!-- End 文件主体 -->
-		                                    </div>
-		                                    <!-- End 一个文件项目 -->
-		                                </div>
-		                                <p class="text-muted"><small>我们的anti-plagiarism系统没有检测到任何剽窃内容。</small></p>
-                                	</div>
+                                            <!-- 一个文件项目开始 -->
+                                            <div class="panel panel-white">
+                                                <!-- 文件标题栏 -->
+                                                <div class="panel-heading">
+                                                    <div class="panel-title no-border">
+                                                        <div class="row">
+                                                            <div class="col-sm-1">
+                                                                <span class="fa big fa-angle-right"></span>
+                                                                <span class="fa big fa-angle-down"></span>
+                                                            </div>
+                                                            <div class="col-sm-7">
+                                                                <!--
+文件名称
+href 对应展开的条目ID
+-->
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" class="file-name">
+                                                                    <!-- 已读文件，去掉class “text－muted” -->
+                                                                    <span class="btn-notice file-name-before">NEW</span>
+                                                                    10294757_Order_4_.doc
+                                                                </a>
+                                                            </div>
+                                                            <!-- 文件发送时间 -->
+                                                            <div class="col-sm-4 text-right">
+                                                                <span>4月2日 7:04 PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End 标题栏 -->
+                                                <!-- 文件主体 -->
+                                                <div id="collapse02" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <!-- 文件内容 -->
+                                                        <div class="file-content">
+                                                            <div class="text-right">
+                                                                <div class="file-info">
+                                                                    108天7小时之前<br />
+                                                                    <strong>1858 words</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="well well-success">
+                                                                终稿已经完成，可以下载。
+                                                            </div>
+                                                            <a href="" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-save"></span>下载文件</a>
+                                                        </div>
+                                                        <!-- End 文件内容 -->
+                                                    </div>
+                                                </div>
+                                                <!-- End 文件主体 -->
+                                            </div>
+                                            <!-- End 一个文件项目 -->
+                                        </div>
+                                        <p class="text-muted"><small>我们的anti-plagiarism系统没有检测到任何剽窃内容。</small></p>
+                                    </div>
 
-                                	<!-- 客户上传的文件 -->
-                                	<div class="col-sm-5 customer-file">
-	                                	<div class="page-header gray-border">
-		                                    <h4>你上传的文件</h4>
-		                                </div>
-										<div class="panel-group file-panel table-panel" id="accordion">
-		                                    <!-- 一个文件项目开始 -->
-		                                    <div class="panel panel-white">
-		                                        <!-- 文件主体 -->
-		                                        <div id="collapse11" class="panel-collapse collapse in">
-		                                            <div class="panel-body">
-		                                                <!-- 文件内容 -->
-		                                                <div class="row">
-			                                                <div class="col-sm-7">
-				                                                <a href="" class="">10294757_Zi_Wang_Paper_2...</a>
-			                                                </div>
-			                                                <div class="col-sm-5 text-right">
-																<small>4月2日 7:04 PM<br />
-																	108天7小时之前</small>
-															</div>
-		                                                </div>
+                                    <!-- 客户上传的文件 -->
+                                    <div class="col-sm-5 customer-file">
+                                        <div class="page-header gray-border">
+                                            <h4>你上传的文件</h4>
+                                        </div>
+                                        <div class="panel-group file-panel table-panel" id="accordion">
+                                            <!-- 一个文件项目开始 -->
+                                            <div class="panel panel-white">
+                                                <!-- 文件主体 -->
+                                                <div id="collapse11" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        <!-- 文件内容 -->
+                                                        <div class="row">
+                                                            <div class="col-sm-7">
+                                                                <a href="" class="">10294757_Zi_Wang_Paper_2...</a>
+                                                            </div>
+                                                            <div class="col-sm-5 text-right">
+                                                                <small>4月2日 7:04 PM<br />
+                                                                    108天7小时之前</small>
+                                                            </div>
+                                                        </div>
 
-														<div>描述： 对论文进行了修改批注</div>
+                                                        <div>描述： 对论文进行了修改批注</div>
 
-		                                                <!-- End 文件内容 -->
-		                                            </div>
-		                                        </div>
-		                                        <!-- End 文件主体 -->
-		                                    </div>
-		                                    <!-- End 一个文件项目 -->
-		                                </div>
-		                                <div class="text-center">
-		                                	<a href="#" data-toggle="modal" data-target="#upload-file" class="btn btn-success">
-												<i class="glyphicon glyphicon-download-alt"></i>
-												<span>上传文件</span>
-											</a>
-		                                </div>
-                                	</div>
-								</div>
+                                                        <!-- End 文件内容 -->
+                                                    </div>
+                                                </div>
+                                                <!-- End 文件主体 -->
+                                            </div>
+                                            <!-- End 一个文件项目 -->
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="#" data-toggle="modal" data-target="#upload-file" class="btn btn-success">
+                                                <i class="glyphicon glyphicon-download-alt"></i>
+                                                <span>上传文件</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
