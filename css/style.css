@@ -386,6 +386,17 @@ a:hover {
 .app-content .order-info-container nav ul li.active a {
   background: #F9F9F9;
 }
+.app-content .order-info-container nav ul a {
+  position: relative;
+  padding-right: 48px;
+}
+.app-content .order-info-container nav ul .badge {
+  background: green;
+  font-size: 10px;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
 .app-content .page-header {
   margin: 0;
   margin-bottom: 8px;
@@ -573,10 +584,64 @@ a.btn-white2gray i.big {
   right: 0;
   top: 0;
 }
+.table-panel .panel-title.no-border .row > :nth-child(n)::after {
+  background: none;
+}
 .table-panel .panel-body {
   border: none !important;
   color: #333;
   padding-bottom: 24px;
+}
+.file-panel .panel-title .fa-angle-down {
+  display: none;
+}
+.file-panel .file-info {
+  font-size: 12px;
+  margin-top: -15px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.file-panel .panel.active .fa-angle-right {
+  display: none;
+}
+.file-panel .panel.active .fa-angle-down {
+  display: inherit;
+}
+.file-panel a.file-name {
+  color: #555;
+}
+.file-panel .new-file-notice {
+  color: green;
+  border: 1px solid green;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 9px;
+}
+.file-panel .file-name-before {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  margin-right: 8px;
+}
+.site_file {
+  position: relative;
+  padding-right: 30px;
+}
+.site_file::after {
+  background: #E4E4E4;
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+.customer-file {
+  padding-left: 30px;
+}
+.customer-file .panel-body {
+  color: inherit;
+  padding: 15px;
 }
 /* dialog */
 .middle-dialog {
@@ -611,6 +676,17 @@ a.btn-white2gray i.big {
   line-height: 30px;
   text-align: center;
   display: block;
+}
+/* well with color */
+.well-success {
+  border-color: green;
+  background: #faffda;
+  padding: 8px 15px;
+}
+.well-failed {
+  border-color: red;
+  background: #fffafa;
+  padding: 8px 15px;
 }
 /* app frame end */
 /* member message */
