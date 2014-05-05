@@ -26,7 +26,15 @@
 		$('.login-mobile-trigger').click();
 	})
 
-    $('.btn-file :file').on('change.customFilePicker', function(e) {
+    $('span.btn-file :file').on('change.customFilePicker', function(e) {
+	    var $this = $(this);
+	    var filename = $this.val().replace(/.*(\/|\\)/, '');
+
+	    $this.parent().find('.filename').text('('+filename+')');
+	    console.log(filename);
+    })
+
+    $('div.btn-file :file').on('change.customFilePicker', function(e) {
 	    var $this = $(this);
 	    var filename = $this.val().replace(/.*(\/|\\)/, '');
 
@@ -35,9 +43,10 @@
 	    console.log(filename);
     })
 
-    $('.btn-file').on('click', '.btn', function(e){
+    $('div.btn-file').on('click', '.btn', function(e){
 	    $(this).closest('.btn-file').find('input').trigger('click');
     })
+
 
 	$('[data-ride="toggle-select"]').on('change.toggleSelectionForm', function(e) {
 		var num = $(this).find('option:selected').index();
