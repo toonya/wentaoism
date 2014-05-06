@@ -8,42 +8,38 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
-        <script src="js/prefixfree.min.js"></script>
     </head>
     <body class="home">
         <!-- page -->
         <div class="page">
-            <div class="nav-cover hide"></div>
-            <div class="login-cover hide"></div>
 
 			<header>
 				<div class="app-top-bar">
-					<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
-					<div class="right-info">
-						<div class="item"><a href="#">回首页</a></div>
-						<div class="item">欢迎你，<a href="#">Gareth</a> <small class="text-muted">[ abc123@me.com ]</small></div>
-						<div class="item"><a href="#">退出</a></div>
+					<div class="app-container">
+						<div class="logo"><a href="#"><img src="images/s-logo.png" alt="" /></a></div>
+						<div class="right-info">
+							<div class="item"><a href="#">回首页</a></div>
+							<div class="item">欢迎你，<a href="#">Gareth</a> <small class="text-muted">[ abc123@me.com ]</small></div>
+							<div class="item"><a href="#">退出</a></div>
+						</div>
 					</div>
+					<div class="decoration-border"></div>
 				</div>
 			</header>
 
 
-            <div class="app order">
+            <div class="app app-container">
                 <div class="app-nav">
                     <nav>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-file"></div><div class="detail">我要下单</div></a></div>
-						<div class="white-block"></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-list-alt"></div><div class="detail">全部订单</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-tag"></div><div class="detail">折扣返券</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-user"></div><div class="detail">个人资料</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-comment"></div><div class="detail">消息通知</div></a></div>
-                    </nav>
-                    <nav class="bottom">
-                    	<div class="item"><a href="#"><div class="icon glyphicon glyphicon-globe"></div><div class="detail">中国</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon"></div><div class="detail">2014-03-20</div></a></div>
-                    	<div class="item"><a href="#"><div class="icon"></div><div class="detail">11:11</div></a></div>
+                    	<ul class="nav nav-tabs">
+							<li><a href="member-orders.html"> <span class="glyphicon glyphicon-list-alt"></span> 全部订单</a></li>
+							<li class="active"><a href="member-profile.html"> <span class="glyphicon glyphicon-user"></span> 我的资料</a></li>
+							<li><a href="member-coupon.html"> <span class="glyphicon glyphicon-tag"></span> 折扣优惠</a></li>
+							<li class="new-order"><a href="member-new-order.html"> <span class="glyphicon glyphicon-file"></span> 我要下单</a></li>
+						</ul>
                     </nav>
                 </div>
+
                 <div class="app-content">
                     <div class="content">
                     	<!-- order-panel 01 -->
@@ -134,6 +130,7 @@
                     </div>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
