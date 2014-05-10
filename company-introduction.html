@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="text/html" charset="utf-8">
         <link href="" rel="stylesheet" media="screen">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
-        <script src="js/prefixfree.min.js"></script>
 	</head>
 	<body class="home">
 		<!-- page -->
@@ -84,8 +84,8 @@
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <div class="item active" style="background-image:url(images/banner-1.jpg);"></div>
-                        <div class="item" style="background-image:url(images/banner-2.jpg);"></div>
+                        <div class="item" style="background-image:url(images/banner-1.jpg);"></div>
+                        <div class="item active" style="background-image:url(images/banner-2.jpg);"></div>
                         <div class="item" style="background-image:url(images/banner-3.jpg);"></div>
                     </div>
 
@@ -108,10 +108,10 @@
 							<h1>Service Package<small>购买我们的论文咨询Service Package, 您将得到:</small></h1>
 							<hr />
 							<ul class="service-package-list">
-								<li>身经百战的学霸顾问为您量身打造的原创范文。</li>
-								<li>免费的抄袭率检测报告。</li>
-								<li>无限次数的修改。</li>
-								<li>退款承诺。</li>
+								<li data-bottom-top="opacity:0; transform:scale(.5)" data--100-bottom="opacity:1; transform:scale(1)">身经百战的学霸顾问为您量身打造的原创范文。</li>
+								<li data-bottom-top="opacity:0; transform:scale(.5)" data--100-bottom="opacity:1; transform:scale(1)">免费的抄袭率检测报告。</li>
+								<li data-bottom-top="opacity:0; transform:scale(.5)" data--100-bottom="opacity:1; transform:scale(1)">无限次数的修改。</li>
+								<li data-bottom-top="opacity:0; transform:scale(.5)" data--100-bottom="opacity:1; transform:scale(1)">退款承诺。</li>
 							</ul>
 						</div>
 					</section>
@@ -132,7 +132,7 @@
 							<h1>Our Customers<small>看看我们的论文咨询客户都在做什么：</small></h1>
 							<hr />
 							<div class="feedback-list">
-								<div class="row">
+								<div class="row" data-bottom-top="opacity:0; transform:scale(1.5)" data--100-bottom="opacity:1; transform:scale(1)">
 									<div class="item col-sm-6">
 										<div class="row">
 											<div class="col-sm-3">
@@ -154,7 +154,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row" data-bottom-top="opacity:0; transform:scale(1.5)" data--100-bottom="opacity:1; transform:scale(1)">
 									<div class="item col-sm-6">
 										<div class="row">
 											<div class="col-sm-3">
@@ -176,7 +176,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row" data-bottom-top="opacity:0; transform:scale(1.5)" data--100-bottom="opacity:1; transform:scale(1)">
 									<div class="item col-sm-6">
 										<div class="row">
 											<div class="col-sm-3">
@@ -263,5 +263,11 @@
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="js/bootstrap-hover-dropdown.min.js"></script>
 		<script src="js/fn.js"></script>
+		<script src="js/skrollr.min.js"></script>
+		<script>
+			jQuery(function($){
+				skrollr.init({forceHeight: true,smoothScrolling: true});
+			})
+		</script>
 	</body>
 </html>

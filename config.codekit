@@ -481,6 +481,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/asset\/man.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2018,
+		"inputAbbreviatedPath": "\/images\/asset\/man.jpg",
+		"outputAbbreviatedPath": "\/images\/asset\/man.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/asset\/star-points.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -488,6 +499,17 @@
 		"initialSize": 21024,
 		"inputAbbreviatedPath": "\/images\/asset\/star-points.png",
 		"outputAbbreviatedPath": "\/images\/asset\/star-points.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/asset\/woman.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2660,
+		"inputAbbreviatedPath": "\/images\/asset\/woman.jpg",
+		"outputAbbreviatedPath": "\/images\/asset\/woman.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -778,8 +800,8 @@
 		},
 	"\/js\/fn.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/fn.js",
 		"outputAbbreviatedPath": "\/js\/min\/fn-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -826,6 +848,17 @@
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/prefixfree.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/prefixfree.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
+	"\/js\/skrollr.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/js\/skrollr.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/skrollr.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

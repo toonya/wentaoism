@@ -1572,17 +1572,34 @@ nav.mobile .panel ul a {
 .co-intro ul.service-package-list li {
   position: relative;
   display: block;
-  padding: 24px 72px;
+  padding: 36px 96px;
 }
 .co-intro ul.service-package-list li::before {
   position: absolute;
   left: 0;
   top: 16px;
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
   content: " ";
-  background: #ddd;
-  border-radius: 24px;
+  background: #ccc;
+  color: #fff;
+  border-radius: 36px;
+  font-size: 36px;
+  font-family: FontAwesome;
+  line-height: 72px;
+  text-align: center;
+}
+.co-intro ul.service-package-list li:nth-child(1)::before {
+  content: "\f0f6";
+}
+.co-intro ul.service-package-list li:nth-child(2)::before {
+  content: "\f002";
+}
+.co-intro ul.service-package-list li:nth-child(3)::before {
+  content: "\f044";
+}
+.co-intro ul.service-package-list li:nth-child(4)::before {
+  content: "\f155";
 }
 .co-intro .ad {
   background: #3388CD;
