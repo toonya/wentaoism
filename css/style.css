@@ -184,6 +184,10 @@ div.btn-file .hidden-file {
 .trigger-area {
   margin-top: 8px;
 }
+input,
+textarea {
+  font-size: 14px;
+}
 /* app frame */
 /* app */
 .app-container {
@@ -792,6 +796,11 @@ a.btn-white2gray i.big {
   transition: transform .65s ease;
 }
 /* end. member message */
+.primary {
+  background: #fff;
+  width: 100%;
+  padding-bottom: 36px;
+}
 header > .container {
   position: relative;
   height: 120px;
@@ -1506,19 +1515,74 @@ nav.mobile .panel ul a {
 }
 /* co-intro */
 .co-intro {
-  background: #fff;
+  background: #FCFCFC;
   color: #777;
+  padding: 48px 0 72px;
+  margin-bottom: -36px;
+}
+.co-intro section {
   padding: 24px 0 72px;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 32px;
 }
-.co-intro p {
-  padding-bottom: 24px;
+.co-intro section .section-inner {
+  max-width: 600px;
+  margin: 0 auto;
 }
-.co-intro h3 {
-  color: #000;
+.co-intro section:last-child {
+  border: none;
+  line-height: normal;
 }
-.co-intro h4 {
-  padding-bottom: 24px;
-  font-weight: bold;
+.co-intro section.feedback .section-inner {
+  max-width: 840px;
+}
+.co-intro h1 {
+  color: #0097B8;
+  font-size: 24px;
+  text-align: center;
+}
+.co-intro h1 small {
+  font-size: 12px;
+  display: block;
+  padding-top: 12px;
+}
+.co-intro h1 + hr {
+  position: relative;
+  width: 45%;
+  margin: 24px auto 48px;
+  border-color: #888888;
+}
+.co-intro h1 + hr::after {
+  content: " ";
+  background: #fff;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #888888;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+}
+.co-intro ul.service-package-list {
+  list-style: none;
+  margin-left: 90px;
+}
+.co-intro ul.service-package-list li {
+  position: relative;
+  display: block;
+  padding: 24px 72px;
+}
+.co-intro ul.service-package-list li::before {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 48px;
+  height: 48px;
+  content: " ";
+  background: #ddd;
+  border-radius: 24px;
 }
 .co-intro .ad {
   background: #3388CD;
@@ -1538,31 +1602,24 @@ nav.mobile .panel ul a {
 .co-intro ol {
   padding-left: 24px;
 }
-.co-intro .commend p.content::before {
+.co-intro .feedback-list p.content::before {
   font-family: 'Gentium Basic', serif;
   content: '“ ';
   font-size: 24px;
   vertical-align: bottom;
   line-height: 14px;
 }
-.co-intro .commend p.content::after {
+.co-intro .feedback-list p.content::after {
   font-family: 'Gentium Basic', serif;
   content: ' ”';
   font-size: 24px;
   vertical-align: bottom;
   line-height: 14px;
 }
-.co-intro .commend .item {
-  padding-left: 48px;
+.co-intro .feedback-list .item {
   position: relative;
 }
-.co-intro .commend .item .glyphicon-comment {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 18px;
-}
-.co-intro .commend .item p {
+.co-intro .feedback-list .item p {
   padding-bottom: 12px;
 }
 .inline-block-list .item {

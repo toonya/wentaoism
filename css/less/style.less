@@ -7,6 +7,16 @@
 
 
 // ----------------------------------------
+// ! front-end common style
+// ----------------------------------------
+
+.primary {
+	background: #fff;
+	width: 100%;
+	padding-bottom: 36px;
+}
+
+// ----------------------------------------
 // ! header
 // ----------------------------------------
 
@@ -915,22 +925,86 @@ nav.mobile {
 
 
 /* co-intro */
+@c-intro-border : #888;
+
 .co-intro {
-	background: #fff;
+	background: #FCFCFC;
 	color: #777;
-	padding: @base 0 @base*3;
+	padding: @base*2 0 @base*3;
+	margin-bottom: -36px;
 
-	p {
-		padding-bottom: 24px;
+	section {
+		padding: 24px 0 72px;
+		border-bottom: 1px solid #e6e6e6;
+		line-height: 32px;
+
+		.section-inner {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		&:last-child {
+			border: none;
+
+			line-height: normal;
+		}
 	}
 
-	h3 {
-		color: #000;
+	section.feedback .section-inner {
+		max-width: 840px;
 	}
 
-	h4 {
-		padding-bottom: 24px;
-		font-weight: bold;
+	h1 {
+		color: #0097B8;
+		font-size: 24px;
+		text-align: center;
+
+		small {
+			font-size: 12px;
+			display: block;
+			padding-top: 12px;
+		}
+	}
+
+	h1+hr {
+		position: relative;
+		width: 45%;
+		margin: 24px auto 48px;
+		border-color: @c-intro-border;
+
+		&::after {
+			content: " ";
+			background: #fff;
+			height: 10px;
+			width: 10px;
+			border: 1px solid @c-intro-border;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 12px;
+		}
+	}
+
+	ul.service-package-list {
+		list-style: none;
+		margin-left: 90px;
+
+		li {
+			position: relative;
+			display: block;
+			padding: 24px 72px;
+
+			&::before {
+				position: absolute;
+				left: 0;
+				top: 16px;
+				width: 48px;
+				height: 48px;
+				content: " ";
+				background: #ddd;
+				border-radius: 24px;
+			}
+		}
 	}
 
 	.ad {
@@ -953,14 +1027,15 @@ nav.mobile {
 		padding-left: @base;
 	}
 
-	.commend p.content::before{
+	.feedback-list p.content::before{
 		font-family: 'Gentium Basic', serif;
 		content: '“ ';
 		font-size: 24px;
 		vertical-align: bottom;
 		line-height: 14px;
 	}
-	.commend p.content::after{
+
+	.feedback-list p.content::after{
 		font-family: 'Gentium Basic', serif;
 		content: ' ”';
 		font-size: 24px;
@@ -968,16 +1043,8 @@ nav.mobile {
 		line-height: 14px;
 	}
 
-	.commend .item {
-		padding-left: @base*2;
+	.feedback-list .item {
 		position: relative;
-
-		.glyphicon-comment {
-			position: absolute;
-			top: 0;
-			left: 0;
-			font-size: 18px;
-		}
 
 		p {
 			padding-bottom: @base*.5;
