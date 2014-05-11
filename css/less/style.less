@@ -1071,7 +1071,7 @@ nav.mobile {
 		li {
 			position: relative;
 			display: block;
-			padding: 18px 96px 36px;
+			padding: 18px 120px 36px 96px;
 			z-index: 11;
 
 			&::before {
@@ -1088,22 +1088,6 @@ nav.mobile {
 				font-family: FontAwesome;
 				line-height: 72px;
 				text-align: center;
-			}
-
-			&:nth-child(1)::before {
-				content: "\f02d";
-			}
-			&:nth-child(3)::before {
-				content: "\f002";
-			}
-			&:nth-child(2)::before {
-				content: "\f025";
-			}
-			&:nth-child(4)::before {
-				content: "\f133";
-			}
-			&:nth-child(5)::before {
-				content: "\f155";
 			}
 		}
 	}
@@ -1183,6 +1167,37 @@ nav.mobile {
 
 		p {
 			padding-bottom: @base*.5;
+		}
+	}
+}
+
+/* for service-process only */
+.service-process {
+	ul.icon-list.icon-md-list {
+		li::before {
+			content: attr(data-icon);
+		}
+	}
+}
+
+.service-standard {
+	ul.icon-list.icon-md-list {
+		li {
+			&:nth-child(1)::before {
+				content: "\f02d";
+			}
+			&:nth-child(3)::before {
+				content: "\f002";
+			}
+			&:nth-child(2)::before {
+				content: "\f025";
+			}
+			&:nth-child(4)::before {
+				content: "\f133";
+			}
+			&:nth-child(5)::before {
+				content: "\f155";
+			}
 		}
 	}
 }

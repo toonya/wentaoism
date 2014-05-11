@@ -1713,7 +1713,7 @@ nav.mobile .panel ul a {
 .service-standard ul.icon-list.icon-md-list li {
   position: relative;
   display: block;
-  padding: 18px 96px 36px;
+  padding: 18px 120px 36px 96px;
   z-index: 11;
 }
 .co-intro ul.icon-list.icon-md-list li::before,
@@ -1732,31 +1732,6 @@ nav.mobile .panel ul a {
   font-family: FontAwesome;
   line-height: 72px;
   text-align: center;
-}
-.co-intro ul.icon-list.icon-md-list li:nth-child(1)::before,
-.service-process ul.icon-list.icon-md-list li:nth-child(1)::before,
-.service-standard ul.icon-list.icon-md-list li:nth-child(1)::before {
-  content: "\f02d";
-}
-.co-intro ul.icon-list.icon-md-list li:nth-child(3)::before,
-.service-process ul.icon-list.icon-md-list li:nth-child(3)::before,
-.service-standard ul.icon-list.icon-md-list li:nth-child(3)::before {
-  content: "\f002";
-}
-.co-intro ul.icon-list.icon-md-list li:nth-child(2)::before,
-.service-process ul.icon-list.icon-md-list li:nth-child(2)::before,
-.service-standard ul.icon-list.icon-md-list li:nth-child(2)::before {
-  content: "\f025";
-}
-.co-intro ul.icon-list.icon-md-list li:nth-child(4)::before,
-.service-process ul.icon-list.icon-md-list li:nth-child(4)::before,
-.service-standard ul.icon-list.icon-md-list li:nth-child(4)::before {
-  content: "\f133";
-}
-.co-intro ul.icon-list.icon-md-list li:nth-child(5)::before,
-.service-process ul.icon-list.icon-md-list li:nth-child(5)::before,
-.service-standard ul.icon-list.icon-md-list li:nth-child(5)::before {
-  content: "\f155";
 }
 .co-intro ul.icon-list li h4,
 .service-process ul.icon-list li h4,
@@ -1862,6 +1837,25 @@ nav.mobile .panel ul a {
 .service-process .feedback-list .item p,
 .service-standard .feedback-list .item p {
   padding-bottom: 12px;
+}
+/* for service-process only */
+.service-process ul.icon-list.icon-md-list li::before {
+  content: attr(data-icon);
+}
+.service-standard ul.icon-list.icon-md-list li:nth-child(1)::before {
+  content: "\f02d";
+}
+.service-standard ul.icon-list.icon-md-list li:nth-child(3)::before {
+  content: "\f002";
+}
+.service-standard ul.icon-list.icon-md-list li:nth-child(2)::before {
+  content: "\f025";
+}
+.service-standard ul.icon-list.icon-md-list li:nth-child(4)::before {
+  content: "\f133";
+}
+.service-standard ul.icon-list.icon-md-list li:nth-child(5)::before {
+  content: "\f155";
 }
 .inline-block-list .item {
   padding: 24px;
