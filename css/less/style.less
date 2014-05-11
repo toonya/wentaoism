@@ -926,8 +926,31 @@ nav.mobile {
 
 /* co-intro */
 @c-intro-border : #888;
+@keyframes bounceIn {
+	0% {
+		transform: scale3d(.5,.5,1);
+		opacity: 0.1;
+	}
 
-.co-intro {
+	70% {
+		transform: scale3d(1.2,1.2,1.2);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale3d(1,1,1);
+	}
+}
+@keyframes hidden {
+	0% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+
+.co-intro, .service-process, .service-standard {
 	background: #FCFCFC;
 	color: #777;
 	padding: @base*2 0 @base*3;
@@ -943,7 +966,7 @@ nav.mobile {
 			margin: 0 auto;
 		}
 
-		&:last-child {
+		&:last-of-type {
 			border: none;
 
 			line-height: normal;
@@ -951,6 +974,10 @@ nav.mobile {
 	}
 
 	section.feedback .section-inner {
+		max-width: 840px;
+	}
+
+	section.md-section .section-inner {
 		max-width: 840px;
 	}
 
@@ -985,7 +1012,7 @@ nav.mobile {
 		}
 	}
 
-	ul.service-package-list {
+	ul.icon-list.icon-sm-list {
 		list-style: none;
 		margin-left: 90px;
 
@@ -1021,6 +1048,96 @@ nav.mobile {
 			}
 			&:nth-child(4)::before {
 				content: "\f155";
+			}
+		}
+	}
+
+	ul.icon-list.icon-md-list {
+		list-style: none;
+		margin-left: 90px;
+		position: relative;
+
+		&::after {
+			content: " ";
+			position: absolute;
+			height: 89%;
+			background: #eee;
+			width: 1px;
+			left: 76px;
+			top: 20px;
+			z-index: 10;
+		}
+
+		li {
+			position: relative;
+			display: block;
+			padding: 18px 96px 36px;
+			z-index: 11;
+
+			&::before {
+				position: absolute;
+				left: 0;
+				top: 16px;
+				width: 72px;
+				height: 72px;
+				content: " ";
+				background: #ccc;
+				color: #fff;
+				border-radius: 36px;
+				font-size: 36px;
+				font-family: FontAwesome;
+				line-height: 72px;
+				text-align: center;
+			}
+
+			&:nth-child(1)::before {
+				content: "\f02d";
+			}
+			&:nth-child(3)::before {
+				content: "\f002";
+			}
+			&:nth-child(2)::before {
+				content: "\f025";
+			}
+			&:nth-child(4)::before {
+				content: "\f133";
+			}
+			&:nth-child(5)::before {
+				content: "\f155";
+			}
+		}
+	}
+
+	ul.icon-list {
+		li {
+			h4 {
+				color: #0097B8;
+				font-size: 14px;
+			}
+		}
+
+		li.bounceIn {
+			&::before {
+				transform-origin: 50% 50%;
+			}
+
+			&:nth-of-type(1)::before {
+				animation: bounceIn 1.5s linear;
+			}
+			&:nth-of-type(2)::before {
+				animation: hidden .3s 0s, bounceIn 1.5s linear .3s;
+			}
+			&:nth-of-type(3)::before {
+				animation: hidden .6s 0s, bounceIn 1.5s linear .6s;
+			}
+			&:nth-of-type(4)::before {
+				animation: hidden .9s 0s, bounceIn 1.5s linear .9s;
+			}
+			&:nth-of-type(5)::before {
+				animation: hidden 1.2s 0s, bounceIn 1.5s linear 1.2s;
+			}
+			&:nth-of-type(6)::before {
+				animation: hidden 1.5s 0s, bounceIn 1.5s linear 1.5s;
 			}
 		}
 	}
