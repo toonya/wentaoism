@@ -5,7 +5,11 @@
 /* app frame end */
 @import "list-panel.less";
 
+@text-green: #00AF01;
 
+.text-green {
+	color: @text-green;
+}
 // ----------------------------------------
 // ! front-end common style
 // ----------------------------------------
@@ -1432,5 +1436,371 @@ nav.mobile {
 
 	input {
 		margin-right: 12px;
+	}
+}
+
+
+.content.coupon-bg {
+	padding: 6px;
+}
+.coupon-area {
+	width: 100%;
+	position: relative;
+
+	.coupon-wrapper {
+		position: relative;
+		padding-top: 59.2%;
+		background-size: cover;
+		background: url(../images/rebate-assets/bg-coupon.gif) no-repeat;
+	}
+
+	.coupon-inner {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+
+	.permanent, .one-time {
+		position: absolute;
+		color: #00A4C7;
+	}
+	.one-time {
+		left:9%;
+		width: 37%;
+		top: 13%;
+		font-size: 12px;
+	}
+	.permanent {
+		right: 13%;
+		top: 15%;
+		width: 26%;
+		text-align: center;
+	}
+
+	.colon {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: ":";
+			width: 15px;
+			right: -15px;
+			text-align: center;
+		}
+	}
+
+	.text-lg {
+		font-size: 14px;
+		position: relative;
+		top: 15px;
+	}
+
+	.text-xxlg {
+		font-size: 34px;
+	}
+
+	.coupon-code, .coupon-value {
+		display: inline-block;
+		padding: 4px 8px;
+		margin: 0 0 0 4px;
+		background: #f1f1f1;
+		font-size: 14px;
+		.text-orange();
+	}
+
+	.coupon-value {
+		font-size: 24px;
+		background: none;
+		top: 3px;
+		position: relative;
+	}
+
+	.coupon-level {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		.coupon {
+			color: #AEA7AC;
+			position: absolute;
+			background: #ccc;
+
+			&:nth-child(1) {
+				left: 15%;
+			}
+			&:nth-child(2) {
+				left: 35%;
+			}
+			&:nth-child(3) {
+				left: 65%;
+			}
+			&:nth-child(4) {
+				left: 85%;
+			}
+		}
+		.coupon:nth-child(1) {
+			top:67%;
+			font-size: 18px;
+			left:10%;
+			text-align: center;
+			width: 9%;
+			padding-bottom: 25%;
+			background: url(../images/rebate-assets/plane-0.png) no-repeat center top;
+			background-position-y: 32px;
+
+			&.active::before {
+				left: -275px;
+				top: 4px;
+			}
+
+			&.active {
+				background-image: url(../images/rebate-assets/b-plane-0.png);
+
+				&~ .totle {
+					left: 0;
+					width: 30%;
+
+					&::before {
+						background-position-y: 15px;
+					}
+				}
+			}
+		}
+		.coupon:nth-child(2) {
+			top:61%;
+			font-size: 24px;
+			left:25%;
+			text-align: center;
+			width: 9%;
+			padding-bottom: 25%;
+
+			background: url(../images/rebate-assets/plane-5.png) no-repeat center top;
+			background-position-y: 40px;
+
+			&.active::before {
+				left: -278px;
+				top: 10px;
+			}
+
+			&.active {
+				background-image: url(../images/rebate-assets/b-plane-5.png);
+
+				&~ .totle {
+					left: 0;
+					width: 58%;
+
+					&::before {
+						background-position-y: 10px;
+					}
+				}
+			}
+		}
+		.coupon:nth-child(3) {
+			top:52%;
+			font-size: 32px;
+			left:49%;
+			text-align: center;
+			width: 9%;
+			padding-bottom: 25%;
+
+			background: url(../images/rebate-assets/plane-10.png) no-repeat center top;
+			background-position-y: 50px;
+
+			&.active::before {
+				left: -290px;
+				top: 19px;
+			}
+
+			&.active {
+				background-image: url(../images/rebate-assets/b-plane-10.png);
+
+				&~ .totle {
+					left: 38.5%;
+					width: 27.5%;
+
+					&::before {
+						background-position-y: 5px;
+					}
+				}
+			}
+		}
+
+		.coupon:nth-child(4) {
+			top:31%;
+			font-size: 40px;
+			left:77%;
+			text-align: center;
+			width: 12%;
+			padding-bottom: 25%;
+
+			background: url(../images/rebate-assets/plane-15.png) no-repeat center top;
+			background-position-y: 55px;
+
+			&.active::before {
+				left: -290px;
+				top: 28px;
+			}
+
+			&.active {
+				background-image: url(../images/rebate-assets/b-plane-15.png);
+
+				&~ .totle {
+					left: 66.3%;
+					width: 33.8%;
+				}
+			}
+		}
+
+		.coupon.active {
+			color: #23A2E3;
+
+			&::before {
+				position: absolute;
+				width: 300px;
+				text-align: right;
+				font-size: 12px;
+				content: attr(data-current-content);
+			}
+		}
+	}
+
+	.totle {
+		position: absolute;
+		width: 100%;
+		top: 87%;
+		// 高度 ＋ 剪头 ＋ 空白
+		padding-top: 39px+11px+2px;
+		background: url(../images/rebate-assets/narrow.png) no-repeat center top;
+		background-position-y: 39px;
+		text-align: center;
+		width: 100px;
+
+		&::before {
+			background: url(../images/rebate-assets/flag.png) no-repeat center top;
+			width: 100%;
+			height: 65px;
+			position: absolute;
+			content: " ";
+			top: -65px;
+			left: 0;
+			transform: translateX(31px);
+		}
+
+		.text-green {
+			font-size: 18px;
+		}
+	}
+}
+.coupon-describe {
+	color: #555;
+
+	h1 {
+		border-bottom: 2px dotted #7C7C7C;
+		padding: 0 0 12px 84px;
+		font-size: 28px;
+	}
+
+	.h1-describe {
+		padding: 6px 84px;
+
+		strong {
+			display: inline-block;
+			position: relative;
+			font-size: 150%;
+			color: #000;
+			padding: 0 6px;
+			font-weight: normal;
+		}
+	}
+}
+.text-orange {
+	color: #ff003f;
+}
+
+section.tips {
+	padding-bottom: 72px;
+	line-height: 24px;
+	font-size:12px;
+	color: #333;
+
+	p {
+		text-indent: 25px;
+		margin: 0;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	ol {
+		padding-left: 60px;
+		margin: 0;
+	}
+}
+
+section.tips, section.invitation {
+	margin: 72px;
+}
+
+section.invitation {
+	max-width: 864px;
+	margin: 0 auto;
+
+	&>p {
+		margin-top: 12px;
+		color: #888;
+	}
+
+	.invitation-wrapper {
+		padding-top: 52%;
+		position: relative;
+
+		background: url(../images/rebate-assets/bg-rebate.jpg) no-repeat center top;
+
+		form {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			padding: 30px 120px 0 150px;
+
+			h3 {
+				font-size: 20px;
+				color: #555;
+				margin-bottom: 14px;
+				margin-left: -15px;
+			}
+
+			.form-control {
+				border-radius: 0;
+			}
+
+			.invitation-target {
+				margin-top: 66px;
+			}
+
+			.control-label {
+				font-weight: normal;
+				text-align: left;
+				margin-left: -15px;
+			}
+
+			.col-xs-3 {
+				width: 20%;
+				padding-right: 0;
+			}
+
+			.btn-green {
+				background: #00B838;
+				padding: 8px 18px;
+				color: #fff;
+
+				&:hover {
+					background: #00B838 - #021;
+				}
+			}
+		}
 	}
 }

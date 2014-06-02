@@ -701,13 +701,134 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/logo.png": {
+	"\/images\/LOGO.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3468,
-		"inputAbbreviatedPath": "\/images\/logo.png",
-		"outputAbbreviatedPath": "\/images\/logo.png",
+		"inputAbbreviatedPath": "\/images\/LOGO.png",
+		"outputAbbreviatedPath": "\/images\/LOGO.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/b-plane-0.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1797,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/b-plane-0.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/b-plane-0.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/b-plane-10.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2575,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/b-plane-10.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/b-plane-10.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/b-plane-15.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3186,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/b-plane-15.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/b-plane-15.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/b-plane-5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2276,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/b-plane-5.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/b-plane-5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/bg-rebate.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 81496,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/bg-rebate.jpg",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/bg-rebate.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/flag.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1092,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/flag.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/flag.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/narrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 451,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/narrow.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/narrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/plane-0.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1797,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/plane-0.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/plane-0.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/plane-10.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2575,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/plane-10.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/plane-10.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/plane-15.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3186,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/plane-15.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/plane-15.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/rebate-assets\/plane-5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2276,
+		"inputAbbreviatedPath": "\/images\/rebate-assets\/plane-5.png",
+		"outputAbbreviatedPath": "\/images\/rebate-assets\/plane-5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

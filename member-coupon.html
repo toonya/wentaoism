@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
     <head>
-        <title>折扣返券</title>
+        <title>折扣返利</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="text/html" charset="utf-8">
         <link href="" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" title="Bootstrap-3.1" type="text/css" media="screen" charset="utf-8">
+
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
-        <script src="js/prefixfree.min.js"></script>
     </head>
     <body class="home">
         <!-- page -->
@@ -42,74 +41,138 @@
                 </div>
 
                 <div class="app-content">
-                    <div class="content">
-                    	<!-- order-panel 01 -->
-						<div class="page-header">
-						  <h4>折扣返券</h4>
+                	<!-- 优惠卷展示 -->
+                    <div class="content coupon-bg">
+						<div class="coupon-area">
+							<div class="coupon-wrapper">
+								<div class="coupon-inner">
+									<!-- 一次性折扣 -->
+									<div class="one-time">
+										<div class="row">
+											<div class="col-xs-4 text-right row"><div class="colon text-lg">五月有礼</div></div>
+											<div class="coupon col-xs-8">
+												优惠码<span class="coupon-code">a2c8p</span>
+												折扣 :<span class="coupon-value">15%</span>
+											</div>
+										</div>
+										<div class="row">
+											<small><div class="col-xs-4 text-right row"><span class="text-orange">未使用 </span></div>
+												<div class="coupon col-xs-8">
+													<span>有效期 : </span>
+													2014.3.23
+													<span> - </span>
+													2014.8.20
+												</div></small>
+										</div>
+										<div class="white-block"></div>
+										<div class="row">
+											<div class="col-xs-4 text-right row"><div class="colon text-lg">首单尊享</div></div>
+											<div class="coupon col-xs-8">
+												优惠码<span class="coupon-code">a2c8p</span>
+												折扣 :<span class="coupon-value">15%</span>
+											</div>
+										</div>
+										<div class="row">
+											<small><div class="col-xs-4 text-right row"><span>已使用 </span></div>
+												<div class="coupon col-xs-8">
+													<span>有效期 : </span>
+													2014.3.23
+													<span> - </span>
+													2014.8.20
+												</div></small>
+										</div>
+									</div>
+									<!-- 一次性折扣 -->
+
+									<!-- 一永久折扣 -->
+									<div class="permanent">
+										<div class="coupon">
+											优惠码<span class="coupon-code">a2c8p</span>
+											折扣 :<span class="coupon-value">15%</span>
+										</div>
+									</div>
+									<!-- 一永久折扣 -->
+
+									<!-- 折扣级别 -->
+									<div class="coupon-level">
+										<!-- 添加了active的coupon 为当前享有的优惠等级 -->
+										<div data-current-content="您当前享有的折扣 :" class="coupon">0%</div>
+										<div data-current-content="您当前享有的折扣 :" class="coupon">5%</div>
+										<div data-current-content="您当前享有的折扣 :" class="coupon">10%</div>
+										<div data-current-content="您当前享有的折扣 :" class="coupon active">15%</div>
+
+										<!-- 消费总额 -->
+										<div class="totle">总消费: <span class="text-green">$2400</span></div>
+									</div>
+									<!-- 折扣级别 -->
+								</div>
+							</div>
 						</div>
-
-						  <div class="row">
-						  	<div class="col-md-2">
-						  	  <select id="messageType" class="form-control input-sm">
-						  	    <option value="0">有效</option>
-						  	    <option value="1">即将过期</option>
-						  	    <option value="2">已过期</option>
-						  	  </select>
-						  	</div>
-						  </div>
-
-						<div class="white-block"></div>
-						<div class="panel panel-default">
-						  <!-- Table -->
-							<table class="table table-striped" id="coupon-list">
-						      <thead>
-						        <tr>
-						          <th class="col-md-1">券值</th>
-						          <th>适用产品</th>
-						          <th class="col-md-3">有效期</th>
-						          <th class="col-md-3">使用条件</th>
-						          <th>适用次数</th>
-						          <th class="col-md-2">状态</th>
-						        </tr>
-						      </thead>
-						      <tbody>
-						        <tr>
-						          <td>5%</td>
-						          <td>所有</td>
-						          <td>2014-01-12-2014-03-12</td>
-						          <td>历史交易满200</td>
-						          <td>无限</td>
-						          <td class="text-muted">已过期</td>
-						        </tr>
-						        <tr>
-						          <td>¥ 10.00</td>
-						          <td>抄袭检查</td>
-						          <td>2014-01-12-2014-03-12</td>
-						          <td>无</td>
-						          <td>1</td>
-						          <td class="text-success">有效</td>
-						        </tr>
-						        <tr>
-						          <td>$ 10.00</td>
-						          <td>推广特惠</td>
-						          <td>2014-01-12-2014-03-12</td>
-						          <td>成功介绍一人下单并交易成功</td>
-						          <td>无限</td>
-						          <td class="text-danger">即将过期</td>
-						        </tr>
-						      </tbody>
-						    </table>
-						</div>
-
                     </div>
+                    <!-- 优惠卷展示 -->
+
+                    <!-- 文字描述 -->
+					<div class="content coupon-describe">
+						<h1>邀请一位朋友，获得一份返利。邀请越多，返利越多！</h1>
+						<div class="h1-describe">为感谢您对我们的信赖和支持，从现在开始，您可以通过邀请朋友注册下单来获得返利</div>
+						<div class="h1-describe">当您邀请的朋友在本网站达成第一笔订单，您将获得该笔订单总金额<strong>10%</strong>的提成</div>
+					</div>
+                    <!-- 文字描述 -->
+
+                    <section class="invitation">
+	                    <div class="invitation-wrapper">
+	                    	<form action="" role="form" class="form-horizontal" data-normal-validate>
+	                    		<h3>复制下面的链接，发送给您的朋友们，邀请他们来文道吧！</h3>
+								<div class="form-group">
+									<div class=""><input type="text" class="form-control" data-auto-copy name="invitationLink" value="http://fewfwef.wfwef.asd.fwefwe" /></div>
+								</div>
+								<div class="invitation-target">
+									<h3>您也可以通过邮件向您的朋友发送邀请。</h3>
+									<div class="form-group" data-required>
+										<label for="" class="control-label col-xs-3">您朋友的昵称 :</label>
+										<div class="col-xs-6"><input type="text" class="form-control" name="friendName" /></div>
+									</div>
+									<div class="form-group" data-required>
+										<label for="" class="control-label col-xs-3">您朋友的Email :</label>
+										<div class="col-xs-6"><input type="email" class="form-control" name="friendEmail" /></div>
+									</div>
+									<div class="form-group" data-required>
+										<label for="" class="control-label col-xs-3">您的昵称 :</label>
+										<div class="col-xs-6"><input type="text" class="form-control" name="yourNickname" /></div>
+									</div>
+
+									<div class="form-group">
+										<label for="" class="control-label col-xs-3"></label>
+										<div class="col-xs-6 text-right"><button type="submit" class="btn btn-green">发 送</button></div>
+									</div>
+								</div>
+							</form>
+	                    </div>
+	                    <p>对于您邀请的朋友们，在每一位朋友的第一笔订单交易成功后，系统将想您赠送一定的积分。</p>
+                    </section>
+
+                    <section class="tips">
+	                    <h3>省钱小诀窍</h3>
+						<p>如果您想多多省钱，请耐心阅读我们下面的省钱小诀窍哦~</p>
+						<p>首先，请您了解，我们有三种省钱方式：</p>
+						<ol><li>您在网站的第一笔订单可以得到九折优惠。</li>
+							<li>介绍新客户注册并下单，您可以得到新客户第一单10%的提成。</li>
+							<li>在网站累计下单达到$500，终生享受95折优惠；达到$1000，终生享受9折优惠；达到2000刀，终生享受85折优惠。</li></ol>
+						<p>好，现在如果您和朋友同时有写作咨询的需求，最划算的方法要怎样呢？</p>
+						<p>Bingo！</p>
+						<p>最划算的做法如下：您邀请朋友建立账户，让他自己下单。这样，您朋友得到了第一单的9折优惠，而您得到他任务款的10%注资到您的账户余额中。你们一起，得到了一个8.1折（90%*90%）的超级大折扣，假设朋友的订单应付160美元，现在实际只付出了129.6美元，节省了整整30.4美元！足够吃一顿豪华大餐了有木有！</p>
+						<p>另外，请注意，推介新客户下单的提成是可以取现的！您不仅可以下次下单时直接使用，还可以通过为我们介绍客户取得可观的零花钱收入！</p>
+						<p>我们有一位可爱的客户，注册了一个“陌陌”账户，起名叫“学霸帮你写作业”，闲暇时帮我们在陌陌上介绍客户，一个月之内获得了好几百美元的零花钱！还有人用微信搜索身边的人，挨个发消息介绍我们的网站，也有几百刀零花钱入账呢~</p>
+						<p>哈哈，我敢说，做我们的客户，实在是实惠多多，优惠多多，幸运的不得了呢~</p>
+						<p>还等什么，行动起来，邀请朋友们注册下单吧！</p>
+                    </section>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/moment.min.js"></script>
-        <script src="js/bootstrap-hover-dropdown.min.js"></script>
-        <script src="js/bootstrap-datetimepicker.min.js"></script>
         <script src="js/fn.js"></script>
     </body>
 </html>

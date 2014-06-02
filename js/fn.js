@@ -266,6 +266,7 @@
 		});
 	})
 	.closest('form')
+	.not('[data-normal-validate]')
 	.on('submit', function(e){
 		e.preventDefault();
 		var $group  =  $(this).find('[data-required]');
@@ -287,6 +288,32 @@
 		e.preventDefault();
 
 		$(this).closest('form').addClass('hide');
+	});
+
+	$('[data-normal-validate] [data-required] :input')
+	.each(function(i,e){
+		$(this).not('[required]').on('beginValid', function(){
+			$(this).attr('required','required');
+		});
+		$(this).on('stopValid', function(){
+			$(this).removeAttr('required');
+		});
+	})
+	.closest('form')
+	.on('reset',function(){
+		$(this).find('[data-required] :input').trigger('stopValid');
+	})
+	.one('submit',function(e){
+
+		$(this).find('[data-required] :input').trigger('beginValid');
+
+		if( $(':invalid').size() > 0 ) {
+			e.preventDefault();
+		}
+
+		else {
+			$(this).trigger('submit');
+		}
 	});
 
 	// article type : other
@@ -322,6 +349,12 @@
 		})
 
 		$container.append($template);
+	})
+
+	// ----------------------------------------
+	// ! auto copy
+	// ----------------------------------------
+	$('[data-auto-copy]').on('focus', function(){
 	})
 
 })(jQuery)
