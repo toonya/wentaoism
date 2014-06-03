@@ -1804,3 +1804,87 @@ section.invitation {
 		}
 	}
 }
+
+
+.well.earn {
+	padding-left: 100px;
+	position: relative;
+	font-size: 24px;
+	margin: 24px 0;
+
+	&::before {
+		content: "\e177";
+		font-family: 'Glyphicons Halflings';
+		position: absolute;
+		left: 24px;
+		color: #ccc;
+		font-size: 48px;
+		top: 7px;
+	}
+}
+
+.record .table {
+	border: 1px solid #ccc;
+	font-size: 12px;
+	color: #333;
+
+	strong {
+		font-weight: normal;
+		color: #000;
+	}
+
+	td {
+		vertical-align: middle;
+	}
+}
+
+.record h2 {
+	margin: 48px 1px 24px;
+	font-size: 22px;
+}
+
+.bank-icon {
+	background: #fff url(../images/combo.png) no-repeat 0 0;
+	min-width: 180px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	height: 34px;
+}
+
+.bank-icon-select .bank-icon {
+	position: relative;
+
+	&::before {
+		content: "\e072";
+		font-family: 'Glyphicons Halflings';
+		position: absolute;
+		right: 6px;
+		color: #aaa;
+		font-size: 12px;
+		top: 7px;
+
+		transform: rotate(90deg);
+	}
+}
+
+#bank-selector {
+	.modal-dialog {
+		margin: 100px auto;
+		width: 840px;
+	}
+
+	label {
+		display: block;
+		width: 180px;
+		margin-left: auto;
+		margin-right: auto;
+
+		input[type="radio"] {
+			margin-top: 10px;
+		}
+	}
+	h4 {
+		margin-bottom: 24px;
+		padding-left: 12px;
+	}
+}

@@ -357,4 +357,19 @@
 	$('[data-auto-copy]').on('focus', function(){
 	})
 
+	// ----------------------------------------
+	// ! bank selector
+	// ----------------------------------------
+	$('[data-ride="select-bank"]').on('click', function() {
+		var $bank = $(this).closest('#bank-selector').find(':checked').closest('label'),
+			bank_code = $bank.find('input').val(),
+			$bank_icon = $bank.find('.bank-icon'),
+			$form_bank = $('[data-target="#bank-selector"]');
+
+		$form_bank.find('input').val(bank_code);
+		$form_bank.find('.bank-icon').replaceWith($bank_icon.clone());
+
+		$(this).closest('.modal').modal('hide');
+	})
+
 })(jQuery)
