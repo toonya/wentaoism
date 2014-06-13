@@ -2438,3 +2438,62 @@ section.invitation .invitation-wrapper form .btn-green:hover {
   margin-bottom: 24px;
   padding-left: 12px;
 }
+
+
+/* added by Mansy */
+.save-your-money section:last-of-type,
+.part-time section:last-of-type,
+.consultant-team section:last-of-type {
+  border: none;
+  line-height: 30px;
+}
+.save-your-money p, .part-time p {
+  text-indent: 2em;
+}
+.save-your-money p.txt-in-4em {
+  text-indent: 4em;
+}
+.save-your-money section .section-inner,
+.part-time section .section-inner
+.consultant-team section .section-inner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.save-your-money h1,
+.part-time h1,
+.consultant-team h1 {
+  color: #0097B8;
+  font-size: 24px;
+  text-align: center;
+}
+.save-your-money,
+.part-time,
+.consultant-team {
+  background: #FCFCFC;
+  color: #777;
+  padding: 48px 0 72px;
+  margin-bottom: -36px;
+}
+.save-your-money h1 + hr,
+.part-time h1 + hr,
+.consultant-team h1 + hr {
+  position: relative;
+  width: 45%;
+  margin: 24px auto 48px;
+  border-color: #888888;
+}
+.save-your-money h1 + hr::after,
+.part-time h1 + hr::after,
+.consultant-team h1 + hr::after {
+  content: " ";
+  background: #fff;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #888888;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+}
