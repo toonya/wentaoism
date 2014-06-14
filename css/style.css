@@ -2443,9 +2443,17 @@ section.invitation .invitation-wrapper form .btn-green:hover {
 /* added by Mansy */
 .save-your-money section:last-of-type,
 .part-time section:last-of-type,
-.consultant-team section:last-of-type {
+.writing-consultation section:last-of-type {
   border: none;
   line-height: 30px;
+}
+.consultant-team section:last-of-type {
+  border: none;
+  line-height: normal;
+}
+.writing-consultation section:last-of-type {
+  border: none;
+  line-height: normal;
 }
 .save-your-money p, .part-time p {
   text-indent: 2em;
@@ -2454,21 +2462,23 @@ section.invitation .invitation-wrapper form .btn-green:hover {
   text-indent: 4em;
 }
 .save-your-money section .section-inner,
-.part-time section .section-inner
+.part-time section .section-inner,
 .consultant-team section .section-inner {
   max-width: 840px;
   margin: 0 auto;
 }
 .save-your-money h1,
 .part-time h1,
-.consultant-team h1 {
+.consultant-team h1,
+.writing-consultation h1 {
   color: #0097B8;
   font-size: 24px;
   text-align: center;
 }
 .save-your-money,
 .part-time,
-.consultant-team {
+.consultant-team,
+.writing-consultation {
   background: #FCFCFC;
   color: #777;
   padding: 48px 0 72px;
@@ -2476,7 +2486,8 @@ section.invitation .invitation-wrapper form .btn-green:hover {
 }
 .save-your-money h1 + hr,
 .part-time h1 + hr,
-.consultant-team h1 + hr {
+.consultant-team h1 + hr,
+.writing-consultation h1 + hr {
   position: relative;
   width: 45%;
   margin: 24px auto 48px;
@@ -2484,7 +2495,8 @@ section.invitation .invitation-wrapper form .btn-green:hover {
 }
 .save-your-money h1 + hr::after,
 .part-time h1 + hr::after,
-.consultant-team h1 + hr::after {
+.consultant-team h1 + hr::after,
+.writing-consultation h1 + hr::after {
   content: " ";
   background: #fff;
   height: 10px;
@@ -2496,4 +2508,34 @@ section.invitation .invitation-wrapper form .btn-green:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-radius: 12px;
+}
+.writing-consultation section {
+  padding: 24px 0 72px;
+  line-height: normal;
+  border-bottom: 1px solid #e6e6e6;
+}
+.writing-consultation h1 small {
+  font-size: 12px;
+  display: block;
+  padding-top: 12px;
+}
+.writing-consultation .text-warning {
+	color: #f0ad4e;
+}
+.writing-consultation .text-muted {
+	font-size: 12px;
+}
+.writing-consultation .section-inner {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.consultant-team .consultant-universities {
+	background: url(../images/consultant-universities.png) no-repeat center;
+	height: 400px;
+}
+.consultant-team ul.consultant-majors {
+	width: 50%;
+	float: left;
+	list-style: none;
+	text-align: left;
 }
